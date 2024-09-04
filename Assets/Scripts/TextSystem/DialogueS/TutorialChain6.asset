@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa6103c8921cbb94f98f1bf24c4bca2f, type: 3}
+  m_Name: TutorialChain6
+  m_EditorClassIdentifier: 
+  dialogueID: tutorial
+  dialogueChain:
+  - See how much easier that was, you crushed it!
+  - Doing these mini games earn rewards that can be used both here and on the ranger
+    conservation to better help you and these little turtles
+  - And thats really about it. Its all on you now to help save these precious creatures
