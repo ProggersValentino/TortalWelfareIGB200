@@ -23,12 +23,12 @@ public class GameManager : MonoBehaviour
     
     private void OnEnable()
     {
-        ActionsEventSystem.SendReadySignal += ReadyMicroTasks;
+        ActionsEventSystem.SendReadySignal += SummonMicroTasks;
     }
 
     private void OnDisable()
     {
-        ActionsEventSystem.SendReadySignal -= ReadyMicroTasks;
+        ActionsEventSystem.SendReadySignal -= SummonMicroTasks;
     }
 
     private void Awake()

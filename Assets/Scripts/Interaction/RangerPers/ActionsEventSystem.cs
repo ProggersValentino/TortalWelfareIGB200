@@ -12,10 +12,10 @@ public class ActionsEventSystem : MonoBehaviour
     public static event Func<List<GameObject>> RetrieveMicroTasks;
     public static event UnityAction<string> DeleteMicroTaskFromPersistent;
     public static event UnityAction<int> InitiateInjection;
-    public static event UnityAction SendReadySignal;
+    public static event UnityAction<List<GameObject>> SendReadySignal;
 
     public static List<GameObject> OnRetrieveMicroTasks() => RetrieveMicroTasks?.Invoke();
     public static void OnDeleteFromPersistent(string UID) => DeleteMicroTaskFromPersistent?.Invoke(UID);
     public static void OnInitiateInjection(int numberToInject) => InitiateInjection?.Invoke(numberToInject);
-    public static void OnSendReadySignal() => SendReadySignal?.Invoke();
+    public static void OnSendReadySignal(List<GameObject> newMicroTasks) => SendReadySignal?.Invoke(newMicroTasks);
 }

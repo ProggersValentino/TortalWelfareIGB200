@@ -7,18 +7,26 @@ using UnityEngine.UI;
 
 public class MicroTask : MonoBehaviour
 {
+    private SpriteRenderer taskSprite;
     public float totalTimeToComplete;
 
-    public float difficultyDecrease; //to determine how much difficulty that will be taken off when completing this task
+    public MicroTaskSO taskData;
+
+    //public float difficultyDecrease; 
 
     public UnityEvent OnTaskComplete;
 
     public string UID;
-   
+
+    private void Awake()
+    {
+        taskSprite = GetComponent<SpriteRenderer>();
+    }
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        taskSprite.sprite = taskData._taskSprite;
     }
 
     // Update is called once per frame
@@ -37,7 +45,7 @@ public class MicroTask : MonoBehaviour
     {
         //decrease the difficulty level
         
-        float newDifLevel = SQLiteTest.PullDifficultyLevel(1) + difficultyDecrease;
+        float newDifLevel = SQLiteTest.PullDifficultyLevel(1) + taskData._difficultyDecreaseLevel;
         
         Debug.LogWarning($"our new diff level is {newDifLevel}");
         

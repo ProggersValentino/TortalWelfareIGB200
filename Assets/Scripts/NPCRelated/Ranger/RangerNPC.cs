@@ -65,7 +65,7 @@ public class RangerNPC : MonoBehaviour, IInteractable
             yield return new WaitForEndOfFrame();
         }
 
-        yield return new WaitForSeconds(currentTask.totalTimeToComplete); //time it takes to do task
+        yield return new WaitForSeconds(currentTask.taskData._timeToCompleteTask); //time it takes to do task
         
         currentTask.ProcessTaskCompletion(); //completing the task
         StopCoroutine(DoTask());
