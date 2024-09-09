@@ -215,6 +215,8 @@ MonoBehaviour:
   numberOfMicroTasksAllowed: 10
   normalAction: {fileID: 7148466029282600895, guid: 792b5d5401f04f146950448fe5edb722,
     type: 3}
+  MTData:
+  - {fileID: 11400000, guid: 5237705b270c03d4ba53b593424a11bf, type: 2}
   test: []
   testString: []
 --- !u!1 &1990913507
