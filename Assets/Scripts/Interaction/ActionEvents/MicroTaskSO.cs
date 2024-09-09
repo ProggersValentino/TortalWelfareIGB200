@@ -12,13 +12,20 @@ public class MicroTaskSO : ScriptableObject
         get { return taskSprite; }
     }
 
-    [SerializeField] private float difficultyDecreaseLevel; //to determine how much difficulty that will be taken off when completing this task
+    [SerializeField] private float difficultyDecreaseLevel; //to determine how much difficulty that will be taken off when completing this task. this number is generally a negative number
     
     public float _difficultyDecreaseLevel
     {
         get { return difficultyDecreaseLevel; }
     }
 
+    [SerializeField] private float difficultyIncreaseLevel; //this is generally a positive number
+
+    public float _difficultyIncreaseLevel
+    {
+        get { return difficultyIncreaseLevel; }
+    }
+    
 
     [SerializeField] private float timeToCompleteTask;
     

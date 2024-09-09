@@ -67,7 +67,7 @@ public class RangerNPC : MonoBehaviour, IInteractable
 
         yield return new WaitForSeconds(currentTask.taskData._timeToCompleteTask); //time it takes to do task
         
-        currentTask.ProcessTaskCompletion(); //completing the task
+        currentTask.ProcessTaskCompletion(currentTask.taskData._difficultyDecreaseLevel); //completing the task
         StopCoroutine(DoTask());
     }
 

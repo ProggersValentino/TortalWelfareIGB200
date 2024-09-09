@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.InteropServices;
 using Cinemachine;
+using JetBrains.Annotations;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.InputSystem.Interactions;
@@ -73,7 +74,7 @@ public class RangerPlayerController : MonoBehaviour
                     selectedNPC = ranger.SetRangerAsSelected();
                     break;
                 case MicroTask taskToBeDone:
-                    if(selectedNPC != null) selectedNPC.CompleteTask(taskToBeDone);
+                   DetermineWhatTask(taskToBeDone);
                     break;
                 default:
                     selectedNPC = null;
@@ -83,6 +84,22 @@ public class RangerPlayerController : MonoBehaviour
             }
         }
         
+    }
+
+    void DetermineWhatTask([CanBeNull] MicroTask task)
+    {
+        switch (task)
+        {
+            case HelpTurtleMicroTask helpTurtle:
+                //if(selectedNPC != null) selectedNPC.CompleteTask(helpTurtle);
+                helpTurtle.StartMicroGame();
+                break;
+            
+            default:
+                if(selectedNPC != null) selectedNPC.CompleteTask(task);
+                break;
+            
+        }
     }
     
     void OnPan(InputAction.CallbackContext context)

@@ -548,6 +548,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: TutorialItemAction
       objectReference: {fileID: 0}
+    - target: {fileID: 7671463736858475423, guid: 1f3e3376a90cc5a46bbf2f5b7621f565,
+        type: 3}
+      propertyPath: taskData
+      value: 
+      objectReference: {fileID: 11400000, guid: 5237705b270c03d4ba53b593424a11bf,
+        type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
