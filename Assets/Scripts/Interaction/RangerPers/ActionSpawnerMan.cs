@@ -12,6 +12,8 @@ public class ActionSpawnerMan : MonoBehaviour
     public int numberOfMicroTasksAllowed;
     
     public GameObject normalAction;
+
+    public List<MicroTaskSO> MTData = new List<MicroTaskSO>();
     
     //TODO: add a SO data for different types of normal actions to change the sprites 
     //public List<GameObject> ActionsToSpawn = new List<GameObject>();
@@ -56,7 +58,10 @@ public class ActionSpawnerMan : MonoBehaviour
 
     public void InjectNewActionToSpawn(int injectAmount)
     {
-        if (actionsToSpawn.Count > numberOfMicroTasksAllowed) return;        
+        List<GameObject> microtasksToSend = new List<GameObject>();
+        
+        if (actionsToSpawn.Count >= numberOfMicroTasksAllowed) return;       
+        
         for (int i = 0; i < injectAmount; i++)
         {
             currentActionIndex = GenerateRandomUID();
@@ -65,11 +70,15 @@ public class ActionSpawnerMan : MonoBehaviour
 
             MicroTask newMT = go.GetComponent<MicroTask>();
             newMT.UID = currentActionIndex;
+
+            newMT.taskData = MTData[Random.Range(0, MTData.Count - 1)]; //select random data to put with new MT
+            
+            microtasksToSend.Add(go);
             
             //add a way to randomise the sprite and how much difficulty it reduces
         }
         
-        ActionsEventSystem.OnSendReadySignal();
+        ActionsEventSystem.OnSendReadySignal(microtasksToSend);
     }
 
     public List<GameObject> ReturnListOfActions()
