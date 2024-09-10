@@ -42,3 +42,21 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Base
+    uniqueID: 3488140107
+    locked: 0
+  - name: Water
+    uniqueID: 1805003805
+    locked: 0
+  - name: Trash
+    uniqueID: 2169959323
+    locked: 0
+  - name: New Layer 4
+    uniqueID: 1827943863
+    locked: 0
+  - name: New Layer 5
+    uniqueID: 1437853073
+    locked: 0
+  - name: Player
+    uniqueID: 537029301
+    locked: 0

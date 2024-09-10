@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class Obstacles : MonoBehaviour
 {
+    
+    
     // private void OnTriggerEnter(Collider other)
     // {
     //     Debug.LogWarning("yes");

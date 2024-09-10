@@ -24,11 +24,13 @@ public class GameManager : MonoBehaviour
     private void OnEnable()
     {
         ActionsEventSystem.SendReadySignal += SummonMicroTasks;
+        SceneManager.sceneLoaded += ReadyMicroTasks;
     }
 
     private void OnDisable()
     {
         ActionsEventSystem.SendReadySignal -= SummonMicroTasks;
+        SceneManager.sceneLoaded -= ReadyMicroTasks;
     }
 
     private void Awake()
@@ -78,11 +80,22 @@ public class GameManager : MonoBehaviour
         
     }
 
-    public void ReadyMicroTasks()
+    public void ReadyMicroTasks(Scene arg0, LoadSceneMode loadSceneMode)
     {
         thingsToSpawn = ActionsEventSystem.OnRetrieveMicroTasks();
-        
-        SummonMicroTasks(thingsToSpawn);
+
+        // Debug.LogWarning($"we are spawning in {thingsToSpawn.Count}");
+        //
+        // if (thingsToSpawn == null) return;
+        // foreach (GameObject microTask in thingsToSpawn)
+        // {
+        //     GameObject returningTask =
+        //         Instantiate(microTask, microTask.transform.position, microTask.transform.rotation);
+        //     
+        //     returningTask.transform.SetParent(transform, true); //to prevent it from running away to the other active scenes (pain)
+        // }
+        //
+        if(thingsToSpawn != null) SummonMicroTasks(thingsToSpawn);
     }
     
     

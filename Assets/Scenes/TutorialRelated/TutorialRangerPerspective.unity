@@ -412,7 +412,19 @@ MonoBehaviour:
       m_Calls: []
   CompleteTask:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1274924246}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!1 &345844288
 GameObject:
   m_ObjectHideFlags: 0
@@ -501,7 +513,7 @@ PrefabInstance:
     - target: {fileID: 600260291563878932, guid: 1f3e3376a90cc5a46bbf2f5b7621f565,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.0000009536743
+      value: 0.18
       objectReference: {fileID: 0}
     - target: {fileID: 600260291563878932, guid: 1f3e3376a90cc5a46bbf2f5b7621f565,
         type: 3}
@@ -511,37 +523,37 @@ PrefabInstance:
     - target: {fileID: 600260291563878932, guid: 1f3e3376a90cc5a46bbf2f5b7621f565,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.5586415
+      value: 0.49997926
       objectReference: {fileID: 0}
     - target: {fileID: 600260291563878932, guid: 1f3e3376a90cc5a46bbf2f5b7621f565,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.45030022
+      value: -0.5142107
       objectReference: {fileID: 0}
     - target: {fileID: 600260291563878932, guid: 1f3e3376a90cc5a46bbf2f5b7621f565,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.5422884
+      value: 0.4821147
       objectReference: {fileID: 0}
     - target: {fileID: 600260291563878932, guid: 1f3e3376a90cc5a46bbf2f5b7621f565,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.4371186
+      value: 0.50316346
       objectReference: {fileID: 0}
     - target: {fileID: 600260291563878932, guid: 1f3e3376a90cc5a46bbf2f5b7621f565,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: -77.742
+      value: -87.941
       objectReference: {fileID: 0}
     - target: {fileID: 600260291563878932, guid: 1f3e3376a90cc5a46bbf2f5b7621f565,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 88.298
+      value: -79.892
       objectReference: {fileID: 0}
     - target: {fileID: 600260291563878932, guid: 1f3e3376a90cc5a46bbf2f5b7621f565,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
+      value: 168.235
       objectReference: {fileID: 0}
     - target: {fileID: 7148466029282600895, guid: 1f3e3376a90cc5a46bbf2f5b7621f565,
         type: 3}
@@ -552,7 +564,7 @@ PrefabInstance:
         type: 3}
       propertyPath: taskData
       value: 
-      objectReference: {fileID: 11400000, guid: 5237705b270c03d4ba53b593424a11bf,
+      objectReference: {fileID: 11400000, guid: 066e9f8b80ab82c498ed6680e190edc8,
         type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1472,7 +1484,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1274924247
 RectTransform:
   m_ObjectHideFlags: 0

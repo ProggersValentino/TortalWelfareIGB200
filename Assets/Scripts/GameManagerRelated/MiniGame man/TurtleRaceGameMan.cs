@@ -99,7 +99,7 @@ public class TurtleRaceGameMan : MonoBehaviour
         for (int i = 0; i < amountToSummon; i++)
         {
             Vector3 randomPoint = new Vector3(Random.Range(startSpawnPoint.position.x, endSpawmPoint.position.x),
-                0.2f,
+                0.15f,
                 Random.Range(startSpawnPoint.position.z, endSpawmPoint.position.z));
 
             GameObject ob = Instantiate(obstaclePref, randomPoint, obstaclePref.transform.rotation);

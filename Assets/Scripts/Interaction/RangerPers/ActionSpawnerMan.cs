@@ -82,6 +82,7 @@ public class ActionSpawnerMan : MonoBehaviour
 
     public List<GameObject> ReturnListOfActions()
     {
+        Debug.LogWarning($"we are sending over {actionsToSpawn.Values.Count} microtrasks");
         return actionsToSpawn.Values.ToList();
     }
     
