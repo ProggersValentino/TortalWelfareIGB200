@@ -14,10 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueID: tutorial
   dialogueChain:
-  - As you can the bar to your right called the "difficulty bar" goes down after
-    completing these simple task
-  - This bar dictates how the world around you looks and feels
-  - However, due to people litering, this bar constantly goes up meaning it is up
-    to you to keep this bar low
-  - Now tap the profile icon again to jump back to the turtle perspective
-  - I have a sneaky suspicion that mini game is going to be alot easier...
+  - You see that bar on the right? That shows how much pollution there is in the
+    habitat.
+  - The lower the bar is, the less pollution and healthier the beach is!
+  - However, the pollution won't stop that easily. You'll need to keep cleaning the
+    beach to make sure that pollution stays low!
+  - Now tap the profile icon again to jump back to the turtle perspective.
+  - And then try out the minigame again! I have a sneaky suspicion something may
+    have changed...
