@@ -148,8 +148,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1827943863
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 24efefca9bf1e2a4ba67b56c6f6ea0f4, type: 3}
   m_Color: {r: 0.93962264, g: 0.23933774, b: 0.23933774, a: 1}
@@ -179,7 +179,7 @@ MonoBehaviour:
   OnTaskComplete:
     m_PersistentCalls:
       m_Calls: []
-  UID: bqmpg466287009
+  UID: yyiwf1108202602
   turtleHelpUI: {fileID: 1627652568265586079}
   trashContainer:
   - {fileID: 5271611958474495409}

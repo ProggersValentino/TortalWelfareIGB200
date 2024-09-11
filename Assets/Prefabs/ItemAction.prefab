@@ -406,8 +406,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -2125007973
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6,
     type: 3}
@@ -434,11 +434,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   totalTimeToComplete: 1
-  taskData: {fileID: 0}
+  taskData: {fileID: 11400000, guid: 5237705b270c03d4ba53b593424a11bf, type: 2}
   OnTaskComplete:
     m_PersistentCalls:
       m_Calls: []
-  UID: 
+  UID: eapxa1033041444
 --- !u!65 &8271993881156634044
 BoxCollider:
   m_ObjectHideFlags: 0
