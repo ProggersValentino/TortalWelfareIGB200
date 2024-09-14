@@ -75,6 +75,8 @@ public class AudioMan : MonoBehaviour
         Tuple<AudioMixerGroup, AudioClip> selectedAudio = ExtractWantedAudio(searchKey);
         AudioSource selectedSource = ExtractWantedSource(selectedAudio.Item1);
         
+        if(selectedSource.isPlaying) selectedSource.Stop();
+        
         selectedSource.PlayOneShot(selectedAudio.Item2);
     }
     
@@ -82,7 +84,7 @@ public class AudioMan : MonoBehaviour
     {
         Tuple<AudioMixerGroup, AudioClip> selectedAudio = ExtractWantedAudio(searchKey);
         AudioSource selectedSource = ExtractWantedSource(selectedAudio.Item1);
-        
+     
         selectedSource.Stop();
     }
     
