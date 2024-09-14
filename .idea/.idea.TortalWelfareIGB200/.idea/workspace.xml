@@ -5,9 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="68d6ce5a-7462-47c9-ab06-87d1cfaf8aab" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Master.mixer" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Master.mixer" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interaction/ActionEvents/MicroTask.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interaction/ActionEvents/MicroTask.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerRelated/MiniGame/TurtleRace/Obstacles.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerRelated/MiniGame/TurtleRace/Obstacles.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
