@@ -11,6 +11,9 @@ public class DifficultyBar : MonoBehaviour
 
     public Image barImage;
 
+    // Bar Colour Gradient
+    public Gradient difficultyBarGradient;
+
     private void OnEnable()
     {
         DifficultyEventSystem.UpdateDifficulty += UpdateUI;
@@ -36,13 +39,11 @@ public class DifficultyBar : MonoBehaviour
     
     public void UpdateUI()
     {
-        
         Debug.LogWarning("we changing level");
-        
-        //if statement barImage.fillAmount   
-        // ChangeDifficultyBarColour()
-        
+
+        ChangeDifficultyBarColour();
         barImage.fillAmount = SQLiteTest.PullDifficultyLevel(1) / 100;
+        ChangeDifficultyBarColour();
     }
 
     /// <summary>
@@ -50,12 +51,11 @@ public class DifficultyBar : MonoBehaviour
     /// </summary>
     public void ChangeDifficultyBarColour()
     {
-        switch (barImage.fillAmount)
+        float barValue = barImage.fillAmount;
+        if (barValue < 0)
         {
-            case > 100:
-                //do stuff here... 
-                
-                break;
+            barValue = 0;
         }
+        barImage.color = difficultyBarGradient.Evaluate(barValue);
     }
 }
