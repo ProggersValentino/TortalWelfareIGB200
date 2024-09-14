@@ -11,12 +11,9 @@ public class ActionSpawnerMan : MonoBehaviour
 
     public int numberOfMicroTasksAllowed;
     
-    public GameObject normalAction;
+    //public GameObject normalAction;
 
-    public List<MicroTaskSO> MTData = new List<MicroTaskSO>();
-    
-    //TODO: add a SO data for different types of normal actions to change the sprites 
-    //public List<GameObject> ActionsToSpawn = new List<GameObject>();
+    public List<GeneralMicroTaskTemplateSO> MTData = new List<GeneralMicroTaskTemplateSO>();
 
     public Dictionary<string, GameObject> actionsToSpawn = new Dictionary<string, GameObject>();
 
@@ -64,14 +61,16 @@ public class ActionSpawnerMan : MonoBehaviour
         
         for (int i = 0; i < injectAmount; i++)
         {
+            GeneralMicroTaskTemplateSO currentDataUsed = MTData[Random.Range(0, MTData.Count - 1)];
+            
             currentActionIndex = GenerateRandomUID();
-            actionsToSpawn.TryAdd(currentActionIndex, normalAction);
+            actionsToSpawn.TryAdd(currentActionIndex, currentDataUsed._microTaskPref);
             actionsToSpawn.TryGetValue(currentActionIndex, out GameObject go);
 
             MicroTask newMT = go.GetComponent<MicroTask>();
             newMT.UID = currentActionIndex;
 
-            newMT.taskData = MTData[Random.Range(0, MTData.Count - 1)]; //select random data to put with new MT
+            newMT.taskData = currentDataUsed._mtData; //select random data to put with new MT
             
             microtasksToSend.Add(go);
             
@@ -83,6 +82,7 @@ public class ActionSpawnerMan : MonoBehaviour
 
     public List<GameObject> ReturnListOfActions()
     {
+        Debug.LogWarning($"we are sending over {actionsToSpawn.Values.Count} microtrasks");
         return actionsToSpawn.Values.ToList();
     }
     
