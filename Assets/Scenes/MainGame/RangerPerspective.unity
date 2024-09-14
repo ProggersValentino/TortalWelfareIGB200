@@ -2409,6 +2409,7 @@ MonoBehaviour:
   microTaskPref: {fileID: 7148466029282600895, guid: 792b5d5401f04f146950448fe5edb722,
     type: 3}
   thingsToSpawn: []
+  spawnedInThings: []
   spawnStart: {fileID: 473960318}
   spawnFinish: {fileID: 2060506079}
 --- !u!1 &1994230106
