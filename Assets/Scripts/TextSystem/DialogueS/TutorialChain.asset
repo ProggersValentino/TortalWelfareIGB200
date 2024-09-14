@@ -14,7 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueID: tutorial
   dialogueChain:
-  - Hello! My name Ranger goob, welcome to the Tortal Welfare an area
-  - First lets get you familiar the core situation. Currently you are a turtle able
-    to move around by tapping to a particular location. Tap to a location where you
-    want the turtle
+  - Hello! My name is Ranger Goob and welcome to Turtle Welfare!
+  - See that turtle there? That's you! To move around try clicking somewhere on screen
+    you want to move to.
