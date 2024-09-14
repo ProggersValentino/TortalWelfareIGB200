@@ -59,6 +59,9 @@ public class MicroTask : MonoBehaviour
         DifficultyEventSystem.OnUpdateDifficulty(); //updating after every task is done
         
         OnTaskComplete?.Invoke();
+        
+        //AudioEventSystem.OnPlayAudio("foxSoundSFX");
+        
         ActionsEventSystem.OnDeleteFromPersistent(UID);
         //destroy object 
         Destroy(gameObject);
