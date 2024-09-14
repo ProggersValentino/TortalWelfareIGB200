@@ -2372,11 +2372,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: HelpTortalMT
       objectReference: {fileID: 0}
-    - target: {fileID: 937717806016075142, guid: bf638b9bf6114dd408b474c325045bc4,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1685650490279336489, guid: bf638b9bf6114dd408b474c325045bc4,
         type: 3}
       propertyPath: m_LocalPosition.x
