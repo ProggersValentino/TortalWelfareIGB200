@@ -19,6 +19,39 @@ AudioMixerGroupController:
   m_Mute: 0
   m_Solo: 0
   m_BypassEffects: 0
+--- !u!243 &-5903350484686184084
+AudioMixerGroupController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: SFX3
+  m_AudioMixer: {fileID: 24100000}
+  m_GroupID: f3761e3f44e78544089cb27e109e47e1
+  m_Children: []
+  m_Volume: 1d36d5954e257b140af4231713aa7262
+  m_Pitch: 177153eaf83430347884f7efed7c30f6
+  m_Send: 00000000000000000000000000000000
+  m_Effects:
+  - {fileID: -4794262508416081204}
+  m_UserColorIndex: 0
+  m_Mute: 0
+  m_Solo: 0
+  m_BypassEffects: 0
+--- !u!244 &-4794262508416081204
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_EffectID: 77f126f1026f6f74584490584f41dfda
+  m_EffectName: Attenuation
+  m_MixLevel: 45c83bcba4214714eaba99ad35cdd87b
+  m_Parameters: []
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
 --- !u!244 &-3913628324966232891
 AudioMixerEffectController:
   m_ObjectHideFlags: 3
@@ -103,6 +136,7 @@ AudioMixerController:
     - 2d98a6533e640254ea5a646f341a4e66
     - e4a989c0263b46b418d091fb44760f1b
     - 1839cb4fe940e524289b897077fd3524
+    - f3761e3f44e78544089cb27e109e47e1
     name: View
   m_CurrentViewIndex: 0
   m_TargetSnapshot: {fileID: 24500006}
@@ -119,6 +153,7 @@ AudioMixerGroupController:
   - {fileID: 7974380642958330171}
   - {fileID: 7533356989215509070}
   - {fileID: -8749325284076006370}
+  - {fileID: -5903350484686184084}
   - {fileID: -473890188806039293}
   m_Volume: fa5c96788201c9b4cbf00d1fbb59c877
   m_Pitch: ca9bda2d8e1271f40a56ca41d6096a73
@@ -153,6 +188,8 @@ AudioMixerSnapshotController:
   m_AudioMixer: {fileID: 24100000}
   m_SnapshotID: 0bc0873e8c867184fa947a67e644d1e9
   m_FloatValues:
+    ffb048a4bc210a94f89a8f19b7e77f35: -10.345207
+    a8e552f704aeed24086c9a25c4b1d256: -19.928473
     fa5c96788201c9b4cbf00d1fbb59c877: 0
   m_TransitionOverrides: {}
 --- !u!244 &1622299840491682395

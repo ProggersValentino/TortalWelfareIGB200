@@ -32,6 +32,10 @@ public class Finishline : MonoBehaviour
     {
         if(other.TryGetComponent(out RacerAI AI) || other.TryGetComponent(out MiniGamePlayer player))
             AddToFinishedRacers(other.gameObject);
+
+        if(other.TryGetComponent(out MiniGamePlayer player2)){
+            AudioEventSystem.OnPlayAudio("RaceWinSFX");
+        }
     }
 
     public int FindPlayerPlacement()

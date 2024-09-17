@@ -44,6 +44,7 @@ public class GameManager : MonoBehaviour
         // MultipleSceneManager.SetActiveScene("RangerPerspective");  
         // thingsToSpawn = ActionsEventSystem.OnRetrieveMicroTasks();
         // SummonMicroTasks(thingsToSpawn);
+        AudioEventSystem.OnPlayAudio("AmbienceMusic");
     }
 
     // Update is called once per frame

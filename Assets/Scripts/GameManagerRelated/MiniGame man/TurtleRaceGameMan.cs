@@ -137,6 +137,10 @@ public class TurtleRaceGameMan : MonoBehaviour
         endUI.SetActive(true);
         ChangeTimeScale(0f);
         
+        if(FL.FindPlayerPlacement() <= 3) AudioEventSystem.OnPlayAudio("RaceWinSFX");
+        else AudioEventSystem.OnPlayAudio("RaceLoseSFX");
+
+
         //TODO: do a reward system that gives the player a reward and adds it to inventory
     }
 

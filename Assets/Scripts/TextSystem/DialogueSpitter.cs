@@ -149,10 +149,11 @@ public class DialogueSpitter : MonoBehaviour
     /// <param name="indexOfDialogue"></param>
     /// <returns></returns>
     IEnumerator ReadThroughText(List<string> indexOfDialogue)
-    { 
+    {
         string line = indexOfDialogue[dialogueIndex]; //dialogueKnowledgeBase.GetValueOrDefault(indexOfDialogue, defaultText)[dialogueIndex];
        isDisplayingText = true;
-       for (int i = 0; i < line.Length; i++)
+       AudioEventSystem.OnPlayAudio("Ranger_talking");
+        for (int i = 0; i < line.Length; i++)
        {
           char c = line[i];
           if (c == '<')
@@ -172,7 +173,6 @@ public class DialogueSpitter : MonoBehaviour
              yield return new WaitForSeconds(textSpeed);
           }
        }
-       
-       isDisplayingText = false;
+        isDisplayingText = false;
     }
 }

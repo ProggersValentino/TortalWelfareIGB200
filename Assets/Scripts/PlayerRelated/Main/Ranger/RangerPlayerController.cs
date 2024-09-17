@@ -70,6 +70,7 @@ public class RangerPlayerController : MonoBehaviour
             switch (hit.collider.GetComponent<MonoBehaviour>())
             {
                 case RangerNPC ranger:
+                    AudioEventSystem.OnPlayAudio("Inital_Press");
                     Debug.LogWarning($"this ranger is {ranger.gameObject.name}");
                     selectedNPC = ranger.SetRangerAsSelected();
                     break;
@@ -90,13 +91,16 @@ public class RangerPlayerController : MonoBehaviour
     {
         switch (task)
         {
+
             case HelpTurtleMicroTask helpTurtle:
+                AudioEventSystem.OnPlayAudio("Confirm_Press");
                 //if(selectedNPC != null) selectedNPC.CompleteTask(helpTurtle);
                 helpTurtle.StartMicroGame();
                 break;
             
             default:
-                if(selectedNPC != null) selectedNPC.CompleteTask(task);
+                AudioEventSystem.OnPlayAudio("Confirm_Press");
+                if (selectedNPC != null) selectedNPC.CompleteTask(task);
                 break;
             
         }
