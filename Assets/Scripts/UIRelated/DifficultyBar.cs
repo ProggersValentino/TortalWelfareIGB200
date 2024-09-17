@@ -41,7 +41,7 @@ public class DifficultyBar : MonoBehaviour
     {
         Debug.LogWarning("we changing level");
 
-        ChangeDifficultyBarColour();
+        //ChangeDifficultyBarColour();
         barImage.fillAmount = SQLiteTest.PullDifficultyLevel(1) / 100;
         ChangeDifficultyBarColour();
     }
