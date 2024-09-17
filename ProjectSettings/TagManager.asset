@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - DoorInteractable
+  - Fox
   layers:
   - Default
   - TransparentFX

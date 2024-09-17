@@ -2230,6 +2230,84 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2103082514}
   m_CullTransparentMesh: 1
+--- !u!1001 &1552168412840930221
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1538593975269588440, guid: 7b9998e9df1a85d4f8bb65b4669d5e42,
+        type: 3}
+      propertyPath: mainCam
+      value: 
+      objectReference: {fileID: 963194227}
+    - target: {fileID: 2938288437138753842, guid: 7b9998e9df1a85d4f8bb65b4669d5e42,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -9.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2938288437138753842, guid: 7b9998e9df1a85d4f8bb65b4669d5e42,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 4.84
+      objectReference: {fileID: 0}
+    - target: {fileID: 2938288437138753842, guid: 7b9998e9df1a85d4f8bb65b4669d5e42,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.31
+      objectReference: {fileID: 0}
+    - target: {fileID: 2938288437138753842, guid: 7b9998e9df1a85d4f8bb65b4669d5e42,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2938288437138753842, guid: 7b9998e9df1a85d4f8bb65b4669d5e42,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2938288437138753842, guid: 7b9998e9df1a85d4f8bb65b4669d5e42,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2938288437138753842, guid: 7b9998e9df1a85d4f8bb65b4669d5e42,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2938288437138753842, guid: 7b9998e9df1a85d4f8bb65b4669d5e42,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2938288437138753842, guid: 7b9998e9df1a85d4f8bb65b4669d5e42,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2938288437138753842, guid: 7b9998e9df1a85d4f8bb65b4669d5e42,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8857486345305443607, guid: 7b9998e9df1a85d4f8bb65b4669d5e42,
+        type: 3}
+      propertyPath: m_Name
+      value: ScareFoxGame
+      objectReference: {fileID: 0}
+    - target: {fileID: 8857486345305443607, guid: 7b9998e9df1a85d4f8bb65b4669d5e42,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7b9998e9df1a85d4f8bb65b4669d5e42, type: 3}
 --- !u!1001 &4305980178271280331
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2484,3 +2562,4 @@ SceneRoots:
   - {fileID: 5936391298109643020}
   - {fileID: 384931115}
   - {fileID: 1779180244}
+  - {fileID: 1552168412840930221}
