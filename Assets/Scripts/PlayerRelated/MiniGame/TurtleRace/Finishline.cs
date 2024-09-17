@@ -34,7 +34,7 @@ public class Finishline : MonoBehaviour
             AddToFinishedRacers(other.gameObject);
 
         if(other.TryGetComponent(out MiniGamePlayer player2)){
-            AudioEventSystem.OnPlayAudio("RaceWinSFX");
+           // AudioEventSystem.OnPlayAudio("RaceWinSFX");
         }
     }
 
