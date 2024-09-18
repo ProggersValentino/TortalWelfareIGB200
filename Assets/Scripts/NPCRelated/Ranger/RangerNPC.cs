@@ -53,6 +53,12 @@ public class RangerNPC : MonoBehaviour, IInteractable
         Debug.LogWarning(npcBrain.isStopped); 
     }
 
+    public void MoveToDest(Vector3 pos)
+    {
+        npcBrain.SetDestination(pos);
+        Debug.LogWarning("going to destination selected");
+    }
+    
     /// <summary>
     /// we have clicked on a valid task and are doing it now
     /// </summary>
