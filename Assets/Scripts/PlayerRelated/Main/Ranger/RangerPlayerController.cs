@@ -60,12 +60,17 @@ public class RangerPlayerController : MonoBehaviour
         
         if(mainCam == null) return; //to prevent from spazzing out when transitioning to another scene
         
-        Ray ray = mainCam.ScreenPointToRay(Input.mousePosition);
+        
+        
+        Ray ray = mainCam.ScreenPointToRay(new Vector3(Input.mousePosition.x, Input.mousePosition.y, Input.mousePosition.z));
 
         RaycastHit hit;
+        
+        
 
         if (Physics.Raycast(ray, out hit))
         {
+            Debug.DrawLine(ray.origin, mainCam.ScreenToWorldPoint(Input.mousePosition), Color.green, 5f);
             //determine what we hit
             switch (hit.collider.GetComponent<MonoBehaviour>())
             {
@@ -79,7 +84,8 @@ public class RangerPlayerController : MonoBehaviour
                     break;
                 default:
                     //selectedNPC = null;
-                    if(selectedNPC != null) selectedNPC.MoveToDest(hit.transform.position);
+                    Debug.LogWarning($"we hit around {hit.collider.transform.position}");
+                    if(selectedNPC != null) selectedNPC.MoveToDest(hit.collider.transform.position);
                     break;
             }
         }

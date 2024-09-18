@@ -3,13 +3,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.InputSystem.Interactions;
 
 public class MiniGamePlayer : MonoBehaviour
 {
 
     public PlayerInput playerInput;
     private InputAction playerActons;
+    private InputAction boostAction;
 
+    
+    
     public TurtleRacePlayerSO playerData;
 
     public float speed;
@@ -35,6 +39,8 @@ public class MiniGamePlayer : MonoBehaviour
         mainCam = FindObjectOfType<Camera>();
         playerInput = GetComponent<PlayerInput>();
         playerActons = playerInput.actions["Movement"];
+        boostAction = playerInput.actions["Boost"];
+        boostAction.performed += BoostingBaby;
 
     }
 
@@ -49,6 +55,22 @@ public class MiniGamePlayer : MonoBehaviour
         Vector2 playerGeneralMovement = playerActons.ReadValue<Vector2>();
         transform.position += new Vector3(playerGeneralMovement.y, 0f, -playerGeneralMovement.x) * Time.deltaTime *
                               speed;
+    }
+
+    public void BoostingBaby(InputAction.CallbackContext context)
+    {
+        if (context.interaction is HoldInteraction)
+        {
+            currentSpeed = TurtleRacePlayerSO.SpeedState.Boosted;
+
+            speed = playerData.DetermineSpeed(currentSpeed);
+        }
+        else
+        {
+            currentSpeed = TurtleRacePlayerSO.SpeedState.Normal;
+
+            speed = playerData.DetermineSpeed(currentSpeed);
+        }
     }
     
     /// <summary>

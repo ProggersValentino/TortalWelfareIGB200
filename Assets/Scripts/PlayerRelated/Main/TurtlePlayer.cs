@@ -122,7 +122,7 @@ public class TurtlePlayer : MonoBehaviour
         MouseHover interactable = hit.collider.GetComponent<MouseHover>(); 
 
         targetPoint = interactable.predeterminedLoco.position;
-        playerData._lastPlayerLocoBeforeSceneChange = targetPoint; //setting the last point where the player was 
+        //playerData._lastPlayerLocoBeforeSceneChange = targetPoint; //setting the last point where the player was 
         MovementDirection = TravelToPoint(targetPoint); //getting the direction for the player to move in 
     }
 

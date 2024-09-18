@@ -6,14 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="68d6ce5a-7462-47c9-ab06-87d1cfaf8aab" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TortalWelfareIGB200/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TortalWelfareIGB200/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/ScareFoxGame.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/ScareFoxGame.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainGame/RangerPerspective.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainGame/RangerPerspective.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interaction/ActionEvents/ScareFoxMicro/ScareFox.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interaction/ActionEvents/ScareFoxMicro/ScareFox.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interaction/ActionEvents/ScareFoxMicro/Torch.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interaction/ActionEvents/ScareFoxMicro/Torch.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MinigameRelated/RaceTimer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MinigameRelated/RaceTimer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainGame/RangerPerspective/NavMesh-Navmehs.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainGame/RangerPerspective/NavMesh-Navmehs.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/NPCRelated/Ranger/RangerNPC.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/NPCRelated/Ranger/RangerNPC.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerRelated/Main/PlayerControls.inputactions" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerRelated/Main/PlayerControls.inputactions" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerRelated/Main/Ranger/RangerPlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerRelated/Main/Ranger/RangerPlayerController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Environment/brain_coral.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Environment/brain_coral.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerRelated/Main/TurtlePlayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerRelated/Main/TurtlePlayer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerRelated/MiniGame/MiniGamePlayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerRelated/MiniGame/MiniGamePlayer.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +49,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "Peter",
+    "git-widget-placeholder": "dev",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",

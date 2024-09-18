@@ -53,11 +53,7 @@ public class RangerNPC : MonoBehaviour, IInteractable
         Debug.LogWarning(npcBrain.isStopped); 
     }
 
-    public void MoveToDest(Vector3 pos)
-    {
-        npcBrain.SetDestination(pos);
-        Debug.LogWarning("going to destination selected");
-    }
+    
     
     /// <summary>
     /// we have clicked on a valid task and are doing it now
@@ -86,6 +82,12 @@ public class RangerNPC : MonoBehaviour, IInteractable
     bool AtDestination(Vector3 target, Vector3 currentPos)
     {
         return Vector3.Distance(target, currentPos) <= (npcBrain.stoppingDistance - 0.5f);
+    }
+    
+    public void MoveToDest(Vector3 pos)
+    {
+        npcBrain.SetDestination(pos);
+        Debug.LogWarning("going to destination selected");
     }
     
 }
