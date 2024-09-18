@@ -19,7 +19,7 @@ public class Torch : MonoBehaviour
 
       if(other.gameObject.CompareTag("Fox"))
       {
-         spotTimer = 0f;
+         
          spotTimer = currentTime + spotTimer;
          isLookingAtFox = true;
       }

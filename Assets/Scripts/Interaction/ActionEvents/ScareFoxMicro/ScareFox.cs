@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ScareFox : MonoBehaviour
+public class ScareFox : MicroTask
 {
     public Camera mainCam;
 
@@ -24,5 +24,15 @@ public class ScareFox : MonoBehaviour
         torchLight.transform.position = mainCam.ScreenToWorldPoint(new Vector3(Input.mousePosition.x,
             Input.mousePosition.y, 12));
 
+    }
+
+    public void StartMG()
+    {
+        microgameUI.SetActive(true);
+    }
+
+    public void EndMG()
+    {
+        Destroy(gameObject);
     }
 }

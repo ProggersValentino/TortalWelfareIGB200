@@ -78,9 +78,8 @@ public class RangerPlayerController : MonoBehaviour
                    DetermineWhatTask(taskToBeDone);
                     break;
                 default:
-                    selectedNPC = null;
-                    Debug.LogWarning($"sadge nuithings");
-                    Debug.LogWarning($"context {context.action}");
+                    //selectedNPC = null;
+                    if(selectedNPC != null) selectedNPC.MoveToDest(hit.transform.position);
                     break;
             }
         }
@@ -96,6 +95,10 @@ public class RangerPlayerController : MonoBehaviour
                 AudioEventSystem.OnPlayAudio("Confirm_Press");
                 //if(selectedNPC != null) selectedNPC.CompleteTask(helpTurtle);
                 helpTurtle.StartMicroGame();
+                break;
+            
+            case ScareFox scareFox:
+                scareFox.StartMG();
                 break;
             
             default:

@@ -71,7 +71,8 @@ public class RaceTimer : MonoBehaviour
         timerToDisplay += timerType == TimerType.countdown ? -Time.deltaTime : Time.deltaTime;
         
         TimeSpan timeSpan = TimeSpan.FromSeconds(timerToDisplay);
-        timerText.text = timeSpan.ToString(@"mm\:ss\:ff");
+        if(timerType == TimerType.stopwatch) timerText.text = timeSpan.ToString(@"mm\:ss\:ff");
+        else timerText.text = timeSpan.ToString(@"ss\");
     }
     
     
