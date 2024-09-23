@@ -8,7 +8,12 @@ using Random = UnityEngine.Random;
 
 public class HungryTurtle : MonoBehaviour
 {
-    private NavMeshAgent tortalBrain;
+    
+    /// <summary>
+    /// time -> 
+    /// </summary>
+    
+    public NavMeshAgent tortalBrain { get; private set; }
     private Camera mainCam;
     private void Awake()
     {
@@ -21,8 +26,6 @@ public class HungryTurtle : MonoBehaviour
     {
         // tortalBrain.destination = ;
         Debug.LogWarning(mainCam.ScreenToWorldPoint(new Vector3(0, Random.Range(0, Screen.height), 20))+ new Vector3(30, 0, 0));
-        
-        tortalBrain.SetDestination(mainCam.ScreenToWorldPoint(new Vector3(0, Random.Range(0, Screen.height), 20))+ new Vector3(30, 0, 0)) ;
     }
 
     // Update is called once per frame
@@ -37,5 +40,10 @@ public class HungryTurtle : MonoBehaviour
         {
             Destroy(other.gameObject);
         }
+    }
+
+    public void SetNewDestination(Vector3 pos)
+    {
+        tortalBrain.SetDestination(pos);
     }
 }
