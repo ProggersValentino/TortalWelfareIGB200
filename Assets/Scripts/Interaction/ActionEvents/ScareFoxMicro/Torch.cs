@@ -3,10 +3,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEditor.Rendering;
 using UnityEngine;
+using UnityEngine.Video;
 
 public class Torch : MonoBehaviour
 {
-
    public float spotTimer;
    public float spotTime = 3f;
    private bool isLookingAtFox = false;
@@ -19,9 +19,7 @@ public class Torch : MonoBehaviour
 
       if(other.gameObject.CompareTag("Fox"))
       {
-         
-         spotTimer = currentTime + spotTimer;
-         isLookingAtFox = true;
+         TimerEventManager.OnTimerStart();
       }
    }
 
@@ -29,7 +27,8 @@ public class Torch : MonoBehaviour
    {
       if(other.gameObject.CompareTag("Fox"))
       {
-         isLookingAtFox = false;
+        TimerEventManager.OnTimerStop();
+        TimerEventManager.OnTimerReset();
       }
    }
 

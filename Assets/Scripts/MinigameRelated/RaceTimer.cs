@@ -7,6 +7,8 @@ using UnityEngine;
 public class RaceTimer : MonoBehaviour
 {
     public TextMeshProUGUI timerText;
+
+    public float amountOfTime;
     
     public enum TimerType {countdown, stopwatch}
 
@@ -27,6 +29,8 @@ public class RaceTimer : MonoBehaviour
         TimerEventManager.TimerStop += TimerManagerOnTimerStop;
         
         TimerEventManager.TimerUpdate += TimerManagerOnTimerUpdate;
+        TimerEventManager.TimerReset += TimerManagerOnTimerReset;
+        TimerEventManager.TimerReset += TimerManagerOnTimerUIReset;
     }
 
     private void OnDisable()
@@ -35,6 +39,8 @@ public class RaceTimer : MonoBehaviour
         TimerEventManager.TimerStop -= TimerManagerOnTimerStop;
         
         TimerEventManager.TimerUpdate -= TimerManagerOnTimerUpdate;
+        TimerEventManager.TimerReset -= TimerManagerOnTimerReset;
+        TimerEventManager.TimerReset -= TimerManagerOnTimerUIReset;
     }
 
     private void TimerManagerOnTimerUpdate(float value)
@@ -42,6 +48,17 @@ public class RaceTimer : MonoBehaviour
         timerToDisplay += value;
     }
 
+    public void TimerManagerOnTimerReset()
+    {
+        timerToDisplay = amountOfTime;
+    }
+
+    public void TimerManagerOnTimerUIReset()
+    {
+        TimeSpan timeSpan = TimeSpan.FromSeconds(timerToDisplay);
+        timerText.text = timeSpan.ToString(@"ss");
+    }
+    
     private void TimerManagerOnTimerStop()
     {
         isRunning = false;
@@ -65,6 +82,7 @@ public class RaceTimer : MonoBehaviour
         if (timerType == TimerType.countdown && timerToDisplay < 0.0f)
         {
             TimerEventManager.OnTimerStop();
+            TimerEventManager.OnTimerComplete();
             return;
         }
 
@@ -72,7 +90,7 @@ public class RaceTimer : MonoBehaviour
         
         TimeSpan timeSpan = TimeSpan.FromSeconds(timerToDisplay);
         if(timerType == TimerType.stopwatch) timerText.text = timeSpan.ToString(@"mm\:ss\:ff");
-        else timerText.text = timeSpan.ToString(@"ss\");
+        else timerText.text = timeSpan.ToString(@"ss");
     }
     
     

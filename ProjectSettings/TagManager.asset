@@ -6,6 +6,7 @@ TagManager:
   tags:
   - DoorInteractable
   - Fox
+  - ClickDraggable
   layers:
   - Default
   - TransparentFX

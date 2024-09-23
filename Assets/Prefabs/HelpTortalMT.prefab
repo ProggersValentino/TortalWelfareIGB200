@@ -180,7 +180,7 @@ MonoBehaviour:
   OnTaskComplete:
     m_PersistentCalls:
       m_Calls: []
-  UID: yyiwf1108202602
+  UID: ojbld743333873
   turtleHelpUI: {fileID: 1627652568265586079}
   trashContainer:
   - {fileID: 5271611958474495409}
@@ -206,8 +206,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 5.12, y: 5.1200013, z: 0.9748389}
-  m_Center: {x: 0, y: -5.163115e-16, z: -0.16133216}
+  m_Size: {x: 15.52549, y: 9.398746, z: 0.9748389}
+  m_Center: {x: 0.61527896, y: -2.139374, z: -0.16133134}
 --- !u!1 &1576265912274391214
 GameObject:
   m_ObjectHideFlags: 0

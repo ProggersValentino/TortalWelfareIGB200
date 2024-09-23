@@ -62,7 +62,7 @@ public class RangerPlayerController : MonoBehaviour
         
         
         
-        Ray ray = mainCam.ScreenPointToRay(new Vector3(Input.mousePosition.x, Input.mousePosition.y, Input.mousePosition.z));
+        Ray ray = mainCam.ScreenPointToRay(Input.mousePosition);
 
         RaycastHit hit;
         
@@ -70,7 +70,7 @@ public class RangerPlayerController : MonoBehaviour
 
         if (Physics.Raycast(ray, out hit))
         {
-            Debug.DrawLine(ray.origin, mainCam.ScreenToWorldPoint(Input.mousePosition), Color.green, 5f);
+            //Debug.DrawLine(ray.origin, mainCam.ScreenToWorldPoint(Input.mousePosition), Color.green, 5f);
             //determine what we hit
             switch (hit.collider.GetComponent<MonoBehaviour>())
             {
@@ -80,12 +80,12 @@ public class RangerPlayerController : MonoBehaviour
                     selectedNPC = ranger.SetRangerAsSelected();
                     break;
                 case MicroTask taskToBeDone:
-                   DetermineWhatTask(taskToBeDone);
+                    DetermineWhatTask(taskToBeDone);
                     break;
                 default:
-                    //selectedNPC = null;
+                    selectedNPC = null;
                     Debug.LogWarning($"we hit around {hit.collider.transform.position}");
-                    if(selectedNPC != null) selectedNPC.MoveToDest(hit.collider.transform.position);
+                    //if(selectedNPC != null) selectedNPC.MoveToDest(hit.collider.transform.position);
                     break;
             }
         }
@@ -100,6 +100,8 @@ public class RangerPlayerController : MonoBehaviour
             case HelpTurtleMicroTask helpTurtle:
                 AudioEventSystem.OnPlayAudio("Confirm_Press");
                 //if(selectedNPC != null) selectedNPC.CompleteTask(helpTurtle);
+                Debug.LogWarning("pressed turtle");
+                
                 helpTurtle.StartMicroGame();
                 break;
             
@@ -109,6 +111,9 @@ public class RangerPlayerController : MonoBehaviour
             
             default:
                 AudioEventSystem.OnPlayAudio("Confirm_Press");
+                
+                Debug.LogWarning("pressed trash");
+                
                 if (selectedNPC != null) selectedNPC.CompleteTask(task);
                 break;
             

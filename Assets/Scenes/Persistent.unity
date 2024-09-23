@@ -406,6 +406,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 07fd3fc721bff6e48badc1a233f2b0c9, type: 2}
   - {fileID: 11400000, guid: 0787f5612686eed4ebf962790533e200, type: 2}
   - {fileID: 11400000, guid: 0787f5612686eed4ebf962790533e200, type: 2}
+  - {fileID: 11400000, guid: 64bd6f9cda97ba0458cb1cadf3c2e9e7, type: 2}
+  - {fileID: 11400000, guid: 64bd6f9cda97ba0458cb1cadf3c2e9e7, type: 2}
   test: []
   testString: []
 --- !u!1 &1009760297
