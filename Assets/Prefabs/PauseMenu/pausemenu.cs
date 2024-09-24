@@ -10,6 +10,9 @@ public class pausemenu : MonoBehaviour
 
     public GameObject pauseMenuUI;
 
+    // main scene turn on/off. hopefully won't break anything
+    public GameObject gameMenuUI;
+
     // Update is called once per frame
     void Update()
     {
@@ -24,12 +27,14 @@ public class pausemenu : MonoBehaviour
     }
     public void Resume (){
         pauseMenuUI.SetActive(false);
+        if (gameMenuUI != null) { gameMenuUI.SetActive(true); } // main scene turn on
         Time.timeScale = 1f;
         GameIsPaused = false;
     }
 
     void Pause(){
         pauseMenuUI.SetActive(true);
+        if (gameMenuUI != null) { gameMenuUI.SetActive(false); } // main scene turn off
         Time.timeScale = 0f;
         GameIsPaused = true;
 
