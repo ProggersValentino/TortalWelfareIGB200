@@ -30,6 +30,8 @@ public class FoodSpawner : Spawner
 
         newFood.transform.SetParent(transform, true);
         
+        
+        
         Food food = newFood.GetComponent<Food>();
 
         food.SetNewDestination(locationToGo);

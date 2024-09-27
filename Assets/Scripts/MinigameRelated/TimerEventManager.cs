@@ -14,6 +14,7 @@ public static class TimerEventManager
     public static event UnityAction<float> TimerUpdate;
     public static event UnityAction TimerReset;
     public static event UnityAction TimerCompleted;
+    // public static event UnityAction 
     
     
     public static void OnTimerStart() => TimerStart?.Invoke();

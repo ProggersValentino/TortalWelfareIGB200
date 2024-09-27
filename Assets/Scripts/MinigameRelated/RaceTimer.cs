@@ -92,6 +92,4 @@ public class RaceTimer : MonoBehaviour
         if(timerType == TimerType.stopwatch) timerText.text = timeSpan.ToString(@"mm\:ss\:ff");
         else timerText.text = timeSpan.ToString(@"ss");
     }
-    
-    
 }

@@ -15,6 +15,11 @@ public class HungryTurtle : MonoBehaviour
     
     public NavMeshAgent tortalBrain { get; private set; }
     private Camera mainCam;
+
+    private bool hasBeenFed; //has the turtle been fed yet
+    
+    public Vector3 direction = Vector3.zero;
+    private Vector3 previousPos = Vector3.zero;
     private void Awake()
     {
         mainCam = FindObjectOfType<Camera>();
@@ -24,21 +29,28 @@ public class HungryTurtle : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        // tortalBrain.destination = ;
+        
         Debug.LogWarning(mainCam.ScreenToWorldPoint(new Vector3(0, Random.Range(0, Screen.height), 20))+ new Vector3(30, 0, 0));
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
+        // direction = new Vector3(transform.position.x - previousPos.x, 0f, transform.position.z - previousPos.z).normalized;  
+        // previousPos = transform.position;
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("ClickDraggable"))
+        //is there a turtle that hasnt been fed
+        if (other.CompareTag("ClickDraggable") && !hasBeenFed)
         {
             Destroy(other.gameObject);
+            hasBeenFed = true; //turtle fed
+            SetNewDestination(tortalBrain.destination * -2);
+            TurtleFeederEventSystem.OnUpdateTurtleFedUI();
+            
         }
     }
 
