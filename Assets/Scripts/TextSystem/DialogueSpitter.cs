@@ -152,7 +152,8 @@ public class DialogueSpitter : MonoBehaviour
     {
         string line = indexOfDialogue[dialogueIndex]; //dialogueKnowledgeBase.GetValueOrDefault(indexOfDialogue, defaultText)[dialogueIndex];
        isDisplayingText = true;
-       AudioEventSystem.OnPlayAudio("Ranger_talking");
+        AudioEventSystem.OnPlayAudio("SpeechBubble");
+        AudioEventSystem.OnPlayAudio("Ranger_talking");
         for (int i = 0; i < line.Length; i++)
        {
           char c = line[i];
@@ -169,10 +170,11 @@ public class DialogueSpitter : MonoBehaviour
           }
           else if(isDisplayingText)
           {
+
              textComponent.text += c;
              yield return new WaitForSeconds(textSpeed);
-          }
-       }
+            }
+        }
         isDisplayingText = false;
     }
 }

@@ -98,6 +98,7 @@ public class TurtleRaceGameMan : MonoBehaviour
         
         for (int i = 0; i < amountToSummon; i++)
         {
+            AudioEventSystem.OnPlayAudio("TurtleRaceMusic");
             Vector3 randomPoint = new Vector3(Random.Range(startSpawnPoint.position.x, endSpawmPoint.position.x),
                 0.15f,
                 Random.Range(startSpawnPoint.position.z, endSpawmPoint.position.z));
@@ -105,6 +106,7 @@ public class TurtleRaceGameMan : MonoBehaviour
             GameObject ob = Instantiate(obstaclePref, randomPoint, obstaclePref.transform.rotation);
             
             ob.transform.SetParent(transform, true);
+
         }
     }
 
