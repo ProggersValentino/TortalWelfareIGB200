@@ -64,7 +64,6 @@ public class RaceTimer : MonoBehaviour
         if (!isRunning) return;
         if (timerType == TimerType.countdown && timerToDisplay < 0.0f)
         {
-            AudioEventSystem.OnPlayAudio("TurtleSandMove");
             TimerEventManager.OnTimerStop();
             return;
         }
