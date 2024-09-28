@@ -75,7 +75,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6,
     type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.4490565, g: 0.43634737, b: 0.43634737, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -98,8 +98,8 @@ GameObject:
   - component: {fileID: 908109631611155568}
   - component: {fileID: 8434364042872051593}
   m_Layer: 0
-  m_Name: Food
-  m_TagString: Food
+  m_Name: Rubbish
+  m_TagString: Rubbish
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -151,8 +151,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.5777755, y: 0.7285025, z: 1.8823807}
-  m_Center: {x: 0.08569276, y: -0.13574874, z: 0.13505188}
+  m_Size: {x: 2.0480351, y: 1, z: 1.8908694}
+  m_Center: {x: -0.08603746, y: 0, z: 0.04754603}
 --- !u!195 &8434364042872051593
 NavMeshAgent:
   m_ObjectHideFlags: 0

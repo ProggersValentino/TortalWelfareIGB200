@@ -5,10 +5,13 @@ using UnityEngine;
 public class TurtleSpawner : Spawner
 {
     
+    public float spawnPerSeconds = 5f;
+    
     // Start is called before the first frame update
     void Start()
     {
-        SummonTortal();
+        // SummonTortal();
+        StartCoroutine(SpawnPerSection());
     }
 
     // Update is called once per frame
@@ -31,5 +34,16 @@ public class TurtleSpawner : Spawner
         HungryTurtle ht = newTurtle.GetComponent<HungryTurtle>();
 
         ht.SetNewDestination(locationToGo);
-    }   
+    }  
+    
+    IEnumerator SpawnPerSection()
+    {
+        while (isGameGoing)
+        {
+            
+            SummonTortal();
+            yield return new WaitForSeconds(spawnPerSeconds);
+        }
+    }
+    
 }

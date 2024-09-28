@@ -44,14 +44,23 @@ public class HungryTurtle : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         //is there a turtle that hasnt been fed
-        if (other.CompareTag("ClickDraggable") && !hasBeenFed)
+        if (other.CompareTag("Food") && !hasBeenFed)
         {
             Destroy(other.gameObject);
             hasBeenFed = true; //turtle fed
             SetNewDestination(tortalBrain.destination * -2);
-            TurtleFeederEventSystem.OnUpdateTurtleFedUI();
+            TurtleFeederEventSystem.OnUpdateTurtleFedUI(1);
             
         }
+        else if(other.CompareTag("Rubbish") && !hasBeenFed)
+        {
+            Destroy(other.gameObject);
+            hasBeenFed = true; //turtle fed
+            SetNewDestination(tortalBrain.destination * -2);
+            TurtleFeederEventSystem.OnUpdateAteRubbishUI(1);
+
+        }
+        
     }
 
     public void SetNewDestination(Vector3 pos)

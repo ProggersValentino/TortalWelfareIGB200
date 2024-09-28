@@ -62,7 +62,7 @@ public class TurtleFeedPlayer : MonoBehaviour
 
         if (Physics.Raycast(ray, out RaycastHit hit))
         {
-            if (hit.collider.CompareTag("ClickDraggable"))
+            if (hit.collider.CompareTag("Food") || hit.collider.CompareTag("Rubbish"))
             {
                 Debug.LogWarning($"the object we can interact with is {hit.collider.gameObject.name}");
                 interactable = hit.collider.gameObject;

@@ -7,6 +7,8 @@ TagManager:
   - DoorInteractable
   - Fox
   - ClickDraggable
+  - Food
+  - Rubbish
   layers:
   - Default
   - TransparentFX

@@ -6,15 +6,17 @@
   <component name="ChangeListManager">
     <list default="true" id="68d6ce5a-7462-47c9-ab06-87d1cfaf8aab" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TortalWelfareIGB200/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TortalWelfareIGB200/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/MiniGame/TurtleFeeder/TortalHungry.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/MiniGame/TurtleFeeder/TortalHungry.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/MiniGame/TurtleFeeder/Food.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/MiniGame/TurtleFeeder/Food.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainGame/RangerPerspective.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainGame/RangerPerspective.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/MiniGame2/MiniGame2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MiniGame2/MiniGame2.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManagerRelated/MiniGame man/TurtleFeederGameMan.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameManagerRelated/MiniGame man/TurtleFeederGameMan.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MinigameRelated/RaceTimer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MinigameRelated/RaceTimer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MinigameRelated/TimerEventManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MinigameRelated/TimerEventManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/MinigameRelated/TurtleFeederRelated/FoodSpawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MinigameRelated/TurtleFeederRelated/FoodSpawner.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/MinigameRelated/TurtleFeederRelated/HungryTurtle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MinigameRelated/TurtleFeederRelated/HungryTurtle.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/MinigameRelated/TurtleFeederRelated/Spawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MinigameRelated/TurtleFeederRelated/Spawner.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/MinigameRelated/TurtleFeederRelated/TurtleFeederEventSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MinigameRelated/TurtleFeederRelated/TurtleFeederEventSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MinigameRelated/TurtleFeederRelated/TurtleSpawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MinigameRelated/TurtleFeederRelated/TurtleSpawner.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerRelated/MiniGame/TurtleFeeder/TurtleFeedPlayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerRelated/MiniGame/TurtleFeeder/TurtleFeedPlayer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,10 +114,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="20212">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="20212" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
@@ -147,6 +149,7 @@
       <workItem from="1727129377955" duration="1125000" />
       <workItem from="1727130661742" duration="2418000" />
       <workItem from="1727165025541" duration="4108000" />
+      <workItem from="1727509462869" duration="4945000" />
     </task>
     <servers />
   </component>
@@ -162,5 +165,24 @@
   <component name="UnityUnitTestConfiguration" currentTestLauncher="Both" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/GameManagerRelated/MiniGame man/TurtleFeederGameMan.cs</url>
+          <line>61</line>
+          <properties documentPath="C:\Uni\Semester 2 2024\IGB200\Assessment\TortalWelfareIGB200\Assets\Scripts\GameManagerRelated\MiniGame man\TurtleFeederGameMan.cs" containingFunctionPresentation="Method 'UpdateAteRubbish'">
+            <startOffsets>
+              <option value="1679" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1704" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
