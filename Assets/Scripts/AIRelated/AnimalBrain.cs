@@ -6,6 +6,13 @@ using UnityEngine.AI;
 
 public class AnimalBrain : MonoBehaviour
 {
+    
+    private Dictionary<State.STATE, Dictionary<string, State>> stateTransitionSys =
+        new Dictionary<State.STATE, Dictionary<string, State>>();
+
+    public StateTransistionSO transitionData;
+
+    
     public State currentState { get; private set; }
 
     public NavMeshAgent aiBrain;
@@ -30,7 +37,7 @@ public class AnimalBrain : MonoBehaviour
     
     public State GenerateNextState(string key)
     {
-        stateTransitionSys[state._currentState].TryGetValue(key, out State transitionState);
+        stateTransitionSys[currentState._currentState].TryGetValue(key, out State transitionState);
         //Debug.LogWarning(transitionState._currentState);
         return transitionState;
     }
@@ -45,7 +52,7 @@ public class AnimalBrain : MonoBehaviour
         currentState._currentProcess = State.ProcessStates.Exit;
         currentState._nextState = temp;
         stateTransitionSys[currentState._currentState][situationKey] =
-            transitionData.whichState(currentState._nextState._currentState, gameObject, this);
+            transitionData.WhichState(currentState._nextState._currentState, gameObject, this);
         //state._nextState._nextState = null;
     }
     
