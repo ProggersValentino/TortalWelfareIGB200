@@ -128,6 +128,7 @@ public class TurtlePlayer : MonoBehaviour
 
     Vector3 TravelToPoint(Vector3 target)
     {
+        AudioEventSystem.OnPlayAudio("TurtleSandMove");
         return target - transform.position;
     }
 
