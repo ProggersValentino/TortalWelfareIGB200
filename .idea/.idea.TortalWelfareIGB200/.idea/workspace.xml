@@ -4,16 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="68d6ce5a-7462-47c9-ab06-87d1cfaf8aab" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.TortalWelfareIGB200/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TortalWelfareIGB200/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MiniGame/MiniGame1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MiniGame/MiniGame1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MiniGame/MiniGameUI/MiniGame1Ui.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MiniGame/MiniGameUI/MiniGame1Ui.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MiniGame2/MiniGame2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MiniGame2/MiniGame2.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManagerRelated/MiniGame man/TurtleFeederGameMan.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameManagerRelated/MiniGame man/TurtleFeederGameMan.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManagerRelated/MiniGame man/TurtleRaceGameMan.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameManagerRelated/MiniGame man/TurtleRaceGameMan.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MinigameRelated/TurtleFeederRelated/FoodSpawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MinigameRelated/TurtleFeederRelated/FoodSpawner.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PersistantDataRelated/SQLiteTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PersistantDataRelated/SQLiteTest.cs" afterDir="false" />
-    </list>
+    <list default="true" id="68d6ce5a-7462-47c9-ab06-87d1cfaf8aab" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -151,7 +142,7 @@
       <workItem from="1727520579456" duration="62000" />
       <workItem from="1727520769931" duration="709000" />
       <workItem from="1727683743352" duration="2130000" />
-      <workItem from="1727687806458" duration="1881000" />
+      <workItem from="1727687806458" duration="2236000" />
     </task>
     <servers />
   </component>
