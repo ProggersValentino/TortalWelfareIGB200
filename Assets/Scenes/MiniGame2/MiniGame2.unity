@@ -4170,9 +4170,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerText: {fileID: 81500918}
-  amountOfTime: 30
+  amountOfTime: 10
   timerType: 0
-  timerToDisplay: 30
+  timerToDisplay: 10
 --- !u!114 &1810109156
 MonoBehaviour:
   m_ObjectHideFlags: 0

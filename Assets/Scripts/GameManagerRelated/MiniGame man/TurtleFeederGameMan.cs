@@ -34,6 +34,7 @@ public class TurtleFeederGameMan : MonoBehaviour
     private void Awake()
     {
         TurtleFeederEventSystem.OnGameIsProgressing(true);
+        Debug.LogWarning(SQLiteTest.dbName);
     }
 
     // Start is called before the first frame update
@@ -68,8 +69,23 @@ public class TurtleFeederGameMan : MonoBehaviour
         turtlesFedResult.text = turtleFedNumberTxt.text;
         AteRubbishResult.text = ateRubbishNumberTxt.text;
         overallScoreResult.text = (turtlesFed - ateRubbish).ToString();
+        HowMuchWasEarned(turtlesFed - ateRubbish);
         endUI.SetActive(true);
         ChangeTimeScale(0f);
+    }
+
+    public void HowMuchWasEarned(int score)
+    {
+        int moneyEarned = score * 10;
+        int newMoneyValue = 0;
+        
+        
+        if(moneyEarned > 0)
+        {
+            newMoneyValue = moneyEarned + SQLiteTest.PullPlayersMoney(1);
+        }
+        
+        SQLiteTest.UpdatePlayersMoney(1, newMoneyValue);
     }
     
     public void ChangeTimeScale(float value)

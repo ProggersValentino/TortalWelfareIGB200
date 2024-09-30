@@ -33,6 +33,7 @@ public class TurtleRaceGameMan : MonoBehaviour
     public GameObject endUI;
     public TextMeshProUGUI timerResult;
     public TextMeshProUGUI placeResult;
+    public TextMeshProUGUI coinsEarnedResult;
 
     //private SQLiteTest yes;
     
@@ -138,14 +139,35 @@ public class TurtleRaceGameMan : MonoBehaviour
         placeResult.text = FL.FindPlayerPlacement().ToString();
         endUI.SetActive(true);
         ChangeTimeScale(0f);
+
+        int overallScore = (int)(1000 / (RT.timerToDisplay * FL.FindPlayerPlacement()));
+        
+        HowMuchWasEarned(overallScore);
         
         if(FL.FindPlayerPlacement() <= 3) AudioEventSystem.OnPlayAudio("RaceWinSFX");
         else AudioEventSystem.OnPlayAudio("RaceLoseSFX");
-
-
-        //TODO: do a reward system that gives the player a reward and adds it to inventory
+        
     }
 
+    
+    public void HowMuchWasEarned(int score)
+    {
+        int moneyEarned = score;
+        int newMoneyValue = 0;
+        
+        
+        if(moneyEarned > 0)
+        {
+            newMoneyValue = moneyEarned + SQLiteTest.PullPlayersMoney(1);
+            
+            Debug.LogWarning($"the new money value is {newMoneyValue}");
+        }
+
+        coinsEarnedResult.text = moneyEarned.ToString();
+        
+        SQLiteTest.UpdatePlayersMoney(1, newMoneyValue);
+    }
+    
     public void ChangeTimeScale(float value)
     {
         Time.timeScale = value;

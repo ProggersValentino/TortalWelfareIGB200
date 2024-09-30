@@ -22,7 +22,7 @@ public class FoodSpawner : Spawner
 
     private void Awake()
     {
-        percentageChance = SQLiteTest.PullDifficultyLevel(2);
+       
     }
 
     // Start is called before the first frame update
@@ -30,6 +30,7 @@ public class FoodSpawner : Spawner
     {
         //SummonFood(turtlePref);
         StartCoroutine(SpawnPerSection());
+        percentageChance = SQLiteTest.PullDifficultyLevel(1); 
     }
 
     // Update is called once per frame
@@ -56,7 +57,7 @@ public class FoodSpawner : Spawner
 
         food.SetNewDestination(locationToGo);
     }
-
+    
     IEnumerator SpawnPerSection()
     {
         while (isGameGoing)

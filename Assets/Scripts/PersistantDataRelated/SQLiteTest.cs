@@ -7,7 +7,7 @@ using SQLite;
 public class SQLiteTest: MonoBehaviour
 {
     
-     private static string dbName = $"{Application.persistentDataPath}/Data.db"; //{Application.persistentDataPath}/
+     public static string dbName = $"{Application.persistentDataPath}/Data.db"; //{Application.persistentDataPath}/
      
      private static SQLiteConnection _db;
      
@@ -56,7 +56,6 @@ public class SQLiteTest: MonoBehaviour
      /// </summary>
      public static void CreateNewDifficultyLevel()
      {
-         //TODO: when a new player or existing player joins then we need to handle SQL to check if there is data
          var options = new SQLiteConnectionString(dbName, false);
          var conn= new SQLiteConnection(options);
 
@@ -65,12 +64,14 @@ public class SQLiteTest: MonoBehaviour
          {
              Debug.LogWarning($"there is already data, lets reset it");
              UpdateDifficultyLevel(1, 100f);
+             UpdatePlayersMoney(1, 0);
          }
          else
          {
              Debug.LogWarning($"new person yippeee, establishing database");
              conn.CreateTable<Difficulty>();
-             conn.Insert(new Difficulty { DifficultyLevel = 100f });     
+             conn.Insert(new Difficulty { DifficultyLevel = 100f, sandDollars = 0}); 
+             
          }
          
      }
@@ -132,12 +133,38 @@ public class SQLiteTest: MonoBehaviour
          var options = new SQLiteConnectionString(dbName, false);
          var conn= new SQLiteConnection(options);
     
-         var results = conn.Update(new Difficulty {Id = id, DifficultyLevel = updatedValue});
-         
-         
+         var results = conn.Update(new Difficulty {Id = id, DifficultyLevel = updatedValue, sandDollars = PullPlayersMoney(1)});
          
          conn.Close();
      }
+
+     public static void UpdatePlayersMoney(int id, int updatedValue)
+     {
+         var options = new SQLiteConnectionString(dbName, false);
+         var conn= new SQLiteConnection(options);
+    
+         var results = conn.Update(new Difficulty {Id = id, DifficultyLevel = PullDifficultyLevel(1),sandDollars = updatedValue});
+         
+         conn.Close();
+     }
+     
+     public static int PullPlayersMoney(int id)
+     {
+         var options = new SQLiteConnectionString(dbName, false);
+         var conn= new SQLiteConnection(options);
+    
+         var results = conn.Query<Difficulty>("SELECT sandMoney FROM DifficultyLevels WHERE Id = id");
+         
+         conn.Close();
+         foreach (var result in results)
+         {
+             Debug.LogWarning($"diff level we pulled {result.sandDollars}");
+             return result.sandDollars;
+         }
+
+         return 0;
+     }
+     
 
      private void Start()
      {
@@ -168,5 +195,8 @@ public class Difficulty
 
     [Column("symbol")]			
     public float DifficultyLevel { get; set; }
-    
+
+    [Column("sandMoney")] 
+    public int sandDollars { get; set; }
+
 }
