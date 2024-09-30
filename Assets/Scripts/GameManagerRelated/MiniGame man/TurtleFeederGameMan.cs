@@ -11,11 +11,16 @@ public class TurtleFeederGameMan : MonoBehaviour
     public TextMeshProUGUI turtlesFedResult;
     public TextMeshProUGUI AteRubbishResult;
     public TextMeshProUGUI overallScoreResult;
+    // Overall score on screen
+    public TextMeshProUGUI overallScoreTxt;
 
     private int turtlesFed = 0;
     private int ateRubbish = 0;
+    // Overall score on screen
+    private int overallScore = 0;
     public GameObject endUI;
-    
+    public GameObject mainUI;
+
 
     private void OnEnable()
     {
@@ -40,6 +45,8 @@ public class TurtleFeederGameMan : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        endUI.SetActive(false);
+        mainUI.SetActive(true);
         TimerEventManager.OnTimerStart();
         turtleFedNumberTxt.text = turtlesFed.ToString();
         ateRubbishNumberTxt.text = ateRubbish.ToString();
@@ -48,7 +55,7 @@ public class TurtleFeederGameMan : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        UpdateTotalScore();
     }
 
     public void UpdateTurtlesFed(int increaseBy)
@@ -64,6 +71,12 @@ public class TurtleFeederGameMan : MonoBehaviour
         ateRubbishNumberTxt.text = ateRubbish.ToString();
     }
 
+    public void UpdateTotalScore()
+    {
+        overallScore = turtlesFed - ateRubbish;
+        overallScoreTxt.text = overallScore.ToString();
+    }
+
     public void ProcessEnd()
     {
         turtlesFedResult.text = turtleFedNumberTxt.text;
@@ -71,6 +84,7 @@ public class TurtleFeederGameMan : MonoBehaviour
         overallScoreResult.text = (turtlesFed - ateRubbish).ToString();
         HowMuchWasEarned(turtlesFed - ateRubbish);
         endUI.SetActive(true);
+        mainUI.SetActive(false);
         ChangeTimeScale(0f);
     }
 
