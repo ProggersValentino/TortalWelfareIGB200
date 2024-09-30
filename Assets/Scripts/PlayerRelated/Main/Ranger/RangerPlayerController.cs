@@ -76,15 +76,13 @@ public class RangerPlayerController : MonoBehaviour
             {
                 case RangerNPC ranger:
                     AudioEventSystem.OnPlayAudio("Inital_Press");
-                    Debug.LogWarning($"this ranger is {ranger.gameObject.name}");
-                    selectedNPC = ranger.SetRangerAsSelected();
                     break;
                 case MicroTask taskToBeDone:
                     DetermineWhatTask(taskToBeDone);
                     break;
                 default:
-                    selectedNPC = null;
-                    Debug.LogWarning($"we hit around {hit.collider.transform.position}");
+                    selectedNPC.npcBrain.SetDestination(hit.point);
+                    Debug.LogWarning($"we hit around {hit.point}");
                     //if(selectedNPC != null) selectedNPC.MoveToDest(hit.collider.transform.position);
                     break;
             }

@@ -4,7 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="68d6ce5a-7462-47c9-ab06-87d1cfaf8aab" name="Changes" comment="" />
+    <list default="true" id="68d6ce5a-7462-47c9-ab06-87d1cfaf8aab" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.TortalWelfareIGB200/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TortalWelfareIGB200/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainGame/RangerPerspective.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainGame/RangerPerspective.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MiniGame/MiniGame1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MiniGame/MiniGame1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MiniGame2/MiniGame2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MiniGame2/MiniGame2.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MinigameRelated/RaceTimer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MinigameRelated/RaceTimer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MinigameRelated/TurtleFeederRelated/FoodSpawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MinigameRelated/TurtleFeederRelated/FoodSpawner.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/NPCRelated/Ranger/RangerNPC.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/NPCRelated/Ranger/RangerNPC.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerRelated/Main/Ranger/RangerPlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerRelated/Main/Ranger/RangerPlayerController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerRelated/MiniGame/TurtleRace/Finishline.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerRelated/MiniGame/TurtleRace/Finishline.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/garbage_bag.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/garbage_bag.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/garbage_bag2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/garbage_bag2.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/garbage_bottle.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/garbage_bottle.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/jelly.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/jelly.png.meta" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -142,7 +156,7 @@
       <workItem from="1727520579456" duration="62000" />
       <workItem from="1727520769931" duration="709000" />
       <workItem from="1727683743352" duration="2130000" />
-      <workItem from="1727687806458" duration="2236000" />
+      <workItem from="1727687806458" duration="6037000" />
     </task>
     <servers />
   </component>

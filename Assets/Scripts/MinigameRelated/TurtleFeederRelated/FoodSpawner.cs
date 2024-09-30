@@ -68,13 +68,13 @@ public class FoodSpawner : Spawner
             Debug.LogWarning($"we have rolled {roll} with the percentage of {percentageChance}");
             if(roll < percentageChance) //spawn trash
             {
-                Sprite spriteToPut = potentialFoodSprite[Random.Range(0, potentialFoodSprite.Count - 1)];
+                Sprite spriteToPut = potentialTrashSprite[Random.Range(0, potentialTrashSprite.Count - 1)];
                 Debug.LogWarning("Summon rubbish");
                 SummonFood(rubbishRef, spriteToPut);
             }
             else
             {
-                Sprite spriteToPut = potentialTrashSprite[Random.Range(0, potentialTrashSprite.Count - 1)];
+                Sprite spriteToPut = potentialFoodSprite[Random.Range(0,potentialFoodSprite.Count - 1)];
                 SummonFood(turtlePref, spriteToPut); //spawn food}
             }
 

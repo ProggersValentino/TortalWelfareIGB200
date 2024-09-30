@@ -8,7 +8,7 @@ public class RangerNPC : MonoBehaviour, IInteractable
 {
     public RangerData rangerData;
 
-    private NavMeshAgent npcBrain;
+    public NavMeshAgent npcBrain { get; private set; }
 
     private MicroTask currentTask;
     

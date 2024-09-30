@@ -1580,6 +1580,7 @@ MonoBehaviour:
   amountOfTime: 0
   timerType: 1
   timerToDisplay: 0
+  timeBar: {fileID: 0}
 --- !u!1 &902169301
 GameObject:
   m_ObjectHideFlags: 0
