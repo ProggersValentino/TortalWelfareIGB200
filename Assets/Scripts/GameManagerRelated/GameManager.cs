@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.Events;
@@ -10,6 +11,8 @@ using Random = UnityEngine.Random;
 
 public class GameManager : MonoBehaviour
 {
+    public TextMeshProUGUI money;
+    
     public Image difficultyBarUI;
     
     public GameObject microTaskPref;
@@ -96,6 +99,9 @@ public class GameManager : MonoBehaviour
         //     returningTask.transform.SetParent(transform, true); //to prevent it from running away to the other active scenes (pain)
         // }
         //
+
+        money.text = SQLiteTest.PullPlayersMoney(1).ToString();
+        
         if(thingsToSpawn != null) SummonMicroTasks(thingsToSpawn);
     }
     

@@ -2456,6 +2456,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0873ba1eaba19e479aa98b8ec646eeb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  money: {fileID: 1466329743}
   difficultyBarUI: {fileID: 0}
   microTaskPref: {fileID: 7148466029282600895, guid: 792b5d5401f04f146950448fe5edb722,
     type: 3}
