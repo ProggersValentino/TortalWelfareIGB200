@@ -2092,6 +2092,7 @@ MonoBehaviour:
   point2: {fileID: 1181982153}
   potentialFoodSprite:
   - {fileID: 21300000, guid: 004d33c4bb402374babd1459bd0b44dd, type: 3}
+  - {fileID: 21300000, guid: 4b08f07f18971d243bec66a5b6812cf3, type: 3}
   potentialTrashSprite:
   - {fileID: 21300000, guid: 5f36954e2cd703d45b36711c106b495d, type: 3}
   - {fileID: 21300000, guid: a70c4130b859b0e4eae26df5e023b401, type: 3}
@@ -2808,6 +2809,7 @@ MonoBehaviour:
   point2: {fileID: 1181982153}
   potentialFoodSprite:
   - {fileID: 21300000, guid: 004d33c4bb402374babd1459bd0b44dd, type: 3}
+  - {fileID: 21300000, guid: 4b08f07f18971d243bec66a5b6812cf3, type: 3}
   potentialTrashSprite:
   - {fileID: 21300000, guid: 5f36954e2cd703d45b36711c106b495d, type: 3}
   - {fileID: 21300000, guid: a70c4130b859b0e4eae26df5e023b401, type: 3}

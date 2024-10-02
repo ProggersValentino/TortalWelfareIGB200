@@ -12,7 +12,7 @@ public class MiniGamePlayer : MonoBehaviour
     private InputAction playerActons;
     private InputAction boostAction;
 
-    
+    public Vector3 playerGeneralMovement; 
     
     public TurtleRacePlayerSO playerData;
 
@@ -45,14 +45,14 @@ public class MiniGamePlayer : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         Movement();
     }
 
     public void Movement()
     {
-        Vector2 playerGeneralMovement = playerActons.ReadValue<Vector2>();
+        playerGeneralMovement = playerActons.ReadValue<Vector2>(); //this is handled in fixed update 
         transform.position += new Vector3(playerGeneralMovement.y, 0f, -playerGeneralMovement.x) * Time.deltaTime *
                               speed;
     }

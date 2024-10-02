@@ -33,8 +33,8 @@ public class Finishline : MonoBehaviour
         if(other.TryGetComponent(out RacerAI AI) || other.TryGetComponent(out MiniGamePlayer player))
         {
             AddToFinishedRacers(other.gameObject);
-            
-            if(AI != null) Destroy(AI.gameObject); 
+
+            if (AI != null) AI.gameObject.SetActive(false);
         }
         
         

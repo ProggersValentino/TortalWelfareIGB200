@@ -296,7 +296,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -689, y: -7.899994}
+  m_AnchoredPosition: {x: -689, y: -7.9000244}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &81500918
@@ -3491,6 +3491,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerInput: {fileID: 0}
+  playerGeneralMovement: {x: 0, y: 0, z: 0}
   playerData: {fileID: 11400000, guid: 8c1bb0aa630c3364d825f8807f0c63b6, type: 2}
   speed: 0
   mainCam: {fileID: 0}
