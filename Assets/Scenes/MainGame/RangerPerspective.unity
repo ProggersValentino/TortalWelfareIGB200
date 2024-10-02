@@ -2865,7 +2865,7 @@ PrefabInstance:
     - target: {fileID: 8857486345305443607, guid: 7b9998e9df1a85d4f8bb65b4669d5e42,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3045,6 +3045,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: HelpTortalMT
+      objectReference: {fileID: 0}
+    - target: {fileID: 937717806016075142, guid: bf638b9bf6114dd408b474c325045bc4,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1685650490279336489, guid: bf638b9bf6114dd408b474c325045bc4,
         type: 3}
