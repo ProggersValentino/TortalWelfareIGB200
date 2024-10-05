@@ -11,7 +11,9 @@ public class AudioEventSystem : MonoBehaviour
 {
     public static event Action<string> PlayAudio;
     public static event Action<string> StopAudio;
+    public static event Action StopAllAudio;
 
     public static void OnPlayAudio(string searchKey) => PlayAudio?.Invoke(searchKey);
     public static void OnStopAudio(string searchKey) => StopAudio?.Invoke(searchKey);
+    public static void OnStopAllAudio() => StopAllAudio?.Invoke();
 }

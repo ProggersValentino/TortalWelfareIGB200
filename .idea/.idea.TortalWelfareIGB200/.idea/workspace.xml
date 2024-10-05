@@ -4,16 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="68d6ce5a-7462-47c9-ab06-87d1cfaf8aab" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.TortalWelfareIGB200/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TortalWelfareIGB200/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/HelpTortalMT.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/HelpTortalMT.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainGame/RangerPerspective.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainGame/RangerPerspective.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MiniGame/MiniGame1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MiniGame/MiniGame1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MiniGame2/MiniGame2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MiniGame2/MiniGame2.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AIRelated/TortalBrain.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AIRelated/TortalBrain.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerRelated/MiniGame/MiniGamePlayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerRelated/MiniGame/MiniGamePlayer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerRelated/MiniGame/TurtleRace/Finishline.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerRelated/MiniGame/TurtleRace/Finishline.cs" afterDir="false" />
-    </list>
+    <list default="true" id="68d6ce5a-7462-47c9-ab06-87d1cfaf8aab" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -156,6 +147,7 @@
       <workItem from="1727782023354" duration="3503000" />
       <workItem from="1727828423669" duration="103000" />
       <workItem from="1727828543909" duration="4146000" />
+      <workItem from="1728096607229" duration="5000" />
     </task>
     <servers />
   </component>

@@ -70,6 +70,7 @@ public class TurtleRaceGameMan : MonoBehaviour
         SummonRacers(racer);
         TimerEventManager.OnTimerStart();
         
+        AudioEventSystem.OnStopAllAudio(); //stops all audio to reset it for new scene
         
         //yes = racer.AddComponent<SQLiteTest>();
 

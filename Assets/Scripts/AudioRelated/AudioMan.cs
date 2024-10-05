@@ -23,6 +23,14 @@ public class AudioMan : MonoBehaviour
     {
         AudioEventSystem.PlayAudio += PlayAudio;
         AudioEventSystem.StopAudio += StopAudio;
+        AudioEventSystem.StopAllAudio += StopAllAudio;
+    }
+
+    private void OnDisable()
+    {
+        AudioEventSystem.PlayAudio -= PlayAudio;
+        AudioEventSystem.StopAudio -= StopAudio;
+        AudioEventSystem.StopAllAudio -= StopAllAudio;
     }
 
     private void Awake()
@@ -86,6 +94,18 @@ public class AudioMan : MonoBehaviour
         AudioSource selectedSource = ExtractWantedSource(selectedAudio.Item1);
      
         selectedSource.Stop();
+    }
+
+    
+    /// <summary>
+    /// stops all audio sources at command
+    /// </summary>
+    public void StopAllAudio()
+    {
+        foreach (AudioSource source in sourcesOfAudio)
+        {
+            source.Stop();
+        }
     }
     
 }
