@@ -30,9 +30,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Persistent.unity
     guid: 3ac3f174f1854014398f5a8a0d46d81e
   - enabled: 1
-    path: Assets/Scenes/TutorialRelated/TutorialMini/TutorialMiniGame1.unity
-    guid: 758d348498672f34ca8d433dd758724e
-  - enabled: 1
     path: Assets/Scenes/TutorialRelated/TutorialMini/MiniGameUI/TutorialMiniGame1Ui.unity
     guid: f7d8bfc48446f094e8b0f4200fbcb11a
   - enabled: 1
@@ -41,4 +38,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/TutorialRelated/DialogueTurtlePerspectiveRevealed.unity
     guid: 7c27ac9bb9ced9e4f8c9ecb81e4a35cf
+  - enabled: 1
+    path: Assets/Scenes/TutorialRelated/TutorialMini/TurtorialMiniGame1.unity
+    guid: cdf5058f01767bf47bf030843174bd7a
   m_configObjects: {}
