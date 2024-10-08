@@ -62,6 +62,6 @@ public class TortalBrain : AnimalBrain
 
     public bool AreWeThereYet(Vector3 currentCheckPoint)
     {
-        return Vector3.Distance(transform.position, currentCheckPoint) < 1f;
+        return Vector3.Distance(transform.position, currentCheckPoint) < 0.2f;
     }
 }

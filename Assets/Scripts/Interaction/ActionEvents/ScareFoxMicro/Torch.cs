@@ -19,7 +19,7 @@ public class Torch : MonoBehaviour
 
       if(other.gameObject.CompareTag("Fox"))
       {
-         TimerEventManager.OnTimerStart();
+         TimerEventManager.OnTimerStart(RaceTimer.TimerType.countdown);
       }
    }
 

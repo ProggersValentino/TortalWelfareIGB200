@@ -20,10 +20,13 @@ public class HungryTurtle : MonoBehaviour
     
     public Vector3 direction = Vector3.zero;
     private Vector3 previousPos = Vector3.zero;
+    
+    Vector3 currentVel = Vector3.zero;
     private void Awake()
     {
         mainCam = FindObjectOfType<Camera>();
         tortalBrain = GetComponent<NavMeshAgent>();
+        tortalBrain.updatePosition = false;
     }
 
     // Start is called before the first frame update
@@ -39,6 +42,11 @@ public class HungryTurtle : MonoBehaviour
 
         // direction = new Vector3(transform.position.x - previousPos.x, 0f, transform.position.z - previousPos.z).normalized;  
         // previousPos = transform.position;
+    }
+
+    private void FixedUpdate()
+    {
+        MoveToPos();
     }
 
     private void OnTriggerEnter(Collider other)
@@ -66,5 +74,10 @@ public class HungryTurtle : MonoBehaviour
     public void SetNewDestination(Vector3 pos)
     {
         tortalBrain.SetDestination(pos);
+    }
+
+    public void MoveToPos()
+    {
+        transform.position = Vector3.SmoothDamp(transform.position, tortalBrain.nextPosition, ref currentVel, 1 / tortalBrain.speed);
     }
 }

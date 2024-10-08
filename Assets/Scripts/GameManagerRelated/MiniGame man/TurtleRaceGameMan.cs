@@ -41,11 +41,13 @@ public class TurtleRaceGameMan : MonoBehaviour
     {
         FL.processEnd.AddListener(ProcessEndOfMinigame);
         SceneManager.sceneLoaded += InitMinigameWhenSceneLoaded;
+        TimerEventManager.TimerCompleted += CountDownCompletedc;
     }
 
     private void OnDisable()
     {
         SceneManager.sceneLoaded -= InitMinigameWhenSceneLoaded;
+        TimerEventManager.TimerCompleted -= CountDownCompletedc;
     }
 
     // Start is called before the first frame update
@@ -66,15 +68,25 @@ public class TurtleRaceGameMan : MonoBehaviour
     {
         Debug.LogWarning($"scene is laoded heeeeee {scene.name}");
         
-        SummonObstacles(obstaclePref);
-        SummonRacers(racer);
-        TimerEventManager.OnTimerStart();
         
+        //start countdown
+        TimerEventManager.OnTimerStart(RaceTimer.TimerType.countdown);
+        
+        
+        SummonObstacles(obstaclePref);
+                
         AudioEventSystem.OnStopAllAudio(); //stops all audio to reset it for new scene
         
         //yes = racer.AddComponent<SQLiteTest>();
 
         //SQLiteTest.pullFromDataBase("SELECT * FROM Stocks");
+    }
+
+    public void CountDownCompletedc()
+    {
+        SummonRacers(racer);
+        TimerEventManager.OnTimerStart(RaceTimer.TimerType.stopwatch);
+
     }
 
     /// <summary>
@@ -125,6 +137,7 @@ public class TurtleRaceGameMan : MonoBehaviour
             RacerAI AI = racer.GetComponent<RacerAI>();
 
             AI.SetAIDestination(goal);
+            // AI.SetOverallNewDestination(goal.position);
         }
     }
     

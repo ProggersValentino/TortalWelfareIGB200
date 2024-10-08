@@ -68,9 +68,10 @@ public class RaceTimer : MonoBehaviour
         isRunning = false;
     }
 
-    private void TimerManagerOnTimerStart()
+    private void TimerManagerOnTimerStart(TimerType typeOfTimer)
     {
-        isRunning = true;
+        if(typeOfTimer == timerType) isRunning = true;
+        
     }
 
     // Start is called before the first frame update

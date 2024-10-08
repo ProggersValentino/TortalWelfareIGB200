@@ -16,6 +16,8 @@ public class MiniGamePlayer : MonoBehaviour
     
     public TurtleRacePlayerSO playerData;
 
+    private Rigidbody rb;
+
     public float speed;
 
     public Camera mainCam;
@@ -25,6 +27,16 @@ public class MiniGamePlayer : MonoBehaviour
 
 
     public TurtleRacePlayerSO.SpeedState currentSpeed;
+
+    private void OnEnable()
+    {
+        TimerEventManager.TimerCompleted += ActivateInput;
+    }
+
+    private void OnDisable()
+    {
+        TimerEventManager.TimerCompleted -= ActivateInput;
+    }
 
 
     private void Awake()
@@ -40,7 +52,12 @@ public class MiniGamePlayer : MonoBehaviour
         playerInput = GetComponent<PlayerInput>();
         playerActons = playerInput.actions["Movement"];
         boostAction = playerInput.actions["Boost"];
+        
+        playerInput.actions.FindActionMap("MinigameActions").Disable();
+        
         boostAction.performed += BoostingBaby;
+
+        rb = GetComponent<Rigidbody>();
 
     }
 
@@ -53,8 +70,11 @@ public class MiniGamePlayer : MonoBehaviour
     public void Movement()
     {
         playerGeneralMovement = playerActons.ReadValue<Vector2>(); //this is handled in fixed update 
-        transform.position += new Vector3(playerGeneralMovement.y, 0f, -playerGeneralMovement.x) * Time.deltaTime *
-                              speed;
+        //
+        Vector3 newPotentialMove = new Vector3(playerGeneralMovement.y, 0f, -playerGeneralMovement.x);
+        
+        rb.MovePosition(transform.position + newPotentialMove * Time.deltaTime * speed);
+        
     }
 
     public void BoostingBaby(InputAction.CallbackContext context)
@@ -109,6 +129,10 @@ public class MiniGamePlayer : MonoBehaviour
         
         StopCoroutine(ResetToNormalState(cooldown)); //a firm stop on coroutine in case it plays again
     }
-    
+
+    public void ActivateInput()
+    {
+        playerInput.actions.FindActionMap("MinigameActions").Enable();
+    }
     
 }

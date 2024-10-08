@@ -47,7 +47,7 @@ public class TurtleFeederGameMan : MonoBehaviour
     {
         endUI.SetActive(false);
         mainUI.SetActive(true);
-        TimerEventManager.OnTimerStart();
+        TimerEventManager.OnTimerStart(RaceTimer.TimerType.countdown);
         turtleFedNumberTxt.text = turtlesFed.ToString();
         ateRubbishNumberTxt.text = ateRubbish.ToString();
     }
