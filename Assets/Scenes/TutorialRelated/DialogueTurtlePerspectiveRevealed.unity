@@ -1210,8 +1210,8 @@ MonoBehaviour:
   - m_SceneAsset: {fileID: 102900000, guid: b37d00fe39ec05c41906e74d378dd2d1, type: 3}
     m_SceneName: MiniGame1Ui
   ScenesToUnload:
-  - m_SceneAsset: {fileID: 102900000, guid: 0f7fd4093af621048a51019d5c745ba6, type: 3}
-    m_SceneName: DialogueTurtlePerspective
+  - m_SceneAsset: {fileID: 102900000, guid: 7c27ac9bb9ced9e4f8c9ecb81e4a35cf, type: 3}
+    m_SceneName: DialogueTurtlePerspectiveRevealed
 --- !u!212 &464313234
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2932,7 +2932,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 2046351586}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
