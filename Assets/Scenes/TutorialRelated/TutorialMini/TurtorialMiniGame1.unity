@@ -2108,7 +2108,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   obstaclePref: {fileID: 4539771526463429180, guid: 53c174a105383b340a9d1f386fc44d08,
     type: 3}
-  obstacles: []
+  obstacles:
+  - {fileID: 4539771526463429180, guid: b48620986ce74fa4aabf5c384ff04a24, type: 3}
+  - {fileID: 4539771526463429180, guid: 7e694f883a232294daa43e03624349a3, type: 3}
+  - {fileID: 4539771526463429180, guid: 53c174a105383b340a9d1f386fc44d08, type: 3}
+  - {fileID: 4539771526463429180, guid: 7d484e4bef27d5d4faf1ea358c0b88d8, type: 3}
   racer: {fileID: 8779918376918156908, guid: 059d4e32477024c478e1a504978fe684, type: 3}
   goal: {fileID: 1659075937}
   startPos:
@@ -3807,19 +3811,7 @@ MonoBehaviour:
   FinishedRacers: []
   processEnd:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1659075940}
-        m_TargetAssemblyTypeName: TaskProgressor, Assembly-CSharp
-        m_MethodName: IncrementIndex
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!65 &1659075939
 BoxCollider:
   m_ObjectHideFlags: 0
