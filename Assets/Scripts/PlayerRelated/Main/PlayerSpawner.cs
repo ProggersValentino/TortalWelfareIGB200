@@ -10,6 +10,8 @@ public class PlayerSpawner : MonoBehaviour
     public PlayerSO playerData;
     public PlayerInput input;
 
+    public Transform spawnPos;
+    
     public Camera cam;
     
     private void Awake()
@@ -21,7 +23,7 @@ public class PlayerSpawner : MonoBehaviour
     void Start()
     {
         //MultipleSceneManager.SetActiveScene("DialogueTurtlePerspective");
-        player.SpawnObject(Vector3.zero, gameObject, input, cam);
+        player.SpawnObject(spawnPos.position, gameObject, input, cam);
     }
 
     // Update is called once per frame

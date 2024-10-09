@@ -2108,6 +2108,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   obstaclePref: {fileID: 4539771526463429180, guid: 53c174a105383b340a9d1f386fc44d08,
     type: 3}
+  obstacles: []
   racer: {fileID: 8779918376918156908, guid: 059d4e32477024c478e1a504978fe684, type: 3}
   goal: {fileID: 1659075937}
   startPos:
@@ -4220,6 +4221,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerInput: {fileID: 0}
+  wallMask:
+    serializedVersion: 2
+    m_Bits: 0
   playerGeneralMovement: {x: 0, y: 0, z: 0}
   playerData: {fileID: 11400000, guid: 8c1bb0aa630c3364d825f8807f0c63b6, type: 2}
   speed: 0

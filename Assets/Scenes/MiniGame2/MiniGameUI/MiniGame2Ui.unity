@@ -612,7 +612,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &152932948
 RectTransform:
   m_ObjectHideFlags: 0
@@ -728,7 +728,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &348503757
 RectTransform:
   m_ObjectHideFlags: 0
@@ -903,7 +903,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Extreme Turtle Race!
+  m_text: 'Turtle Feeder '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 25cb761be649ae64c8a023cde19ca5c2, type: 2}
   m_sharedMaterial: {fileID: -801570042812006529, guid: 25cb761be649ae64c8a023cde19ca5c2,
@@ -2070,7 +2070,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1128855599
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2224,7 +2224,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 19}
+  m_AnchoredPosition: {x: 0, y: -10}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1261618510
@@ -3189,7 +3189,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1716237397
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3307,8 +3307,8 @@ MonoBehaviour:
   - m_SceneAsset: {fileID: 102900000, guid: f80cac304300adb4c8d16b480ecc1ede, type: 3}
     m_SceneName: MiniGame2
   ScenesToUnload:
-  - m_SceneAsset: {fileID: 102900000, guid: b37d00fe39ec05c41906e74d378dd2d1, type: 3}
-    m_SceneName: MiniGame1Ui
+  - m_SceneAsset: {fileID: 102900000, guid: bd602d59d7947e14b99dd118bb757e4f, type: 3}
+    m_SceneName: MiniGame2Ui
 --- !u!1 &1814965452
 GameObject:
   m_ObjectHideFlags: 0

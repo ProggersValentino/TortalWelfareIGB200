@@ -57,7 +57,7 @@ public class MiniGamePlayer : MonoBehaviour
         playerActons = playerInput.actions["Movement"];
         boostAction = playerInput.actions["Boost"];
         
-        //playerInput.actions.FindActionMap("MinigameActions").Disable();
+        playerInput.actions.FindActionMap("MinigameActions").Disable();
         
         boostAction.performed += BoostingBaby;
 
