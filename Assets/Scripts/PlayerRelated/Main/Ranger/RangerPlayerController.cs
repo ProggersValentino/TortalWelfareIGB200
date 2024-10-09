@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Runtime.InteropServices;
 using Cinemachine;
 using JetBrains.Annotations;
-using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.InputSystem.Interactions;
@@ -16,10 +15,6 @@ public class RangerPlayerController : MonoBehaviour
     public Camera mainCam;
 
     public RangerNPC selectedNPC;
-
-    // sand dollar on UI
-    public TextMeshProUGUI dollarCount;
-    int coinCount = 0;
 
     //initial set up for when the player is enabled/ spawns in
     private void OnEnable()
@@ -53,7 +48,7 @@ public class RangerPlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        
     }
 
     /// <summary>
@@ -127,11 +122,5 @@ public class RangerPlayerController : MonoBehaviour
     {
         if(context.interaction is HoldInteraction)
             Debug.LogWarning("yes");
-    }
-
-    public void coinUpdate()
-    {
-        coinCount = SQLiteTest.PullPlayersMoney(1);
-        dollarCount.text = coinCount.ToString();
     }
 }
