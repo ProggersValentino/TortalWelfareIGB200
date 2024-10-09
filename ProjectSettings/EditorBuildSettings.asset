@@ -41,4 +41,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/TutorialRelated/TutorialMini/TurtorialMiniGame1.unity
     guid: cdf5058f01767bf47bf030843174bd7a
+  - enabled: 1
+    path: Assets/Scenes/TutorialRelated/TutorialMini/TurtorialMiniGame2.unity
+    guid: 8e3f61c31b1b215479cf22f2b54e17c2
+  - enabled: 1
+    path: Assets/Scenes/TutorialRelated/TutorialMini/MiniGameUI/TutorialMiniGame1Ui2.unity
+    guid: 872743aa73165c747875497929b07c07
   m_configObjects: {}

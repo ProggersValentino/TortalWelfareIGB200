@@ -10,7 +10,9 @@ using Random = UnityEngine.Random;
 public class TurtleRaceGameMan : MonoBehaviour
 {
     public GameObject obstaclePref;
-   
+
+    public List<GameObject> obstacles = new List<GameObject>();
+    
     //racer related
     public GameObject racer;
     public Transform goal;
@@ -117,7 +119,9 @@ public class TurtleRaceGameMan : MonoBehaviour
                 0.15f,
                 Random.Range(startSpawnPoint.position.z, endSpawmPoint.position.z));
 
-            GameObject ob = Instantiate(obstaclePref, randomPoint, obstaclePref.transform.rotation);
+            GameObject go = obstacles[Random.Range(0, obstacles.Count - 1)];
+            
+            GameObject ob = Instantiate(go, randomPoint, go.transform.rotation);
             
             ob.transform.SetParent(transform, true);
 

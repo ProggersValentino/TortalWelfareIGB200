@@ -9,6 +9,9 @@ TagManager:
   - ClickDraggable
   - Food
   - Rubbish
+  - NorthWall
+  - SouthWall
+  - WestWall
   layers:
   - Default
   - TransparentFX
@@ -17,7 +20,7 @@ TagManager:
   - Water
   - UI
   - DoorInteractable
-  - 
+  - wall
   - 
   - 
   - 

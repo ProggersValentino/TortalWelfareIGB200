@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.InputSystem.Interactions;
@@ -12,6 +13,9 @@ public class MiniGamePlayer : MonoBehaviour
     private InputAction playerActons;
     private InputAction boostAction;
 
+    public LayerMask wallMask;
+    
+    
     public Vector3 playerGeneralMovement; 
     
     public TurtleRacePlayerSO playerData;
@@ -53,7 +57,7 @@ public class MiniGamePlayer : MonoBehaviour
         playerActons = playerInput.actions["Movement"];
         boostAction = playerInput.actions["Boost"];
         
-        playerInput.actions.FindActionMap("MinigameActions").Disable();
+        //playerInput.actions.FindActionMap("MinigameActions").Disable();
         
         boostAction.performed += BoostingBaby;
 
@@ -61,10 +65,18 @@ public class MiniGamePlayer : MonoBehaviour
 
     }
 
+    private void Update()
+    {
+
+        
+    }
+
+
     // Update is called once per frame
     void FixedUpdate()
     {
         Movement();
+      
     }
 
     public void Movement()
@@ -73,7 +85,33 @@ public class MiniGamePlayer : MonoBehaviour
         //
         Vector3 newPotentialMove = new Vector3(playerGeneralMovement.y, 0f, -playerGeneralMovement.x);
         
+          List<RaycastHit> hits = new List<RaycastHit>(); 
+            
+        hits = Physics.SphereCastAll(transform.position, 2f, new Vector3(0.001f, 0.001f, 0.001f), 0.1f,
+            wallMask).ToList();
+        if(hits.Count > 0)
+        {
+            Debug.LogWarning($"we are colliding with {hits[0].collider.gameObject.name}");
+            switch (hits[0].collider.tag)
+            {
+                case "NorthWall":
+                    if(playerGeneralMovement.y > 0) newPotentialMove = new Vector3(hits[0].point.x, 0f, -playerGeneralMovement.x);    
+                    break;
+                
+                case "SouthWall":
+                    if(playerGeneralMovement.y < 0) newPotentialMove = new Vector3(hits[0].point.x, 0f, -playerGeneralMovement.x);
+                    break;
+                
+                case "WestWall":
+                    if(-playerGeneralMovement.x > 0) newPotentialMove = new Vector3(playerGeneralMovement.y, 0f, hits[0].point.z);
+                    break;
+            }
+            
+        }
+        
         rb.MovePosition(transform.position + newPotentialMove * Time.deltaTime * speed);
+        
+        
         
     }
 
