@@ -29,6 +29,13 @@ public class Tutorial : MonoBehaviour
         SceneManager.sceneLoaded += CurrentSceneLoaded;
     }
 
+    private void OnEnable()
+    {
+        // movement = input.actions["Movement"];
+        // movement.performed += GetClickPos;
+        // SceneManager.sceneLoaded += CurrentSceneLoaded;
+    }
+
     private void OnDisable()
     {
         movement.performed -= GetClickPos;

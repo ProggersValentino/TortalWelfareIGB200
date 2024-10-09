@@ -2108,6 +2108,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   obstaclePref: {fileID: 4539771526463429180, guid: 53c174a105383b340a9d1f386fc44d08,
     type: 3}
+  obstacles: []
   racer: {fileID: 8779918376918156908, guid: 059d4e32477024c478e1a504978fe684, type: 3}
   goal: {fileID: 1659075937}
   startPos:
@@ -3768,6 +3769,7 @@ GameObject:
   - component: {fileID: 1659075937}
   - component: {fileID: 1659075939}
   - component: {fileID: 1659075938}
+  - component: {fileID: 1659075940}
   m_Layer: 0
   m_Name: FinishLine
   m_TagString: Untagged
@@ -3805,7 +3807,19 @@ MonoBehaviour:
   FinishedRacers: []
   processEnd:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1659075940}
+        m_TargetAssemblyTypeName: TaskProgressor, Assembly-CSharp
+        m_MethodName: IncrementIndex
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!65 &1659075939
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3827,6 +3841,18 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 10.191541, y: 1.0477893, z: 1}
   m_Center: {x: 0.3200972, y: -0.02389072, z: 0}
+--- !u!114 &1659075940
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1659075936}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 413e4d2507003874b9bf2244c4dfd7b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1674316256
 GameObject:
   m_ObjectHideFlags: 0
@@ -4220,6 +4246,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerInput: {fileID: 0}
+  wallMask:
+    serializedVersion: 2
+    m_Bits: 0
   playerGeneralMovement: {x: 0, y: 0, z: 0}
   playerData: {fileID: 11400000, guid: 8c1bb0aa630c3364d825f8807f0c63b6, type: 2}
   speed: 0

@@ -38,12 +38,12 @@ public class DifficultyManager : MonoBehaviour
                 DifficultyEventSystem.OnUpdateDifficulty();
                 yield return new WaitForSeconds(timeTillNextIncrease);    
             }
-            else if (SQLiteTest.PullDifficultyLevel(1) < 0f)
-            {
-                SQLiteTest.UpdateDifficultyLevel(1, 0f);
-                DifficultyEventSystem.OnUpdateDifficulty();
-                yield return new WaitForSeconds(timeTillNextIncrease);    
-            }
+            // else if (SQLiteTest.PullDifficultyLevel(1) < 0f)
+            // {
+            //     SQLiteTest.UpdateDifficultyLevel(1, 0f);
+            //     DifficultyEventSystem.OnUpdateDifficulty();
+            //     yield return new WaitForSeconds(timeTillNextIncrease);    
+            // }
             
             else
             {
