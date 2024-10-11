@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using Cinemachine;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.InputSystem.Interactions;
@@ -14,7 +15,13 @@ public class MiniGamePlayer : MonoBehaviour
     private InputAction boostAction;
 
     public LayerMask wallMask;
-    
+
+    public CinemachineVirtualCamera cam;
+    private CinemachineBasicMultiChannelPerlin noise;
+
+    public List<GameObject> obstructions = new List<GameObject>();
+
+    private GameObject currentActiveObstruction;
     
     public Vector3 playerGeneralMovement; 
     
@@ -46,6 +53,7 @@ public class MiniGamePlayer : MonoBehaviour
     private void Awake()
     {
         speed = playerData.DetermineSpeed(currentSpeed);
+        
     }
 
 
@@ -56,6 +64,8 @@ public class MiniGamePlayer : MonoBehaviour
         playerInput = GetComponent<PlayerInput>();
         playerActons = playerInput.actions["Movement"];
         boostAction = playerInput.actions["Boost"];
+
+        noise = cam.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>();
         
         playerInput.actions.FindActionMap("MinigameActions").Disable();
         
@@ -67,8 +77,7 @@ public class MiniGamePlayer : MonoBehaviour
 
     private void Update()
     {
-
-        
+       
     }
 
 
@@ -141,8 +150,33 @@ public class MiniGamePlayer : MonoBehaviour
         {
             currentSpeed = TurtleRacePlayerSO.SpeedState.Slowed;
 
+            
+            
+            switch (ob.GetComponent<SpriteRenderer>().sprite.name)
+            {
+                case "garbage_fishnet":
+                    obstructions[0].SetActive(true);
+                    currentActiveObstruction = obstructions[0];
+                    break;
+                
+                case "garbage_bag2":
+                case "garbage_bag":
+                    obstructions[1].SetActive(true);
+                    currentActiveObstruction = obstructions[1];
+                    break;
+                
+                case "garbage_bottle":
+                    obstructions[2].SetActive(true);
+                    currentActiveObstruction = obstructions[2];
+                    break;
+            }
+            
+            
             speed = playerData.DetermineSpeed(currentSpeed);
+            float newFOV = playerData.DetermineFOV(currentSpeed);
+            StartCoroutine(Zoom(newFOV));
             StartCoroutine(ResetToNormalState(playerData._speedCooldown));
+            StartCoroutine(ShakeyTime());
         }
 
         if (other.TryGetComponent(out Finishline finish))
@@ -153,6 +187,50 @@ public class MiniGamePlayer : MonoBehaviour
         
     }
 
+
+    /// <summary>
+    /// determine the zooming of FOV
+    /// </summary>
+    /// <param name="zoomAmount"></param>
+    /// <returns></returns>
+    public IEnumerator Zoom(float zoomAmount)
+    {
+        float currentFOV = cam.m_Lens.FieldOfView;
+
+        Debug.LogWarning("yes we zooming");
+        
+        while (cam.m_Lens.FieldOfView != (zoomAmount - 1))
+        {
+            Debug.LogWarning("yes we zooming");
+            currentFOV = Mathf.Lerp(currentFOV, zoomAmount, Time.deltaTime * 20);
+
+            cam.m_Lens.FieldOfView = currentFOV;
+            
+            yield return new WaitForSeconds(Time.deltaTime); 
+        }
+        
+        
+        
+    }
+    
+    /// <summary>
+    /// to make camera shake 
+    /// </summary>
+    /// <param name="ampLevel"></param>
+    public void ShakeyShakey(int ampLevel)
+    {
+        noise.m_AmplitudeGain = ampLevel;
+    }
+
+    public IEnumerator ShakeyTime()
+    {
+        ShakeyShakey(3);
+
+        yield return new WaitForSeconds(0.1f);
+        
+        ShakeyShakey(0);
+    }
+    
     /// <summary>
     /// cooldown to reset the speed to its normal state when against slowed effects 
     /// </summary>
@@ -164,6 +242,11 @@ public class MiniGamePlayer : MonoBehaviour
 
         currentSpeed = TurtleRacePlayerSO.SpeedState.Normal;
         speed = playerData.DetermineSpeed(currentSpeed);
+        StartCoroutine(Zoom(playerData.DetermineFOV(currentSpeed)));
+        foreach (GameObject obstruction in obstructions)
+        {
+            obstruction.SetActive(false);
+        }
         
         StopCoroutine(ResetToNormalState(cooldown)); //a firm stop on coroutine in case it plays again
     }

@@ -6,12 +6,23 @@
   <component name="ChangeListManager">
     <list default="true" id="68d6ce5a-7462-47c9-ab06-87d1cfaf8aab" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TortalWelfareIGB200/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TortalWelfareIGB200/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/ScareFoxGame.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/ScareFoxGame.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainGame/RangerPerspective.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainGame/RangerPerspective.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainGame/TurtlePerspective.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainGame/TurtlePerspective.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MiniGame2/MiniGameUI/MiniGame1Ui.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MiniGame2/MiniGameUI/MiniGame1Ui.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerRelated/Main/PlayerSpawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerRelated/Main/PlayerSpawner.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MiniGame/MiniGame1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MiniGame/MiniGame1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MiniGame/MiniGameUI/MiniGame1Ui.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MiniGame/MiniGameUI/MiniGame1Ui.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/TutorialRelated/DialogueTurtlePerspective.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/TutorialRelated/DialogueTurtlePerspective.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/TutorialRelated/TutorialMini/MiniGameUI/TutorialMiniGame1Ui.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/TutorialRelated/TutorialMini/MiniGameUI/TutorialMiniGame1Ui.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/TutorialRelated/TutorialMini/MiniGameUI/TutorialMiniGame1Ui2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/TutorialRelated/TutorialMini/MiniGameUI/TutorialMiniGame1Ui2.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/TutorialRelated/TutorialMini/TurtorialMiniGame1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/TutorialRelated/TutorialMini/TurtorialMiniGame1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/TutorialRelated/TutorialMini/TurtorialMiniGame2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/TutorialRelated/TutorialMini/TurtorialMiniGame2.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interaction/ActionEvents/ScareFoxMicro/ScareFox.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interaction/ActionEvents/ScareFoxMicro/ScareFox.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MinigameRelated/RaceTimer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MinigameRelated/RaceTimer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PersistantDataRelated/DifficultyManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PersistantDataRelated/DifficultyManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerRelated/MiniGame/MiniGamePlayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerRelated/MiniGame/MiniGamePlayer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/so/ScriptObjects/TRPlayer.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/so/ScriptObjects/TRPlayer.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/so/TurtleRacePlayerSO.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/so/TurtleRacePlayerSO.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/bush_occupied.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/bush_occupied.png.meta" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +88,7 @@
 }</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="$PROJECT_DIR$/../Builds/Protot\IGB200TortalSquad.exe" />
+      <option name="EXE_PATH" value="$PROJECT_DIR$/../Builds/Playtest3prototype6\IGB200TortalSquad.exe" />
       <option name="PROGRAM_PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="C:\Uni\Semester 2 2024\IGB200\Assessment\Builds" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -160,6 +171,8 @@
       <workItem from="1728275811826" duration="6150000" />
       <workItem from="1728351682810" duration="627000" />
       <workItem from="1728434628056" duration="481000" />
+      <workItem from="1728462300091" duration="7443000" />
+      <workItem from="1728642882483" duration="414000" />
     </task>
     <servers />
   </component>
@@ -175,5 +188,24 @@
   <component name="UnityUnitTestConfiguration" currentTestLauncher="Both" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/PlayerRelated/MiniGame/MiniGamePlayer.cs</url>
+          <line>201</line>
+          <properties documentPath="C:\Uni\Semester 2 2024\IGB200\Assessment\TortalWelfareIGB200\Assets\Scripts\PlayerRelated\MiniGame\MiniGamePlayer.cs" containingFunctionPresentation="Method 'Zoom'">
+            <startOffsets>
+              <option value="5665" />
+            </startOffsets>
+            <endOffsets>
+              <option value="5715" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

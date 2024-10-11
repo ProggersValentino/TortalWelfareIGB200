@@ -1344,7 +1344,7 @@ MonoBehaviour:
   OnTaskComplete:
     m_PersistentCalls:
       m_Calls: []
-  UID: yyetv1367585468
+  UID: njbhg1207789628
   mainCam: {fileID: 0}
   microgameUI: {fileID: 759070352996124812}
   torchLight: {fileID: 1589482086082054816}
@@ -1367,8 +1367,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.9613972, y: 1.9555447, z: 0.43820268}
-  m_Center: {x: 0.27, y: -1.19, z: -0.06840101}
+  m_Size: {x: 3.836442, y: 3.6831577, z: 0.43820268}
+  m_Center: {x: -0.18041277, y: -0.32619345, z: -0.06840101}
 --- !u!212 &9026693396500108844
 SpriteRenderer:
   m_ObjectHideFlags: 0

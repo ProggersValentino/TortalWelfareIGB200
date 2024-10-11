@@ -67,7 +67,7 @@ public class RaceTimer : MonoBehaviour
     {
         isRunning = false;
     }
-
+    
     private void TimerManagerOnTimerStart(TimerType typeOfTimer)
     {
         if(typeOfTimer == timerType) isRunning = true;
