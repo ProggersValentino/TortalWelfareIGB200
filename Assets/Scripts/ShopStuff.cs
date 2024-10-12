@@ -39,12 +39,22 @@ public class ShopStuff : MonoBehaviour
         // Updates text, certificate cost, button interactableness
         
         certText.text = "Certificate of Beach Cleaning\n----\n" + certCost + " Sand Dollars";
+        coinCount = SQLiteTest.PullPlayersMoney(1);
 
-        buyButton.interactable = false;
         if (certBought == false)
         {
             shopButtonMain.interactable = true;
-            messageText.text = "Press the image to buy!";
+            messageText.text = "";
+            if (coinCount >= certCost)
+            {
+                buyButton.interactable = true;
+                messageText.text = "You have enough sand dollars to buy the certificate!";
+            }
+            else
+            {
+                buyButton.interactable = false;
+                messageText.text = "You don't have enough sand dollars yet!";
+            }
         }
         else
         {
@@ -56,36 +66,23 @@ public class ShopStuff : MonoBehaviour
     public void checkDollarAmount()
     {
         int newMoneyValue = 0;
-        coinCount = SQLiteTest.PullPlayersMoney(1);
 
-        if (coinCount >= certCost)
-        {
-            // Updating sand dollar amount
-            newMoneyValue = coinCount - certCost;
-            SQLiteTest.UpdatePlayersMoney(1, newMoneyValue);
+        // Updating sand dollar amount
+        newMoneyValue = coinCount - certCost;
+        SQLiteTest.UpdatePlayersMoney(1, newMoneyValue);
 
-            // Change bool
-            certBought = true;
+        // Change bool
+        certBought = true;
 
-            // Update money on ranger screen (there must be a better way to do this but idk it)
-            dollarCount.text = SQLiteTest.PullPlayersMoney(1).ToString();
+        // Update money on ranger screen (there must be a better way to do this but idk it)
+        dollarCount.text = SQLiteTest.PullPlayersMoney(1).ToString();
 
-            // Update buttons
-            shopButtonMain.interactable = false;
-            buyButton.interactable = false;
+        // Update buttons
+        shopButtonMain.interactable = false;
+        buyButton.interactable = false;
 
-            // Update UI
-            winScreen.SetActive(true);
-            shopMenu.SetActive(false);
-        }
-        else
-        {
-            // Change message text
-            messageText.text = "Not enough sand dollars!";
-
-            // Update buttons
-            buyButton.interactable = false;
-            shopButtonMain.interactable = false;
-        }
+        // Update UI
+        winScreen.SetActive(true);
+        shopMenu.SetActive(false);
     }
 }
