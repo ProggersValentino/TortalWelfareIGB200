@@ -84,4 +84,9 @@ public class TurtleFeedPlayer : MonoBehaviour
     {
         isBeingGrabbed = false;
     }
+    
+    public void ActivateInput()
+    {
+        playerInput.actions.FindActionMap("MinigameActions").Enable();
+    }
 }

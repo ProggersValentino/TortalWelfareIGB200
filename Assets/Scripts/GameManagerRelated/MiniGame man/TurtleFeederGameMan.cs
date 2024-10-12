@@ -27,6 +27,7 @@ public class TurtleFeederGameMan : MonoBehaviour
         TurtleFeederEventSystem.UpdateTurtleFedUI += UpdateTurtlesFed;
         TurtleFeederEventSystem.UpdateAteRubbishUI += UpdateAteRubbish;
         TimerEventManager.TimerCompleted += ProcessEnd;
+        
     }
 
     private void OnDisable()
@@ -38,7 +39,7 @@ public class TurtleFeederGameMan : MonoBehaviour
 
     private void Awake()
     {
-        TurtleFeederEventSystem.OnGameIsProgressing(true);
+        
         Debug.LogWarning(SQLiteTest.dbName);
     }
 
@@ -47,7 +48,7 @@ public class TurtleFeederGameMan : MonoBehaviour
     {
         endUI.SetActive(false);
         mainUI.SetActive(true);
-        TimerEventManager.OnTimerStart(RaceTimer.TimerType.countdown);
+      
         turtleFedNumberTxt.text = turtlesFed.ToString();
         ateRubbishNumberTxt.text = ateRubbish.ToString();
     }
@@ -88,6 +89,12 @@ public class TurtleFeederGameMan : MonoBehaviour
         ChangeTimeScale(0f);
     }
 
+    public void InitializeMinigame()
+    {
+        TurtleFeederEventSystem.OnGameIsProgressing(true);
+        TimerEventManager.OnTimerStart(RaceTimer.TimerType.countdown);
+    }
+    
     public void HowMuchWasEarned(int score)
     {
         int moneyEarned = score * 10;
