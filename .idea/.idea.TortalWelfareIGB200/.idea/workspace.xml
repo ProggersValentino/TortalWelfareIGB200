@@ -7,11 +7,7 @@
     <list default="true" id="68d6ce5a-7462-47c9-ab06-87d1cfaf8aab" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TortalWelfareIGB200/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TortalWelfareIGB200/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainGame/RangerPerspective.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainGame/RangerPerspective.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MiniGame2/MiniGameUI/MiniGame2Ui.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MiniGame2/MiniGameUI/MiniGame2Ui.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManagerRelated/MiniGame man/TurtleFeederGameMan.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameManagerRelated/MiniGame man/TurtleFeederGameMan.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interaction/ActionEvents/ScareFoxMicro/ScareFox.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interaction/ActionEvents/ScareFoxMicro/ScareFox.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerRelated/MiniGame/TurtleFeeder/TurtleFeedPlayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerRelated/MiniGame/TurtleFeeder/TurtleFeedPlayer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/boar_placeholder.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/boar_placeholder.png.meta" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -162,6 +158,7 @@
       <workItem from="1728434628056" duration="481000" />
       <workItem from="1728462300091" duration="7443000" />
       <workItem from="1728642882483" duration="4473000" />
+      <workItem from="1728704505999" duration="140000" />
     </task>
     <servers />
   </component>

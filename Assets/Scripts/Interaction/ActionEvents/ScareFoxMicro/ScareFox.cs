@@ -97,6 +97,12 @@ public class ScareFox : MicroTask
 
         currentFox.SetActive(true);
 
+        ParticleSystem ps = currentFox.GetComponentInChildren<ParticleSystem>();
+        ParticleSystem ps2 = ps.GetComponentInChildren<ParticleSystem>();
+        
+        ps.Play();
+        ps2.Play();
+
     }
     
 }
