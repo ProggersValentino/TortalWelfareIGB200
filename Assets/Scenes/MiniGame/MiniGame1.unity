@@ -1226,6 +1226,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerText: {fileID: 81500918}
+  amountOfTime: 0
   timerType: 1
   timerToDisplay: 0
 --- !u!1 &902169301
