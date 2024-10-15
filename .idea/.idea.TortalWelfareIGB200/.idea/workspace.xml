@@ -6,8 +6,19 @@
   <component name="ChangeListManager">
     <list default="true" id="68d6ce5a-7462-47c9-ab06-87d1cfaf8aab" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TortalWelfareIGB200/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TortalWelfareIGB200/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainGame/RangerPerspective.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainGame/RangerPerspective.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interaction/ActionEvents/ScareFoxMicro/ScareFox.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interaction/ActionEvents/ScareFoxMicro/ScareFox.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/TurtleController.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/TurtleController.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/MiniGame/TurtleFeeder/TortalHungry.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/MiniGame/TurtleFeeder/TortalHungry.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/MiniGame/TurtleRace/CompetitorRacer.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/MiniGame/TurtleRace/CompetitorRacer.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainGame/TurtlePerspective.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainGame/TurtlePerspective.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MiniGame/MiniGame1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MiniGame/MiniGame1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/TutorialRelated/TutorialMini/TurtorialMiniGame1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/TutorialRelated/TutorialMini/TurtorialMiniGame1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/TutorialRelated/TutorialMini/TurtorialMiniGame2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/TutorialRelated/TutorialMini/TurtorialMiniGame2.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManagerRelated/MiniGame man/TurtleFeederGameMan.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameManagerRelated/MiniGame man/TurtleFeederGameMan.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MinigameRelated/TurtleFeederRelated/HungryTurtle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MinigameRelated/TurtleFeederRelated/HungryTurtle.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerRelated/Main/TurtlePlayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerRelated/Main/TurtlePlayer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerRelated/MiniGame/MiniGamePlayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerRelated/MiniGame/MiniGamePlayer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/thumbnail_Environmental.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/thumbnail_Environmental.png.meta" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +84,7 @@
 }</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="$PROJECT_DIR$/../Builds/Playtest3prototype6\IGB200TortalSquad.exe" />
+      <option name="EXE_PATH" value="$PROJECT_DIR$/../Builds/Prototype6\IGB200TortalSquad.exe" />
       <option name="PROGRAM_PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="C:\Uni\Semester 2 2024\IGB200\Assessment\Builds" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -159,6 +170,8 @@
       <workItem from="1728462300091" duration="7443000" />
       <workItem from="1728642882483" duration="4473000" />
       <workItem from="1728704505999" duration="140000" />
+      <workItem from="1728949885995" duration="147000" />
+      <workItem from="1728950141130" duration="6153000" />
     </task>
     <servers />
   </component>
@@ -174,24 +187,5 @@
   <component name="UnityUnitTestConfiguration" currentTestLauncher="Both" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Scripts/PlayerRelated/MiniGame/MiniGamePlayer.cs</url>
-          <line>201</line>
-          <properties documentPath="C:\Uni\Semester 2 2024\IGB200\Assessment\TortalWelfareIGB200\Assets\Scripts\PlayerRelated\MiniGame\MiniGamePlayer.cs" containingFunctionPresentation="Method 'Zoom'">
-            <startOffsets>
-              <option value="5665" />
-            </startOffsets>
-            <endOffsets>
-              <option value="5715" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

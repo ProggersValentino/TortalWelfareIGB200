@@ -14,6 +14,7 @@ public class MiniGamePlayer : MonoBehaviour
     private InputAction playerActons;
     private InputAction boostAction;
 
+    //public Animator turtleController;
     public LayerMask wallMask;
 
     public CinemachineVirtualCamera cam;
@@ -53,7 +54,7 @@ public class MiniGamePlayer : MonoBehaviour
     private void Awake()
     {
         speed = playerData.DetermineSpeed(currentSpeed);
-        
+        //turtleController.SetBool("isOnLand", true);
     }
 
 
