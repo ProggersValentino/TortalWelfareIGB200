@@ -2430,6 +2430,16 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6090656593586225139, guid: b30325500eca0de47aae24bfb2705cd0,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1103952075}
+    - target: {fileID: 6090656593586225139, guid: b30325500eca0de47aae24bfb2705cd0,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetActive
+      objectReference: {fileID: 0}
     - target: {fileID: 7123592634569595764, guid: b30325500eca0de47aae24bfb2705cd0,
         type: 3}
       propertyPath: m_Pivot.x
@@ -2552,6 +2562,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c80f7b6c1b2721a4b970a4911c693d11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1103952075 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8817216216489292291, guid: b30325500eca0de47aae24bfb2705cd0,
+    type: 3}
+  m_PrefabInstance: {fileID: 1103952073}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1155703113
 GameObject:
   m_ObjectHideFlags: 0
