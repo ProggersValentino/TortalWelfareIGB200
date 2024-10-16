@@ -1304,6 +1304,7 @@ GameObject:
   - component: {fileID: 1538593975269588440}
   - component: {fileID: 7927249486438706539}
   - component: {fileID: 9026693396500108844}
+  - component: {fileID: 6906247433251126892}
   m_Layer: 0
   m_Name: ScareFoxGame
   m_TagString: Untagged
@@ -1348,6 +1349,10 @@ MonoBehaviour:
   mainCam: {fileID: 0}
   microgameUI: {fileID: 759070352996124812}
   torchLight: {fileID: 1589482086082054816}
+  currentFox: {fileID: 0}
+  possibleFoxAreas: []
+  timer: 0
+  timeToSwitch: 0
 --- !u!65 &7927249486438706539
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1389,7 +1394,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: d0fbf2de053ee294eb90ec46f32a6dde, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1421,6 +1426,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &6906247433251126892
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8857486345305443607}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1bec1b1b981bc4346b6b8756326dd5c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spriteCollider: {fileID: 8857486345305443607}
+  noOutlineMat: {fileID: 2100000, guid: d0fbf2de053ee294eb90ec46f32a6dde, type: 2}
+  outlineMat: {fileID: 2100000, guid: 4e0ae13635569ec4faae7fbcd37a0854, type: 2}
+  spriteEnable: {fileID: 0}
 --- !u!1 &8966008183663915239
 GameObject:
   m_ObjectHideFlags: 0

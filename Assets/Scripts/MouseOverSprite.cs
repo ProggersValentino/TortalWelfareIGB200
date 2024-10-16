@@ -8,25 +8,23 @@ public class MouseOverSprite : MonoBehaviour
     public Material noOutlineMat;
     public Material outlineMat;
 
+    public GameObject spriteEnable;
+
     private void OnMouseOver()
     {
         spriteCollider.GetComponent<SpriteRenderer>().material = outlineMat;
+        if (spriteEnable != null)
+        {
+            spriteEnable.SetActive(true);
+        }
     }
 
     private void OnMouseExit()
     {
         spriteCollider.GetComponent<SpriteRenderer>().material = noOutlineMat;
-    }
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        if (spriteEnable != null)
+        {
+            spriteEnable.SetActive(false);
+        }
     }
 }

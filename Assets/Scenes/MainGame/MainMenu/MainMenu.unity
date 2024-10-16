@@ -1721,16 +1721,11 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "Devloped By:\nPeter Erbeni: Programming\nAerin Larrazabal: Design & UI\nAlexander
-    Saffigna-Hayes: Design & Audio\nPaige Martin: Art & Assets\n\nFonts Used:\nFutura
-    Handwritten by Billy Snyder\r\n\thttps://www.dafont.com/futurahandwritten.font\nPulang
-    by Khurasan\r\n\thttps://www.dafont.com/pulang.font\n\nAudio Used:\nCollect Game
-    Hits by stockboom\n\thttps://motionarray.com/sound-effects/collect-game-hits-2745671/?subcategories=ui-buttons\nbutton
-    8 by Pixabay\r\n\thttps://pixabay.com/sound-effects/button-8-88355/\r\nGood!
-    by Pixabay\r\n\thttps://pixabay.com/sound-effects/good-6081/\r\nnegative_beeps
-    by Pixabay\r\n\thttps://pixabay.com/sound-effects/negative-beeps-6008/\r\nMaleGrunt_full
-    by Pixabay\r\n\thttps://pixabay.com/sound-effects/malegrunt-full-99410/\r\nOcean
-    ambience - small waves and birds by FascinatedSound\r\n\thttps://uppbeat.io/sfx/ocean-ambience-small-waves-and-birds/1479/12730\r\nSpeech
-    Bubbles by ThreeStateAudio\r\n\thttps://motionarray.com/sound-effects/speech-bubbles-1094414/?subcategories=ui-buttons"
+    Saffigna-Hayes: Design & Audio\nPaige Martin: Art & Assets\n\nShaders:\n2D Sprite
+    Outline by Hanna Fiani\n\nFonts:\nFutura Handwritten by Billy Snyder\r\nPulang
+    by Khurasan\r\n\nAudio:\nCollect Game Hits by stockboom\nbutton 8 by Pixabay\r\nGood!
+    by Pixabay\r\nnegative_beeps by Pixabay\r\nMaleGrunt_full by Pixabay\r\nOcean
+    ambience - small waves and birds by FascinatedSound\r\nSpeech Bubbles by ThreeStateAudio\r"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c09ee6d36e138f94dbf37ce60e68582e, type: 2}
   m_sharedMaterial: {fileID: 5715111878098099456, guid: c09ee6d36e138f94dbf37ce60e68582e,

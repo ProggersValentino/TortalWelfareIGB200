@@ -224,6 +224,7 @@ GameObject:
   - component: {fileID: 3895322490938641864}
   - component: {fileID: 9204094737032318953}
   - component: {fileID: 2210287336457345039}
+  - component: {fileID: 829651751541814918}
   m_Layer: 0
   m_Name: HelpTortalMT
   m_TagString: Untagged
@@ -267,7 +268,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: d0fbf2de053ee294eb90ec46f32a6dde, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -344,6 +345,22 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 15.52549, y: 9.398746, z: 0.9748389}
   m_Center: {x: 0.61527896, y: -2.139374, z: -0.16133134}
+--- !u!114 &829651751541814918
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 937717806016075142}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1bec1b1b981bc4346b6b8756326dd5c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spriteCollider: {fileID: 937717806016075142}
+  noOutlineMat: {fileID: 2100000, guid: d0fbf2de053ee294eb90ec46f32a6dde, type: 2}
+  outlineMat: {fileID: 2100000, guid: 4e0ae13635569ec4faae7fbcd37a0854, type: 2}
+  spriteEnable: {fileID: 0}
 --- !u!1 &1576265912274391214
 GameObject:
   m_ObjectHideFlags: 0
@@ -496,7 +513,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &7478793275093433293
 RectTransform:
   m_ObjectHideFlags: 0
