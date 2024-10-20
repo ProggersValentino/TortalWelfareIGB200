@@ -155,22 +155,22 @@ public class MiniGamePlayer : MonoBehaviour
             switch (ob.GetComponent<SpriteRenderer>().sprite.name)
             {
                 case "garbage_fishnet":
-                    AudioEventSystem.OnPlayAudio("Rubbish");
                     obstructions[0].SetActive(true);
                     currentActiveObstruction = obstructions[0];
+                    AudioEventSystem.OnPlayAudio("Rubbish");
                     break;
                 
                 case "garbage_bag2":
                 case "garbage_bag":
-                    AudioEventSystem.OnPlayAudio("Rubbish");
                     obstructions[1].SetActive(true);
                     currentActiveObstruction = obstructions[1];
+                    AudioEventSystem.OnPlayAudio("Rubbish");
                     break;
                 
                 case "garbage_bottle":
-                    AudioEventSystem.OnPlayAudio("Rubbish");
                     obstructions[2].SetActive(true);
                     currentActiveObstruction = obstructions[2];
+                    AudioEventSystem.OnPlayAudio("Rubbish");
                     break;
             }
             
