@@ -3,9 +3,13 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using Cinemachine;
+using Unity.VisualScripting;
+using UnityEditor.Animations;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.InputSystem.Interactions;
+using UnityEngine.Rendering;
+using UnityEngine.Rendering.Universal;
 
 public class MiniGamePlayer : MonoBehaviour
 {
@@ -14,12 +18,16 @@ public class MiniGamePlayer : MonoBehaviour
     private InputAction playerActons;
     private InputAction boostAction;
 
+    public AnimatorController turtleAnim;
+    
     //public Animator turtleController;
     public LayerMask wallMask;
 
     public CinemachineVirtualCamera cam;
     private CinemachineBasicMultiChannelPerlin noise;
 
+    public GameObject pp;
+    
     public List<GameObject> obstructions = new List<GameObject>();
 
     private GameObject currentActiveObstruction;
@@ -52,7 +60,8 @@ public class MiniGamePlayer : MonoBehaviour
 
 
     private void Awake()
-    {
+    {   
+        
         speed = playerData.DetermineSpeed(currentSpeed);
         //turtleController.SetBool("isOnLand", true);
     }
@@ -176,6 +185,7 @@ public class MiniGamePlayer : MonoBehaviour
             speed = playerData.DetermineSpeed(currentSpeed);
             float newFOV = playerData.DetermineFOV(currentSpeed);
             StartCoroutine(Zoom(newFOV));
+            pp.SetActive(true);
             StartCoroutine(ResetToNormalState(playerData._speedCooldown));
             StartCoroutine(ShakeyTime());
         }
@@ -187,6 +197,18 @@ public class MiniGamePlayer : MonoBehaviour
         }
         
     }
+
+    // private void OnTriggerExit(Collider other)
+    // {
+    //     currentSpeed = TurtleRacePlayerSO.SpeedState.Normal;
+    //     speed = playerData.DetermineSpeed(currentSpeed);
+    //     StartCoroutine(Zoom(playerData.DetermineFOV(currentSpeed)));
+    //     //v.intensity.value = v.intensity.min;
+    //     foreach (GameObject obstruction in obstructions)
+    //     {
+    //         obstruction.SetActive(false);
+    //     }
+    // }
 
 
     /// <summary>
@@ -209,10 +231,23 @@ public class MiniGamePlayer : MonoBehaviour
             
             yield return new WaitForSeconds(Time.deltaTime); 
         }
-        
-        
-        
     }
+
+    // public IEnumerator ActivateVignette(float idealValue)
+    // {
+    //     float vignetteIntensity = pp.weight;
+    //
+    //     
+    //
+    //     while (vignetteIntensity < idealValue)
+    //     {
+    //         vignetteIntensity = Mathf.Lerp(vignetteIntensity, idealValue, Time.deltaTime * 10);
+    //
+    //         pp.weight = vignetteIntensity;
+    //         yield return new WaitForSeconds(Time.deltaTime);    
+    //     }
+    // }
+    
     
     /// <summary>
     /// to make camera shake 
@@ -244,6 +279,8 @@ public class MiniGamePlayer : MonoBehaviour
         currentSpeed = TurtleRacePlayerSO.SpeedState.Normal;
         speed = playerData.DetermineSpeed(currentSpeed);
         StartCoroutine(Zoom(playerData.DetermineFOV(currentSpeed)));
+        //StartCoroutine(ActivateVignette(0.0f));
+        pp.SetActive(false);
         foreach (GameObject obstruction in obstructions)
         {
             obstruction.SetActive(false);

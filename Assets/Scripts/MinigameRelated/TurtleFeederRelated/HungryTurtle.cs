@@ -16,6 +16,9 @@ public class HungryTurtle : MonoBehaviour
     public NavMeshAgent tortalBrain { get; private set; }
     private Camera mainCam;
 
+    public ParticleSystem yippeeParticles;
+    public ParticleSystem snadParticles;
+
     private bool hasBeenFed; //has the turtle been fed yet
     
     public Vector3 direction = Vector3.zero;
@@ -58,7 +61,7 @@ public class HungryTurtle : MonoBehaviour
             hasBeenFed = true; //turtle fed
             SetNewDestination(tortalBrain.destination * -2);
             TurtleFeederEventSystem.OnUpdateTurtleFedUI(1);
-            
+            yippeeParticles.Play();
         }
         else if(other.CompareTag("Rubbish") && !hasBeenFed)
         {
@@ -66,6 +69,7 @@ public class HungryTurtle : MonoBehaviour
             hasBeenFed = true; //turtle fed
             SetNewDestination(tortalBrain.destination * -2);
             TurtleFeederEventSystem.OnUpdateAteRubbishUI(1);
+            snadParticles.Play();
 
         }
         

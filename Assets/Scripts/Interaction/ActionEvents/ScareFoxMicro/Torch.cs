@@ -32,6 +32,11 @@ public class Torch : MonoBehaviour
       }
    }
 
+   private void OnTriggerStay(Collider other)
+   {
+      
+   }
+
    private void Update()
    {
 

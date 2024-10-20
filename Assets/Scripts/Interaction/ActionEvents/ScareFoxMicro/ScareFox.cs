@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Serialization;
 using Random = UnityEngine.Random;
 
 public class ScareFox : MicroTask
@@ -18,7 +19,8 @@ public class ScareFox : MicroTask
     public List<GameObject> possibleFoxAreas = new List<GameObject>();
 
     public float timer;
-    public float timeToSwitch;
+    public float timeToSwitchMin;
+    public float timeToSwitchMax;
     
     private void OnEnable()
     {
@@ -64,7 +66,7 @@ public class ScareFox : MicroTask
 
         if (Time.time > timer && microgameUI.activeInHierarchy)
         {
-            timer = timeToSwitch + Time.time;
+            timer = Random.Range(timeToSwitchMin, timeToSwitchMax) + Time.time;
             currentFox.SetActive(false);
             
             MoveFox();
@@ -102,6 +104,9 @@ public class ScareFox : MicroTask
         
         ps.Play();
         ps2.Play();
+        
+        TimerEventManager.OnTimerStop();
+        TimerEventManager.OnTimerReset();
 
     }
     

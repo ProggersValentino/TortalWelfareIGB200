@@ -12,6 +12,10 @@ public class MicroTask : MonoBehaviour
     {
         get { return taskSprite; }
     }
+
+    private bool timeRunning = false;
+    private float timeTillFinished;
+    public Image barImg;
     
     public float totalTimeToComplete;
 
@@ -39,9 +43,27 @@ public class MicroTask : MonoBehaviour
     {
         
     }
-    
-    //TODO: we want a function that when an object is clicked on will come up with options
 
+    public IEnumerator StartProcessingTask(float timeAmount)
+    {
+        float time = Time.deltaTime;
+
+        timeTillFinished = timeAmount + Time.deltaTime;
+
+
+        while (barImg.fillAmount < 0.96)
+        {
+
+            barImg.fillAmount += Time.deltaTime * timeAmount; 
+            
+            yield return new WaitForSeconds(Time.deltaTime);
+        }
+        
+        
+        AudioEventSystem.OnPlayAudio("Confirm_Press");
+        ProcessTaskCompletion(-20);
+    }
+    
 
     /// <summary>
     /// when the player has completed a task we need to process the end of it
@@ -61,7 +83,7 @@ public class MicroTask : MonoBehaviour
         OnTaskComplete?.Invoke();
         
         //AudioEventSystem.OnPlayAudio("foxSoundSFX");
-        
+        ActionsEventSystem.OnIsCompletingTask(false); //player has completed the task
         ActionsEventSystem.OnDeleteFromPersistent(UID);
         //destroy object 
         Destroy(gameObject);

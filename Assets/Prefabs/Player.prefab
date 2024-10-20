@@ -108,7 +108,7 @@ MonoBehaviour:
     m_SingletonActionBindings: []
     m_Flags: 0
   playerData: {fileID: 11400000, guid: a22edd0bf84afb640b2006c3ae44556d, type: 2}
-  speed: 10
+  speed: 5
   mainCam: {fileID: 0}
 --- !u!1001 &2517054424908634412
 PrefabInstance:
@@ -430,7 +430,7 @@ Animator:
   m_GameObject: {fileID: 3048819712664970039}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 00d5ad519347a2e4ab6a1c2c165b4280, type: 2}
+  m_Controller: {fileID: 9100000, guid: 587b4956e9ad8b74387bab5a12c410ab, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

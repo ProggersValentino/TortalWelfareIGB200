@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.InputSystem.Interactions;
+using UnityEngine.UI;
 
 public class TurtleFeedPlayer : MonoBehaviour
 {
@@ -11,6 +12,8 @@ public class TurtleFeedPlayer : MonoBehaviour
     private InputAction mouseTrack;
     private InputAction interaction;
 
+    public Image inventorySlot;
+    
     private GameObject interactable;
     private bool isBeingGrabbed;
     
@@ -28,12 +31,16 @@ public class TurtleFeedPlayer : MonoBehaviour
 
         interaction.performed += ClickDrag;
         interaction.canceled += ClickDragRelease;
+
+        // Debug.LogWarning($"the pos for inven {mainCam.ScreenToWorldPoint(inventorySlot.rectTransform.anchoredPosition)}");
     }
 
     // Start is called before the first frame update
     void Start()
     {
-        refffer.transform.position = mainCam.ScreenToWorldPoint(new Vector3(0, 0, 20)) ;
+        //refffer.transform.position = mainCam.ScreenToWorldPoint(new Vector3(0, 0, 20)) ;
+
+        refffer.transform.position = mainCam.ScreenToWorldPoint(new Vector3(Screen.width / 2, 30, 20));
     }
 
     // Update is called once per frame
