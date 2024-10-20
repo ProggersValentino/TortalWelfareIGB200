@@ -14,6 +14,8 @@ public class TurtlePlayer : MonoBehaviour
 
     public PlayerSO playerData;
 
+    public Animator turtleAnim;
+    
     public float speed;
 
     public Camera mainCam;
@@ -70,9 +72,10 @@ public class TurtlePlayer : MonoBehaviour
         if(Vector3.Distance(targetPoint, transform.position) > 0.3f)
         {
             Vector3 normalDirec = MovementDirection.normalized;
-
+            turtleAnim.SetBool("isWater", true);
             transform.position += normalDirec * Time.deltaTime * speed;
         }
+        else turtleAnim.SetBool("isWater", false);
     }
 
     public void GetClickPos(InputAction.CallbackContext context)

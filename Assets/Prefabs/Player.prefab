@@ -108,6 +108,7 @@ MonoBehaviour:
     m_SingletonActionBindings: []
     m_Flags: 0
   playerData: {fileID: 11400000, guid: a22edd0bf84afb640b2006c3ae44556d, type: 2}
+  turtleAnim: {fileID: 7942582460532578426}
   speed: 5
   mainCam: {fileID: 0}
 --- !u!1001 &2517054424908634412

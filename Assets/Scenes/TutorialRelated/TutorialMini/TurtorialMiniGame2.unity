@@ -4840,10 +4840,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerInput: {fileID: 0}
+  turtleAnim: {fileID: 2107107685}
   wallMask:
     serializedVersion: 2
     m_Bits: 128
   cam: {fileID: 508740278}
+  pp: {fileID: 0}
   obstructions:
   - {fileID: 259458348}
   - {fileID: 750294552}
@@ -6193,7 +6195,7 @@ Animator:
   m_GameObject: {fileID: 2107107684}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 00d5ad519347a2e4ab6a1c2c165b4280, type: 2}
+  m_Controller: {fileID: 9100000, guid: 587b4956e9ad8b74387bab5a12c410ab, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

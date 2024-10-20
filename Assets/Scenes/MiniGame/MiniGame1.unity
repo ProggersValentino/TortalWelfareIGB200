@@ -5053,7 +5053,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerInput: {fileID: 0}
-  turtleAnim: {fileID: 9100000, guid: 587b4956e9ad8b74387bab5a12c410ab, type: 2}
+  turtleAnim: {fileID: 1634568615}
   wallMask:
     serializedVersion: 2
     m_Bits: 128
@@ -5107,7 +5107,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1810109148}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: 0.106848694, w: 0.99427533}
   m_LocalPosition: {x: -0.04, y: 0.42, z: 8.43}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -5121,7 +5121,7 @@ Transform:
   - {fileID: 1495349026}
   - {fileID: 1012957340}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 12.267}
 --- !u!54 &1810109152
 Rigidbody:
   m_ObjectHideFlags: 0

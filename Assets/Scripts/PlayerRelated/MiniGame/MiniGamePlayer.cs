@@ -18,7 +18,7 @@ public class MiniGamePlayer : MonoBehaviour
     private InputAction playerActons;
     private InputAction boostAction;
 
-    public AnimatorController turtleAnim;
+    public Animator turtleAnim;
     
     //public Animator turtleController;
     public LayerMask wallMask;
@@ -61,7 +61,7 @@ public class MiniGamePlayer : MonoBehaviour
 
     private void Awake()
     {   
-        
+        turtleAnim.SetBool("OnLand", true);
         speed = playerData.DetermineSpeed(currentSpeed);
         //turtleController.SetBool("isOnLand", true);
     }
@@ -101,7 +101,10 @@ public class MiniGamePlayer : MonoBehaviour
     public void Movement()
     {
         playerGeneralMovement = playerActons.ReadValue<Vector2>(); //this is handled in fixed update 
-        //
+        
+        if(playerGeneralMovement != Vector3.zero) turtleAnim.SetBool("OnLand", true);
+        else turtleAnim.SetBool("OnLand", false);
+        
         Vector3 newPotentialMove = new Vector3(playerGeneralMovement.y, 0f, -playerGeneralMovement.x);
         
           List<RaycastHit> hits = new List<RaycastHit>(); 
@@ -195,6 +198,7 @@ public class MiniGamePlayer : MonoBehaviour
 
         if (other.TryGetComponent(out Finishline finish))
         {
+            turtleAnim.SetBool("OnLand", false);
             // finish.AddToFinishedRacers(gameObject);
             finish.processEnd?.Invoke();
         }
