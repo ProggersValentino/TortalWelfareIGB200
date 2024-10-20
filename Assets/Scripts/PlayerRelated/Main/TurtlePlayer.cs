@@ -117,6 +117,29 @@ public class TurtlePlayer : MonoBehaviour
 
     }
 
+    public void FlipSprite(Vector2 direction)
+    {
+
+        Vector3 transcribedDirection = new Vector3(direction.y, 0.0f, direction.x);
+        
+        Vector3 animalScale = transform.localScale;
+
+        bool isLeft = animalScale.z > 0; //to determine the current direction the animal is facing
+        
+        //if the direction provided x axis is less than 0 and is not left then we flip the scale on the x-axis to a positive
+        if (transcribedDirection.z < 0 && !isLeft)
+        {
+            transform.localScale = new Vector3(animalScale.x, animalScale.y, Mathf.Abs(animalScale.z));
+            //Debug.LogWarning($"we flipped it");
+            
+        }
+        else if (transcribedDirection.z > 0 && isLeft)
+        {
+            transform.localScale = new Vector3(animalScale.x, animalScale.y, -animalScale.z);
+            //Debug.LogWarning($"we flipped it");
+        }
+    }
+    
     public void travelToInteractable(RaycastHit hit)
     {
         MouseHover interactable = hit.collider.GetComponent<MouseHover>(); 
@@ -129,6 +152,12 @@ public class TurtlePlayer : MonoBehaviour
     Vector3 TravelToPoint(Vector3 target)
     {
         AudioEventSystem.OnPlayAudio("TurtleSandMove");
+        Vector2 direction = new Vector2(target.z - transform.position.z, target.x - transform.position.x);
+
+        Vector2 directionNormalized = direction.normalized;
+        
+        FlipSprite(directionNormalized);
+        
         return target - transform.position;
     }
 

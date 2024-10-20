@@ -4,15 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="68d6ce5a-7462-47c9-ab06-87d1cfaf8aab" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.TortalWelfareIGB200/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TortalWelfareIGB200/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainGame/RangerPerspective.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainGame/RangerPerspective.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MiniGame2/MiniGameUI/MiniGame2Ui.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MiniGame2/MiniGameUI/MiniGame2Ui.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManagerRelated/MiniGame man/TurtleFeederGameMan.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameManagerRelated/MiniGame man/TurtleFeederGameMan.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interaction/ActionEvents/ScareFoxMicro/ScareFox.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interaction/ActionEvents/ScareFoxMicro/ScareFox.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerRelated/MiniGame/TurtleFeeder/TurtleFeedPlayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerRelated/MiniGame/TurtleFeeder/TurtleFeedPlayer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/boar_placeholder.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/boar_placeholder.png.meta" afterDir="false" />
-    </list>
+    <list default="true" id="68d6ce5a-7462-47c9-ab06-87d1cfaf8aab" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -45,6 +37,8 @@
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.inputsystem@1.7.0/InputSystem/InputManager.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.inputsystem@1.7.0/InputSystem/InputManagerStateMonitors.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.inputsystem@1.7.0/InputSystem/Utilities/DelegateHelpers.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.shadergraph@14.0.11/Editor/Data/Graphs/SerializableTexture.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0652bf0e14024522b5c92574ad0ef550175c00/34/0012938c/SetupCoroutine.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8
@@ -77,7 +71,7 @@
 }</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="$PROJECT_DIR$/../Builds/Playtest3prototype6\IGB200TortalSquad.exe" />
+      <option name="EXE_PATH" value="$PROJECT_DIR$/../Builds/Prototype8DatabaseFix\IGB200TortalSquad.exe" />
       <option name="PROGRAM_PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="C:\Uni\Semester 2 2024\IGB200\Assessment\Builds" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -162,6 +156,14 @@
       <workItem from="1728434628056" duration="481000" />
       <workItem from="1728462300091" duration="7443000" />
       <workItem from="1728642882483" duration="4473000" />
+      <workItem from="1728704505999" duration="140000" />
+      <workItem from="1728949885995" duration="147000" />
+      <workItem from="1728950141130" duration="8108000" />
+      <workItem from="1729037259555" duration="93000" />
+      <workItem from="1729037369329" duration="9468000" />
+      <workItem from="1729300247038" duration="4199000" />
+      <workItem from="1729306475433" duration="11224000" />
+      <workItem from="1729394833269" duration="995000" />
     </task>
     <servers />
   </component>
@@ -177,24 +179,5 @@
   <component name="UnityUnitTestConfiguration" currentTestLauncher="Both" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Scripts/PlayerRelated/MiniGame/MiniGamePlayer.cs</url>
-          <line>201</line>
-          <properties documentPath="C:\Uni\Semester 2 2024\IGB200\Assessment\TortalWelfareIGB200\Assets\Scripts\PlayerRelated\MiniGame\MiniGamePlayer.cs" containingFunctionPresentation="Method 'Zoom'">
-            <startOffsets>
-              <option value="5665" />
-            </startOffsets>
-            <endOffsets>
-              <option value="5715" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

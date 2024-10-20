@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa3e3bf4333ee0b40aaf6d732d661708, type: 3}
   m_Name: PlayerData
   m_EditorClassIdentifier: 
-  lastPlayerLocoBeforeSceneChange: {x: 0, y: 0, z: 0}
+  lastPlayerLocoBeforeSceneChange: {x: 11.67184, y: -0.4999996, z: 5.076368}
   inventory: {fileID: 11400000, guid: 362c45124e2532a4d9edab4d5f561838, type: 2}

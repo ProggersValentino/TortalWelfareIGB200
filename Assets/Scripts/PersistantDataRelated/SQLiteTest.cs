@@ -62,15 +62,23 @@ public class SQLiteTest: MonoBehaviour
          Debug.LogWarning(dbName);
          if (IsTherePreviousData())
          {
-             Debug.LogWarning($"there is already data, lets reset it");
-             UpdateDifficultyLevel(1, 100f);
-             UpdatePlayersMoney(1, 0);
+             // Debug.LogWarning($"there is already data, lets reset it");
+             //
+             // UpdateDifficultyLevel(1, 100f);
+             // UpdatePlayersMoney(1, 0);
+             conn.DeleteAll<Difficulty>();
+             
+             Debug.LogWarning($"reset");
+             conn.CreateTable<Difficulty>();
+             conn.Insert(new Difficulty {Id = 1, DifficultyLevel = 100f, sandDollars = 0}); 
+             
          }
          else
          {
+             conn.DeleteAll<Difficulty>();
              Debug.LogWarning($"new person yippeee, establishing database");
              conn.CreateTable<Difficulty>();
-             conn.Insert(new Difficulty { DifficultyLevel = 100f, sandDollars = 0}); 
+             conn.Insert(new Difficulty {Id = 1, DifficultyLevel = 100f, sandDollars = 0}); 
              
          }
          
@@ -189,7 +197,7 @@ public class Stock
 [Table("DifficultyLevels")]	 
 public class Difficulty		
 {		
-    [PrimaryKey, AutoIncrement]
+    [PrimaryKey]
     [Column("id")]		
     public int Id { get; set; }	
 
