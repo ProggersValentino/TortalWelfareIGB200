@@ -56,7 +56,7 @@ Material:
     m_Ints: []
     m_Floats:
     - _Desity: 0.93
-    - _Offset: 7.99
+    - _Offset: 7.85
     - _power: 3
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 0}
