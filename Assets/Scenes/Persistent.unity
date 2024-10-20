@@ -226,6 +226,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 16d34ada56ed1a544b559611d85beab3, type: 2}
   - {fileID: 11400000, guid: eee183c20eb94114e813480035197905, type: 2}
   - {fileID: 11400000, guid: a05085fa864047a4cb7f4ca8ae134b04, type: 2}
+  - {fileID: 11400000, guid: f0d38bc496b0b3e4ca8a56927a28c0b2, type: 2}
   sourcesOfAudio:
   - {fileID: 1735260344}
   - {fileID: 1880249678}
