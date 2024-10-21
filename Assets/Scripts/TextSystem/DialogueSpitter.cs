@@ -93,6 +93,8 @@ public class DialogueSpitter : MonoBehaviour
     {
        
         ProgressThroughDialogue(dialogue);
+        AudioEventSystem.OnPlayAudio("SpeechBubble");
+        AudioEventSystem.OnPlayAudio("Ranger_talking");
     }
 
     public void ProgressThroughDialogue(List<string> dialogueConversation)
@@ -152,8 +154,6 @@ public class DialogueSpitter : MonoBehaviour
     {
         string line = indexOfDialogue[dialogueIndex]; //dialogueKnowledgeBase.GetValueOrDefault(indexOfDialogue, defaultText)[dialogueIndex];
        isDisplayingText = true;
-        AudioEventSystem.OnPlayAudio("SpeechBubble");
-        AudioEventSystem.OnPlayAudio("Ranger_talking");
         for (int i = 0; i < line.Length; i++)
        {
           char c = line[i];
