@@ -9973,7 +9973,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 537029301
-  m_SortingLayer: 6
+  m_SortingLayer: 5
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 24efefca9bf1e2a4ba67b56c6f6ea0f4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -10057,7 +10057,7 @@ PrefabInstance:
     - target: {fileID: -3285921161777767494, guid: f1f0dcd5bef1677489589fbc9096532a,
         type: 3}
       propertyPath: m_SortingLayer
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: -3285921161777767494, guid: f1f0dcd5bef1677489589fbc9096532a,
         type: 3}
@@ -10067,7 +10067,7 @@ PrefabInstance:
     - target: {fileID: -1391605460648307374, guid: f1f0dcd5bef1677489589fbc9096532a,
         type: 3}
       propertyPath: m_SortingLayer
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: -1391605460648307374, guid: f1f0dcd5bef1677489589fbc9096532a,
         type: 3}
@@ -10077,7 +10077,7 @@ PrefabInstance:
     - target: {fileID: 4298863973720794148, guid: f1f0dcd5bef1677489589fbc9096532a,
         type: 3}
       propertyPath: m_SortingLayer
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4298863973720794148, guid: f1f0dcd5bef1677489589fbc9096532a,
         type: 3}
@@ -10087,7 +10087,7 @@ PrefabInstance:
     - target: {fileID: 7328998217607256556, guid: f1f0dcd5bef1677489589fbc9096532a,
         type: 3}
       propertyPath: m_SortingLayer
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7328998217607256556, guid: f1f0dcd5bef1677489589fbc9096532a,
         type: 3}
@@ -10148,7 +10148,7 @@ PrefabInstance:
     - target: {fileID: -8933176596981031357, guid: 53a7edd5f96badb4eb124c18f8f56f07,
         type: 3}
       propertyPath: m_SortingLayer
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: -8933176596981031357, guid: 53a7edd5f96badb4eb124c18f8f56f07,
         type: 3}
@@ -10168,7 +10168,7 @@ PrefabInstance:
     - target: {fileID: -8127757466526028528, guid: 53a7edd5f96badb4eb124c18f8f56f07,
         type: 3}
       propertyPath: m_SortingLayer
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: -8127757466526028528, guid: 53a7edd5f96badb4eb124c18f8f56f07,
         type: 3}
@@ -10228,7 +10228,7 @@ PrefabInstance:
     - target: {fileID: -3233502903615150381, guid: 53a7edd5f96badb4eb124c18f8f56f07,
         type: 3}
       propertyPath: m_SortingLayer
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: -3233502903615150381, guid: 53a7edd5f96badb4eb124c18f8f56f07,
         type: 3}
@@ -10238,7 +10238,7 @@ PrefabInstance:
     - target: {fileID: 6686581847232996787, guid: 53a7edd5f96badb4eb124c18f8f56f07,
         type: 3}
       propertyPath: m_SortingLayer
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6686581847232996787, guid: 53a7edd5f96badb4eb124c18f8f56f07,
         type: 3}
@@ -10309,7 +10309,7 @@ PrefabInstance:
     - target: {fileID: -8621038777829357485, guid: d566ce47b3f371a4e8dbedaa405fb8f5,
         type: 3}
       propertyPath: m_SortingLayer
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: -8621038777829357485, guid: d566ce47b3f371a4e8dbedaa405fb8f5,
         type: 3}
@@ -10389,7 +10389,7 @@ PrefabInstance:
     - target: {fileID: -6613274319417986525, guid: d566ce47b3f371a4e8dbedaa405fb8f5,
         type: 3}
       propertyPath: m_SortingLayer
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: -6613274319417986525, guid: d566ce47b3f371a4e8dbedaa405fb8f5,
         type: 3}
@@ -10399,7 +10399,7 @@ PrefabInstance:
     - target: {fileID: -4063391785377352444, guid: d566ce47b3f371a4e8dbedaa405fb8f5,
         type: 3}
       propertyPath: m_SortingLayer
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: -4063391785377352444, guid: d566ce47b3f371a4e8dbedaa405fb8f5,
         type: 3}
@@ -10463,7 +10463,7 @@ Animator:
   m_GameObject: {fileID: 8894065801087388891}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 00d5ad519347a2e4ab6a1c2c165b4280, type: 2}
+  m_Controller: {fileID: 9100000, guid: 0a3bdb5b0018fce418c7ae94fa7dab20, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
