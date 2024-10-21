@@ -12856,6 +12856,7 @@ GameObject:
   - component: {fileID: 1424993137}
   - component: {fileID: 1424993136}
   - component: {fileID: 1424993135}
+  - component: {fileID: 1424993140}
   m_Layer: 6
   m_Name: Interactable (1)
   m_TagString: DoorInteractable
@@ -13000,6 +13001,22 @@ Transform:
   - {fileID: 1398081482}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: -45, y: 90, z: 0}
+--- !u!114 &1424993140
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1424993134}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1bec1b1b981bc4346b6b8756326dd5c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spriteCollider: {fileID: 1424993134}
+  noOutlineMat: {fileID: 2100000, guid: d0fbf2de053ee294eb90ec46f32a6dde, type: 2}
+  outlineMat: {fileID: 2100000, guid: 4e0ae13635569ec4faae7fbcd37a0854, type: 2}
+  spriteEnable: {fileID: 1398081481}
 --- !u!1 &1485378991
 GameObject:
   m_ObjectHideFlags: 0
@@ -13545,10 +13562,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 592513915164948652, guid: b30325500eca0de47aae24bfb2705cd0,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 10.299988
+      objectReference: {fileID: 0}
     - target: {fileID: 4734501044021408123, guid: b30325500eca0de47aae24bfb2705cd0,
         type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5261432019548250955, guid: b30325500eca0de47aae24bfb2705cd0,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 12.799988
       objectReference: {fileID: 0}
     - target: {fileID: 7123592634569595764, guid: b30325500eca0de47aae24bfb2705cd0,
         type: 3}

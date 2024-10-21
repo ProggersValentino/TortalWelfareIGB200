@@ -852,7 +852,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &365479303
 Transform:
   m_ObjectHideFlags: 0
@@ -888,7 +888,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 4e0ae13635569ec4faae7fbcd37a0854, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1189,6 +1189,7 @@ GameObject:
   - component: {fileID: 464313235}
   - component: {fileID: 464313234}
   - component: {fileID: 464313233}
+  - component: {fileID: 464313238}
   m_Layer: 6
   m_Name: Interactable (1)
   m_TagString: DoorInteractable
@@ -1234,7 +1235,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 4e0ae13635569ec4faae7fbcd37a0854, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1333,6 +1334,22 @@ Transform:
   - {fileID: 365479303}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: -45, y: 90, z: 0}
+--- !u!114 &464313238
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 464313232}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1bec1b1b981bc4346b6b8756326dd5c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spriteCollider: {fileID: 464313232}
+  noOutlineMat: {fileID: 2100000, guid: 4e0ae13635569ec4faae7fbcd37a0854, type: 2}
+  outlineMat: {fileID: 2100000, guid: 4e0ae13635569ec4faae7fbcd37a0854, type: 2}
+  spriteEnable: {fileID: 365479302}
 --- !u!1 &510888605
 GameObject:
   m_ObjectHideFlags: 0
