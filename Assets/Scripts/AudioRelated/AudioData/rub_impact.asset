@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: rub_impact
   m_EditorClassIdentifier: 
   lookupKey: Rubbish
-  mixerOutput: {fileID: 7533356989215509070, guid: 9398e3c600910cc47acf1181a3ab73f5,
+  mixerOutput: {fileID: -5903350484686184084, guid: 9398e3c600910cc47acf1181a3ab73f5,
     type: 2}
   audio: {fileID: 8300000, guid: 512ac601b6c614b42949f0622e64e752, type: 3}
