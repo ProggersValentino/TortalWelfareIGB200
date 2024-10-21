@@ -8,7 +8,7 @@ public class RangerNPC : MonoBehaviour, IInteractable
 {
     public RangerData rangerData;
 
-    private NavMeshAgent npcBrain;
+    public NavMeshAgent npcBrain { get; private set; }
 
     private MicroTask currentTask;
     
@@ -53,6 +53,8 @@ public class RangerNPC : MonoBehaviour, IInteractable
         Debug.LogWarning(npcBrain.isStopped); 
     }
 
+    
+    
     /// <summary>
     /// we have clicked on a valid task and are doing it now
     /// </summary>
@@ -67,7 +69,7 @@ public class RangerNPC : MonoBehaviour, IInteractable
 
         yield return new WaitForSeconds(currentTask.taskData._timeToCompleteTask); //time it takes to do task
         
-        currentTask.ProcessTaskCompletion(); //completing the task
+        currentTask.ProcessTaskCompletion(currentTask.taskData._difficultyDecreaseLevel); //completing the task
         StopCoroutine(DoTask());
     }
 
@@ -80,6 +82,12 @@ public class RangerNPC : MonoBehaviour, IInteractable
     bool AtDestination(Vector3 target, Vector3 currentPos)
     {
         return Vector3.Distance(target, currentPos) <= (npcBrain.stoppingDistance - 0.5f);
+    }
+    
+    public void MoveToDest(Vector3 pos)
+    {
+        npcBrain.SetDestination(pos);
+        Debug.LogWarning("going to destination selected");
     }
     
 }

@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class Obstacles : MonoBehaviour
 {
+    
+    
     // private void OnTriggerEnter(Collider other)
     // {
     //     Debug.LogWarning("yes");
@@ -14,12 +16,7 @@ public class Obstacles : MonoBehaviour
     // {
     //     Debug.LogWarning("yes");
     // }
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    
 
     // Update is called once per frame
     void Update()

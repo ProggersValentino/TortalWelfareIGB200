@@ -23,11 +23,25 @@ public class TurtleRacePlayerSO : ScriptableObject
     {
         get { return normalSpeed; }
     }
+    
+    [SerializeField] private float normalFOV;
+    public float _normalFOV
+    {
+        get { return normalFOV; }
+    }
+    
     [SerializeField] private float slowedSpeed;
     public float _slowedSpeed
     {
         get { return slowedSpeed; }
     }
+    
+    [SerializeField] private float slowedFOV;
+    public float _slowedFOV
+    {
+        get { return slowedFOV; }
+    }
+
     
     [SerializeField] private float boostedSpeed;
     public float _boostedSpeed
@@ -35,6 +49,13 @@ public class TurtleRacePlayerSO : ScriptableObject
         get { return boostedSpeed; }
     }
 
+    [SerializeField] private float boostedFOV;
+    public float _boostedFOV
+    {
+        get { return boostedFOV; }
+    }
+    
+    
     public enum SpeedState
     {
         Slowed,
@@ -55,5 +76,20 @@ public class TurtleRacePlayerSO : ScriptableObject
         }
 
         return 0f;
+    }
+    
+    public float DetermineFOV(SpeedState speedType)
+    {
+        switch (speedType)
+        {
+            case SpeedState.Slowed:
+                return _slowedFOV;
+            case SpeedState.Normal:
+                return _normalFOV;
+            case SpeedState.Boosted:
+                return _boostedFOV;
+        }
+
+        return 60f;
     }
 }

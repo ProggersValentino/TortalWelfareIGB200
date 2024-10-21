@@ -14,8 +14,11 @@ public class ActionsEventSystem : MonoBehaviour
     public static event UnityAction<int> InitiateInjection;
     public static event UnityAction<List<GameObject>> SendReadySignal;
 
+    public static event UnityAction<bool> IsCompletingATask;
+
     public static List<GameObject> OnRetrieveMicroTasks() => RetrieveMicroTasks?.Invoke();
     public static void OnDeleteFromPersistent(string UID) => DeleteMicroTaskFromPersistent?.Invoke(UID);
     public static void OnInitiateInjection(int numberToInject) => InitiateInjection?.Invoke(numberToInject);
     public static void OnSendReadySignal(List<GameObject> newMicroTasks) => SendReadySignal?.Invoke(newMicroTasks);
+    public static void OnIsCompletingTask(bool isCompleting) => IsCompletingATask?.Invoke(isCompleting);
 }

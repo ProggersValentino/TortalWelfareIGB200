@@ -14,11 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueID: tutorial
   dialogueChain:
-  - This is the ranger convservation
-  - It was once a healthy place full of beauty...
-  - Sadly it didn't stay like that for long once people found about this place, it
-    was littered with everything imaginable
-  - 'Scaring away our gentle creatures '
+  - Now you are a conservation ranger.
+  - This beach was once a healthy place full of beauty...
+  - But sadly litter has polluted the beach badly, and its hurting the gentle turtles
+    that make their nests on this beach.
   - But now that you're here we can start making a difference!
-  - Tap a ranger then tap on the trash to guide the ranger and get them to pick it
-    up
+  - Tap on the rubbish to pick up the trash. Try it out!

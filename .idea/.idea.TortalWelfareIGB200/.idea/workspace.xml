@@ -26,7 +26,19 @@
   }
 }</component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AIRelated/AnimalBrain.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameManagerRelated/MiniGame man/TurtleFeederGameMan.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interaction/ActionEvents/GeneralMicroTaskTemplateSO.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interaction/ActionEvents/MicroTaskSO.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interaction/ActionEvents/ScareFoxMicro/Torch.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/MinigameRelated/TurtleFeederRelated/HungryTurtle.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/MinigameRelated/TurtleFeederRelated/TurtleFeederEventSystem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.inputsystem@1.7.0/InputSystem/Actions/InputActionState.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.inputsystem@1.7.0/InputSystem/InputManager.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.inputsystem@1.7.0/InputSystem/InputManagerStateMonitors.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.inputsystem@1.7.0/InputSystem/Utilities/DelegateHelpers.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.shadergraph@14.0.11/Editor/Data/Graphs/SerializableTexture.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0652bf0e14024522b5c92574ad0ef550175c00/34/0012938c/SetupCoroutine.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8
@@ -38,8 +50,9 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Attach to Unity Editor.Attach to Unity Editor.executor": "Debug",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "Peter",
+    "git-widget-placeholder": "dev",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -57,6 +70,14 @@
   }
 }]]></component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="$PROJECT_DIR$/../Builds/Prototype8DatabaseFix\IGB200TortalSquad.exe" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="C:\Uni\Semester 2 2024\IGB200\Assessment\Builds" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <method v="2" />
+    </configuration>
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2022.3.30f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-projectPath &quot;C:\Uni\Semester 2 2024\IGB200\Assessment\TortalWelfareIGB200&quot; -debugCodeOptimization" />
@@ -104,6 +125,46 @@
       <updated>1687844439985</updated>
       <workItem from="1725670769197" duration="58000" />
       <workItem from="1725670837140" duration="6529000" />
+      <workItem from="1725872714004" duration="7122000" />
+      <workItem from="1725925363867" duration="2600000" />
+      <workItem from="1725934380154" duration="796000" />
+      <workItem from="1726024676654" duration="2300000" />
+      <workItem from="1726034476334" duration="5255000" />
+      <workItem from="1726279783086" duration="339000" />
+      <workItem from="1726383904085" duration="5070000" />
+      <workItem from="1726538434453" duration="518000" />
+      <workItem from="1726613988840" duration="2223000" />
+      <workItem from="1726643427548" duration="9752000" />
+      <workItem from="1727086242001" duration="6608000" />
+      <workItem from="1727129377955" duration="1125000" />
+      <workItem from="1727130661742" duration="2418000" />
+      <workItem from="1727165025541" duration="4108000" />
+      <workItem from="1727509462869" duration="8550000" />
+      <workItem from="1727520119876" duration="124000" />
+      <workItem from="1727520579456" duration="62000" />
+      <workItem from="1727520769931" duration="709000" />
+      <workItem from="1727683743352" duration="2130000" />
+      <workItem from="1727687806458" duration="6433000" />
+      <workItem from="1727748901592" duration="2155000" />
+      <workItem from="1727782023354" duration="3503000" />
+      <workItem from="1727828423669" duration="103000" />
+      <workItem from="1727828543909" duration="4146000" />
+      <workItem from="1728096607229" duration="5000" />
+      <workItem from="1728199024382" duration="9362000" />
+      <workItem from="1728275811826" duration="6150000" />
+      <workItem from="1728351682810" duration="627000" />
+      <workItem from="1728434628056" duration="481000" />
+      <workItem from="1728462300091" duration="7443000" />
+      <workItem from="1728642882483" duration="4473000" />
+      <workItem from="1728704505999" duration="140000" />
+      <workItem from="1728949885995" duration="147000" />
+      <workItem from="1728950141130" duration="8108000" />
+      <workItem from="1729037259555" duration="93000" />
+      <workItem from="1729037369329" duration="9468000" />
+      <workItem from="1729300247038" duration="4199000" />
+      <workItem from="1729306475433" duration="11224000" />
+      <workItem from="1729394833269" duration="995000" />
+      <workItem from="1729504154952" duration="807000" />
     </task>
     <servers />
   </component>

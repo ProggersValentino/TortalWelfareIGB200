@@ -31,7 +31,15 @@ public class Finishline : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         if(other.TryGetComponent(out RacerAI AI) || other.TryGetComponent(out MiniGamePlayer player))
+        {
             AddToFinishedRacers(other.gameObject);
+
+            if (AI != null) AI.gameObject.SetActive(false);
+        }
+        
+        
+
+        
     }
 
     public int FindPlayerPlacement()
