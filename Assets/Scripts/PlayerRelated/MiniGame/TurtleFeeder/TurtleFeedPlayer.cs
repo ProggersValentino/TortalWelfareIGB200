@@ -96,4 +96,13 @@ public class TurtleFeedPlayer : MonoBehaviour
     {
         playerInput.actions.FindActionMap("MinigameActions").Enable();
     }
+
+    public void TrashCurrentInteractable()
+    {
+        if (interactable.CompareTag("Rubbish"))
+        {
+            isBeingGrabbed = false;
+            Destroy(interactable);
+        }
+    }
 }
