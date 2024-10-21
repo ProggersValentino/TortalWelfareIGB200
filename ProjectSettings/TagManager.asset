@@ -5,6 +5,13 @@ TagManager:
   serializedVersion: 2
   tags:
   - DoorInteractable
+  - Fox
+  - ClickDraggable
+  - Food
+  - Rubbish
+  - NorthWall
+  - SouthWall
+  - WestWall
   layers:
   - Default
   - TransparentFX
@@ -13,9 +20,9 @@ TagManager:
   - Water
   - UI
   - DoorInteractable
-  - 
-  - 
-  - 
+  - wall
+  - NoPost
+  - Particles
   - 
   - 
   - 
@@ -41,4 +48,28 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Base
+    uniqueID: 3488140107
+    locked: 0
+  - name: Water
+    uniqueID: 1805003805
+    locked: 0
+  - name: Trash
+    uniqueID: 2169959323
+    locked: 0
+  - name: Environ Behind
+    uniqueID: 1437853073
+    locked: 0
+  - name: Player
+    uniqueID: 537029301
+    locked: 0
+  - name: Inside
+    uniqueID: 2010690615
+    locked: 0
+  - name: Outside
+    uniqueID: 3770401949
+    locked: 0
+  - name: Environ Front
+    uniqueID: 2013090479
     locked: 0

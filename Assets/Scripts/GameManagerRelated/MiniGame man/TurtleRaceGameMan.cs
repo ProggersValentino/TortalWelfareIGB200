@@ -10,7 +10,9 @@ using Random = UnityEngine.Random;
 public class TurtleRaceGameMan : MonoBehaviour
 {
     public GameObject obstaclePref;
-   
+
+    public List<GameObject> obstacles = new List<GameObject>();
+    
     //racer related
     public GameObject racer;
     public Transform goal;
@@ -33,6 +35,7 @@ public class TurtleRaceGameMan : MonoBehaviour
     public GameObject endUI;
     public TextMeshProUGUI timerResult;
     public TextMeshProUGUI placeResult;
+    public TextMeshProUGUI coinsEarnedResult;
 
     //private SQLiteTest yes;
     
@@ -40,11 +43,13 @@ public class TurtleRaceGameMan : MonoBehaviour
     {
         FL.processEnd.AddListener(ProcessEndOfMinigame);
         SceneManager.sceneLoaded += InitMinigameWhenSceneLoaded;
+        TimerEventManager.TimerCompleted += CountDownCompletedc;
     }
 
     private void OnDisable()
     {
         SceneManager.sceneLoaded -= InitMinigameWhenSceneLoaded;
+        TimerEventManager.TimerCompleted -= CountDownCompletedc;
     }
 
     // Start is called before the first frame update
@@ -65,14 +70,25 @@ public class TurtleRaceGameMan : MonoBehaviour
     {
         Debug.LogWarning($"scene is laoded heeeeee {scene.name}");
         
-        SummonObstacles(obstaclePref);
-        SummonRacers(racer);
-        TimerEventManager.OnTimerStart();
         
+        //start countdown
+        TimerEventManager.OnTimerStart(RaceTimer.TimerType.countdown);
+        
+        
+        SummonObstacles(obstaclePref);
+                
+        AudioEventSystem.OnStopAllAudio(); //stops all audio to reset it for new scene
         
         //yes = racer.AddComponent<SQLiteTest>();
 
         //SQLiteTest.pullFromDataBase("SELECT * FROM Stocks");
+    }
+
+    public void CountDownCompletedc()
+    {
+        SummonRacers(racer);
+        TimerEventManager.OnTimerStart(RaceTimer.TimerType.stopwatch);
+
     }
 
     /// <summary>
@@ -98,13 +114,17 @@ public class TurtleRaceGameMan : MonoBehaviour
         
         for (int i = 0; i < amountToSummon; i++)
         {
+            AudioEventSystem.OnPlayAudio("TurtleRaceMusic");
             Vector3 randomPoint = new Vector3(Random.Range(startSpawnPoint.position.x, endSpawmPoint.position.x),
-                0.2f,
+                0.15f,
                 Random.Range(startSpawnPoint.position.z, endSpawmPoint.position.z));
 
-            GameObject ob = Instantiate(obstaclePref, randomPoint, obstaclePref.transform.rotation);
+            GameObject go = obstacles[Random.Range(0, obstacles.Count - 1)];
+            
+            GameObject ob = Instantiate(go, randomPoint, go.transform.rotation);
             
             ob.transform.SetParent(transform, true);
+
         }
     }
 
@@ -121,6 +141,7 @@ public class TurtleRaceGameMan : MonoBehaviour
             RacerAI AI = racer.GetComponent<RacerAI>();
 
             AI.SetAIDestination(goal);
+            // AI.SetOverallNewDestination(goal.position);
         }
     }
     
@@ -136,10 +157,35 @@ public class TurtleRaceGameMan : MonoBehaviour
         placeResult.text = FL.FindPlayerPlacement().ToString();
         endUI.SetActive(true);
         ChangeTimeScale(0f);
+
+        int overallScore = (int)(1000 / (RT.timerToDisplay * FL.FindPlayerPlacement()));
         
-        //TODO: do a reward system that gives the player a reward and adds it to inventory
+        HowMuchWasEarned(overallScore);
+        
+        if(FL.FindPlayerPlacement() <= 3) AudioEventSystem.OnPlayAudio("RaceWinSFX");
+        else AudioEventSystem.OnPlayAudio("RaceLoseSFX");
+        
     }
 
+    
+    public void HowMuchWasEarned(int score)
+    {
+        int moneyEarned = score;
+        int newMoneyValue = 0;
+        
+        
+        if(moneyEarned > 0)
+        {
+            newMoneyValue = moneyEarned + SQLiteTest.PullPlayersMoney(1);
+            
+            Debug.LogWarning($"the new money value is {newMoneyValue}");
+        }
+
+        coinsEarnedResult.text = moneyEarned.ToString();
+        
+        SQLiteTest.UpdatePlayersMoney(1, newMoneyValue);
+    }
+    
     public void ChangeTimeScale(float value)
     {
         Time.timeScale = value;

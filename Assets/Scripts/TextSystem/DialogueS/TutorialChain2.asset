@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueID: tutorial
   dialogueChain:
-  - Well done! now that you understand movement basics lets put you in a mini game
-  - it'll be really tough so buckle in!
+  - Well done! Now that you understand how to move around, lets try out a minigame.
+  - It'll be really tough so buckle in!

@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.Events;
@@ -10,6 +11,8 @@ using Random = UnityEngine.Random;
 
 public class GameManager : MonoBehaviour
 {
+    public TextMeshProUGUI money;
+    
     public Image difficultyBarUI;
     
     public GameObject microTaskPref;
@@ -24,11 +27,13 @@ public class GameManager : MonoBehaviour
     private void OnEnable()
     {
         ActionsEventSystem.SendReadySignal += SummonMicroTasks;
+        SceneManager.sceneLoaded += ReadyMicroTasks;
     }
 
     private void OnDisable()
     {
         ActionsEventSystem.SendReadySignal -= SummonMicroTasks;
+        SceneManager.sceneLoaded -= ReadyMicroTasks;
     }
 
     private void Awake()
@@ -42,6 +47,7 @@ public class GameManager : MonoBehaviour
         // MultipleSceneManager.SetActiveScene("RangerPerspective");  
         // thingsToSpawn = ActionsEventSystem.OnRetrieveMicroTasks();
         // SummonMicroTasks(thingsToSpawn);
+        AudioEventSystem.OnPlayAudio("AmbienceMusic");
     }
 
     // Update is called once per frame
@@ -78,11 +84,25 @@ public class GameManager : MonoBehaviour
         
     }
 
-    public void ReadyMicroTasks()
+    public void ReadyMicroTasks(Scene arg0, LoadSceneMode loadSceneMode)
     {
         thingsToSpawn = ActionsEventSystem.OnRetrieveMicroTasks();
+
+        // Debug.LogWarning($"we are spawning in {thingsToSpawn.Count}");
+        //
+        // if (thingsToSpawn == null) return;
+        // foreach (GameObject microTask in thingsToSpawn)
+        // {
+        //     GameObject returningTask =
+        //         Instantiate(microTask, microTask.transform.position, microTask.transform.rotation);
+        //     
+        //     returningTask.transform.SetParent(transform, true); //to prevent it from running away to the other active scenes (pain)
+        // }
+        //
+
+        money.text = SQLiteTest.PullPlayersMoney(1).ToString();
         
-        SummonMicroTasks(thingsToSpawn);
+        if(thingsToSpawn != null) SummonMicroTasks(thingsToSpawn);
     }
     
     

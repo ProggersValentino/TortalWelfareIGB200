@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueID: tutorial
   dialogueChain:
-  - See how much easier that was, you crushed it!
-  - Doing these mini games earn rewards that can be used both here and on the ranger
-    conservation to better help you and these little turtles
-  - And thats really about it. Its all on you now to help save these precious creatures
+  - See how much easier that was? You crushed it!
+  - Doing these minigames will earn you sand dollars!
+  - Once you've earned enough sand dollars, you can fully clean up the beach and
+    save these cute turtles.
+  - Its all on you now! Good luck and I believe in you!
