@@ -11,7 +11,7 @@ public class PositionInWorld : MonoBehaviour
     
     private void Awake()
     {
-        
+        objectToMove.transform.position = mainCam.ScreenToWorldPoint(new Vector3(Screen.width, 0.0f, 20f));
     }
 
 

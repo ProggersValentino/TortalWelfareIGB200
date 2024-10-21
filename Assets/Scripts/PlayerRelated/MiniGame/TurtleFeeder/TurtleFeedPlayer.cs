@@ -14,7 +14,7 @@ public class TurtleFeedPlayer : MonoBehaviour
 
     public Image inventorySlot;
     
-    private GameObject interactable;
+    private Food interactable;
     private bool isBeingGrabbed;
     
     public GameObject refffer;
@@ -69,13 +69,14 @@ public class TurtleFeedPlayer : MonoBehaviour
 
         if (Physics.Raycast(ray, out RaycastHit hit))
         {
-            if (hit.collider.CompareTag("Food") || hit.collider.CompareTag("Rubbish"))
+            if (hit.collider.TryGetComponent(out Food fod)) //(hit.collider.CompareTag("Food") || hit.collider.CompareTag("Rubbish"))
             {
                 Debug.LogWarning($"the object we can interact with is {hit.collider.gameObject.name}");
-                interactable = hit.collider.gameObject;
+                interactable = fod;
+                interactable.isGettingPickedUp = true;
             }
             
-            else if(!isBeingGrabbed) interactable = null; 
+           // else if(!interactable.isGettingPickedUp && interactable) interactable = null; 
         }
     }
 
@@ -89,7 +90,14 @@ public class TurtleFeedPlayer : MonoBehaviour
 
     public void ClickDragRelease(InputAction.CallbackContext context)
     {
+        if (interactable)
+        {
+            interactable.isGettingPickedUp = false;    
+            interactable = null;
+        }
+        
         isBeingGrabbed = false;
+
     }
     
     public void ActivateInput()
@@ -99,10 +107,11 @@ public class TurtleFeedPlayer : MonoBehaviour
 
     public void TrashCurrentInteractable()
     {
-        if (interactable.CompareTag("Rubbish"))
+        if (interactable.CompareTag("Rubbish") && Input.GetMouseButtonUp(0))
         {
             isBeingGrabbed = false;
             Destroy(interactable);
+            interactable = null;
         }
     }
 }
