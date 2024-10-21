@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueID: tutorial
   dialogueChain:
-  - Wow, well done! Although all that trash was slowing you down huh?
-  - I know the perfect place to fix that! Tap on the profile icon in the top left
-    of the screen to get started.
+  - Wow, well done! Although all that trash was slowing you down, huh?
+  - I know the perfect way to fix that! Tap on the profile icon in the top left of
+    the screen to get started.

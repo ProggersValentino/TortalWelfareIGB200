@@ -15,5 +15,5 @@ MonoBehaviour:
   dialogueID: tutorial
   dialogueChain:
   - Hello! My name is Ranger Goob and welcome to Turtle Welfare!
-  - See that turtle there? That's you! To move around try clicking somewhere on screen
-    you want to move to.
+  - See that turtle there? That's you! To move around, try clicking somewhere on
+    screen.

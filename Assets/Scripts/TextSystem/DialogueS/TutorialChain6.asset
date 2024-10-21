@@ -15,7 +15,7 @@ MonoBehaviour:
   dialogueID: tutorial
   dialogueChain:
   - See how much easier that was? You crushed it!
-  - Doing these minigame will earn you rewards that can be used to better help you
-    clean the beach and save these cute turtles.
-  - Its all on you now to help save these precious creatures! Good luck and I believe
-    in you!
+  - Doing these minigames will earn you sand dollars!
+  - Once you've earned enough sand dollars, you can fully clean up the beach and
+    save these cute turtles.
+  - Its all on you now! Good luck and I believe in you!

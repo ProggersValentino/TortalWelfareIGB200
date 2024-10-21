@@ -14,9 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueID: tutorial
   dialogueChain:
-  - You see that bar on the right? That shows how much pollution there is in the
-    habitat.
-  - The lower the bar is, the less pollution and healthier the beach is!
+  - You see that bar on the right? That shows how much pollution there is on the
+    beach.
+  - The lower that bar is, the less pollution and healthier the beach is!
   - However, the pollution won't stop that easily. You'll need to keep cleaning the
     beach to make sure that pollution stays low!
   - Now tap the profile icon again to jump back to the turtle perspective.
