@@ -61,7 +61,7 @@ public class MicroTask : MonoBehaviour
         
         
         AudioEventSystem.OnPlayAudio("Confirm_Press");
-        ProcessTaskCompletion(-20);
+        ProcessTaskCompletion(taskData._difficultyDecreaseLevel);
     }
     
 

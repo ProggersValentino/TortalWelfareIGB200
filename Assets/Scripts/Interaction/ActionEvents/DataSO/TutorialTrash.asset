@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: TutorialTrash
   m_EditorClassIdentifier: 
   taskSprite: {fileID: 21300000, guid: 5677493dfe60c314cbd7fb42409c8976, type: 3}
-  difficultyDecreaseLevel: -70
+  difficultyDecreaseLevel: -80
   difficultyIncreaseLevel: 0
   timeToCompleteTask: 2
