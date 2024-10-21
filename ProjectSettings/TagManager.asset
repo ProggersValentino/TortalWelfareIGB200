@@ -58,10 +58,7 @@ TagManager:
   - name: Trash
     uniqueID: 2169959323
     locked: 0
-  - name: New Layer 4
-    uniqueID: 1827943863
-    locked: 0
-  - name: New Layer 5
+  - name: Environ Behind
     uniqueID: 1437853073
     locked: 0
   - name: Player
@@ -72,4 +69,7 @@ TagManager:
     locked: 0
   - name: Outside
     uniqueID: 3770401949
+    locked: 0
+  - name: Environ Front
+    uniqueID: 2013090479
     locked: 0
