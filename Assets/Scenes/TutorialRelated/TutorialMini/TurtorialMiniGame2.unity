@@ -193,7 +193,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 537029301
-  m_SortingLayer: 6
+  m_SortingLayer: 5
   m_SortingOrder: 10
   m_Sprite: {fileID: 21300000, guid: 54187bba7a82dfb43989873f7feee47a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -924,7 +924,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 537029301
-  m_SortingLayer: 6
+  m_SortingLayer: 5
   m_SortingOrder: 10
   m_Sprite: {fileID: 21300000, guid: 55642687214e78644b9a9f6bdd8b9ef0, type: 3}
   m_Color: {r: 0, g: 0, b: 0, a: 1}
@@ -1574,7 +1574,7 @@ MonoBehaviour:
   m_LookAt: {fileID: 0}
   m_Follow: {fileID: 1810109151}
   m_Lens:
-    FieldOfView: 59.98856
+    FieldOfView: 50
     OrthographicSize: 5
     NearClipPlane: 0.3
     FarClipPlane: 1000
@@ -2225,7 +2225,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 537029301
-  m_SortingLayer: 6
+  m_SortingLayer: 5
   m_SortingOrder: 10
   m_Sprite: {fileID: 21300000, guid: 5f36954e2cd703d45b36711c106b495d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -2562,7 +2562,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 59.98856
+  field of view: 50
   orthographic: 0
   orthographic size: 5
   m_Depth: -1
@@ -3546,6 +3546,55 @@ MonoBehaviour:
   ScenesToUnload:
   - m_SceneAsset: {fileID: 102900000, guid: 8e3f61c31b1b215479cf22f2b54e17c2, type: 3}
     m_SceneName: TurtorialMiniGame2
+--- !u!1 &1329689287
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1329689289}
+  - component: {fileID: 1329689288}
+  m_Layer: 0
+  m_Name: Global Volume
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &1329689288
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1329689287}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 172515602e62fb746b5d573b38a5fe58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IsGlobal: 1
+  priority: 0
+  blendDistance: 0
+  weight: 1
+  sharedProfile: {fileID: 11400000, guid: e4c4b7ce137abc44bb0db2cd2ac11740, type: 2}
+--- !u!4 &1329689289
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1329689287}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -22.055172, y: -10.625427, z: -9.714649}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1345968732
 GameObject:
   m_ObjectHideFlags: 0
@@ -4845,7 +4894,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 128
   cam: {fileID: 508740278}
-  pp: {fileID: 0}
+  pp: {fileID: 1329689287}
   obstructions:
   - {fileID: 259458348}
   - {fileID: 750294552}
@@ -5457,7 +5506,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 537029301
-  m_SortingLayer: 6
+  m_SortingLayer: 5
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 24efefca9bf1e2a4ba67b56c6f6ea0f4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -6041,7 +6090,7 @@ PrefabInstance:
     - target: {fileID: -8621038777829357485, guid: d566ce47b3f371a4e8dbedaa405fb8f5,
         type: 3}
       propertyPath: m_SortingLayer
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: -8621038777829357485, guid: d566ce47b3f371a4e8dbedaa405fb8f5,
         type: 3}
@@ -6121,7 +6170,7 @@ PrefabInstance:
     - target: {fileID: -6613274319417986525, guid: d566ce47b3f371a4e8dbedaa405fb8f5,
         type: 3}
       propertyPath: m_SortingLayer
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: -6613274319417986525, guid: d566ce47b3f371a4e8dbedaa405fb8f5,
         type: 3}
@@ -6131,7 +6180,7 @@ PrefabInstance:
     - target: {fileID: -4063391785377352444, guid: d566ce47b3f371a4e8dbedaa405fb8f5,
         type: 3}
       propertyPath: m_SortingLayer
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: -4063391785377352444, guid: d566ce47b3f371a4e8dbedaa405fb8f5,
         type: 3}
@@ -6518,3 +6567,4 @@ SceneRoots:
   - {fileID: 460608694}
   - {fileID: 328264108}
   - {fileID: 9763902}
+  - {fileID: 1329689289}
