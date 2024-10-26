@@ -940,7 +940,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: EXIT
+  m_text: EXIT GAME
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c09ee6d36e138f94dbf37ce60e68582e, type: 2}
   m_sharedMaterial: {fileID: 5715111878098099456, guid: c09ee6d36e138f94dbf37ce60e68582e,
@@ -1439,7 +1439,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: -328.1, y: -2.800003}
-  m_SizeDelta: {x: 55, y: 25}
+  m_SizeDelta: {x: 125, y: 30}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &921699889
 MonoBehaviour:
@@ -1484,7 +1484,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 921699890}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 921699892}
+        m_TargetAssemblyTypeName: ChangeScene, Assembly-CSharp
+        m_MethodName: doExitGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &921699890
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1533,7 +1545,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 921699887}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6bba81e65b49b664b9b6c42decea6c47, type: 3}
+  m_Script: {fileID: 11500000, guid: 6129aa4fe67132547b370202a8754d11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &938800568
