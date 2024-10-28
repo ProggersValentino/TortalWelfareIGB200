@@ -73,3 +73,6 @@ TagManager:
   - name: Environ Front
     uniqueID: 2013090479
     locked: 0
+  - name: Environ front bubble
+    uniqueID: 2615071759
+    locked: 0
