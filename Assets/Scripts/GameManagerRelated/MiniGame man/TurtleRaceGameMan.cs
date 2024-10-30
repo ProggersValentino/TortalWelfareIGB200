@@ -24,6 +24,7 @@ public class TurtleRaceGameMan : MonoBehaviour
     public List<GameObject> racers;  
 
     [Range(0, 3)] public float multiplierEnhancer = 1;
+    [Range(0, 3)] public float multiplierScore = 1;
 
     public Transform startSpawnPoint;
     public Transform endSpawmPoint;
