@@ -111,6 +111,8 @@ public class TurtleRaceGameMan : MonoBehaviour
     {
         int amountToSummon = DetermineObstacleCount();
         
+        if(amountToSummon <= 0) amountToSummon = obstacles.Count * (int)multiplierEnhancer;  
+        
         Debug.Log("yes we are spawn obs");
         
         for (int i = 0; i < amountToSummon; i++)
@@ -159,7 +161,7 @@ public class TurtleRaceGameMan : MonoBehaviour
         endUI.SetActive(true);
         ChangeTimeScale(0f);
 
-        int overallScore = (int)(1000 / (RT.timerToDisplay * FL.FindPlayerPlacement()));
+        int overallScore = (int)((1000) / (RT.timerToDisplay * FL.FindPlayerPlacement() / multiplierScore));
         
         HowMuchWasEarned(overallScore);
         

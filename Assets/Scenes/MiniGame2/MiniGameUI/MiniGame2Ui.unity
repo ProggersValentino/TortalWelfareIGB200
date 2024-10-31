@@ -2688,6 +2688,7 @@ GameObject:
   - component: {fileID: 1261618512}
   - component: {fileID: 1261618511}
   - component: {fileID: 1261618510}
+  - component: {fileID: 1261618513}
   m_Layer: 5
   m_Name: Play Easy
   m_TagString: Untagged
@@ -2708,6 +2709,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2101704118}
+  - {fileID: 1405661117}
   m_Father: {fileID: 1761187831}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
@@ -2759,7 +2761,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1761187832}
+      - m_Target: {fileID: 1261618513}
         m_TargetAssemblyTypeName: MultipleSceneManager, Assembly-CSharp
         m_MethodName: SetNewSceneAsActive
         m_Mode: 1
@@ -2835,6 +2837,24 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1261618508}
   m_CullTransparentMesh: 1
+--- !u!114 &1261618513
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1261618508}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19f98be12fc305242be3e3c01ee766db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ScenesToLoad:
+  - m_SceneAsset: {fileID: 102900000, guid: f80cac304300adb4c8d16b480ecc1ede, type: 3}
+    m_SceneName: MiniGame2
+  ScenesToUnload:
+  - m_SceneAsset: {fileID: 102900000, guid: bd602d59d7947e14b99dd118bb757e4f, type: 3}
+    m_SceneName: MiniGame2Ui
 --- !u!1 &1295204610
 GameObject:
   m_ObjectHideFlags: 0
@@ -3117,6 +3137,7 @@ GameObject:
   - component: {fileID: 1405661120}
   - component: {fileID: 1405661119}
   - component: {fileID: 1405661118}
+  - component: {fileID: 1405661121}
   m_Layer: 5
   m_Name: Play HARD
   m_TagString: Untagged
@@ -3133,15 +3154,15 @@ RectTransform:
   m_GameObject: {fileID: 1405661116}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.5516, y: 1.5516, z: 1.5516}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1734759187}
-  m_Father: {fileID: 1761187831}
+  m_Father: {fileID: 1261618509}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 176.7273, y: 0}
   m_SizeDelta: {x: 160, y: 100}
   m_Pivot: {x: 1, y: 0.5}
 --- !u!114 &1405661118
@@ -3183,12 +3204,12 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 0
+  m_Interactable: 1
   m_TargetGraphic: {fileID: 1405661119}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1761187832}
+      - m_Target: {fileID: 1405661121}
         m_TargetAssemblyTypeName: MultipleSceneManager, Assembly-CSharp
         m_MethodName: SetNewSceneAsActive
         m_Mode: 1
@@ -3264,6 +3285,24 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1405661116}
   m_CullTransparentMesh: 1
+--- !u!114 &1405661121
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1405661116}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19f98be12fc305242be3e3c01ee766db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ScenesToLoad:
+  - m_SceneAsset: {fileID: 102900000, guid: f80cac304300adb4c8d16b480ecc1ede, type: 3}
+    m_SceneName: MiniGame2
+  ScenesToUnload:
+  - m_SceneAsset: {fileID: 102900000, guid: 050893a9669f2bc4ebc33e37166c8c62, type: 3}
+    m_SceneName: HardMiniGame2
 --- !u!1 &1429052484
 GameObject:
   m_ObjectHideFlags: 0
@@ -4320,7 +4359,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1761187831}
-  - component: {fileID: 1761187832}
   m_Layer: 5
   m_Name: TitleScreen
   m_TagString: Untagged
@@ -4342,7 +4380,6 @@ RectTransform:
   m_Children:
   - {fileID: 175401375}
   - {fileID: 1261618509}
-  - {fileID: 1405661117}
   - {fileID: 148599942}
   - {fileID: 1354783303}
   m_Father: {fileID: 1562902203}
@@ -4352,24 +4389,6 @@ RectTransform:
   m_AnchoredPosition: {x: -104.0556, y: -91.18729}
   m_SizeDelta: {x: 314.35483, y: 181.26178}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1761187832
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1761187830}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 19f98be12fc305242be3e3c01ee766db, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ScenesToLoad:
-  - m_SceneAsset: {fileID: 102900000, guid: f80cac304300adb4c8d16b480ecc1ede, type: 3}
-    m_SceneName: MiniGame2
-  ScenesToUnload:
-  - m_SceneAsset: {fileID: 102900000, guid: bd602d59d7947e14b99dd118bb757e4f, type: 3}
-    m_SceneName: MiniGame2Ui
 --- !u!1 &1999785106
 GameObject:
   m_ObjectHideFlags: 0
@@ -4588,7 +4607,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1761187832}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: MultipleSceneManager, Assembly-CSharp
         m_MethodName: SetNewSceneAsActive
         m_Mode: 1
