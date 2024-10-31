@@ -2574,7 +2574,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: a70c4130b859b0e4eae26df5e023b401, type: 3}
   rubbishRef: {fileID: 7975794405566715185, guid: 4a85a50aee7a88c418d7ed7c2f4561cd,
     type: 3}
-  multiplier: 1.25
+  multiplier: 0.95
   spawnPerSeconds: 1.5
 --- !u!1 &963194225
 GameObject:
@@ -3321,7 +3321,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: a70c4130b859b0e4eae26df5e023b401, type: 3}
   rubbishRef: {fileID: 7975794405566715185, guid: 4a85a50aee7a88c418d7ed7c2f4561cd,
     type: 3}
-  multiplier: 1.25
+  multiplier: 0.95
   spawnPerSeconds: 1.5
 --- !u!1 &1236467185
 GameObject:
