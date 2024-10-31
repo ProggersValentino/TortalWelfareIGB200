@@ -3316,11 +3316,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScenesToLoad:
-  - m_SceneAsset: {fileID: 102900000, guid: 0595b652b86b87e49a59fee2dc639a4d, type: 3}
-    m_SceneName: MiniGame1
-  ScenesToUnload:
   - m_SceneAsset: {fileID: 102900000, guid: f813f2c9b60187641ba219c815dbc589, type: 3}
     m_SceneName: HardMiniGame1
+  ScenesToUnload:
+  - m_SceneAsset: {fileID: 102900000, guid: b37d00fe39ec05c41906e74d378dd2d1, type: 3}
+    m_SceneName: MiniGame1Ui
 --- !u!1 &1247941616
 GameObject:
   m_ObjectHideFlags: 0
