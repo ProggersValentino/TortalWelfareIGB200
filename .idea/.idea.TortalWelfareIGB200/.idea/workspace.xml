@@ -5,16 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="68d6ce5a-7462-47c9-ab06-87d1cfaf8aab" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.TortalWelfareIGB200/.idea/projectSettingsUpdater.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TortalWelfareIGB200/.idea/projectSettingsUpdater.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TortalWelfareIGB200/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TortalWelfareIGB200/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MiniGame/Easy/MiniGame1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MiniGame/Easy/MiniGame1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MiniGame/Hard/HardMiniGame1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MiniGame/Hard/HardMiniGame1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MiniGame2/MiniGame2.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MiniGame2/MiniGame2.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/TutorialRelated/TutorialMini/TurtorialMiniGame1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/TutorialRelated/TutorialMini/TurtorialMiniGame1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/TutorialRelated/TutorialMini/TurtorialMiniGame2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/TutorialRelated/TutorialMini/TurtorialMiniGame2.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManagerRelated/MiniGame man/TurtleRaceGameMan.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameManagerRelated/MiniGame man/TurtleRaceGameMan.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/TutorialRelated/DialogueTurtlePerspective.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/TutorialRelated/DialogueTurtlePerspective.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +67,7 @@
 }]]></component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="$PROJECT_DIR$/../Buids/TortalWelfare/FinalSubmission2/IGB200TortalSquad.exe" />
+      <option name="EXE_PATH" value="$PROJECT_DIR$/../Buids/TortalWelfare/TortalWelfare_FinalProduct\IGB200TortalSquad.exe" />
       <option name="PROGRAM_PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="C:\Uni\Semester 2 2024\IGB200\Assessment\Builds" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -170,7 +162,7 @@
       <workItem from="1729394833269" duration="995000" />
       <workItem from="1729504154952" duration="807000" />
       <workItem from="1729518311436" duration="325000" />
-      <workItem from="1730364829239" duration="1148000" />
+      <workItem from="1730364829239" duration="3537000" />
     </task>
     <servers />
   </component>

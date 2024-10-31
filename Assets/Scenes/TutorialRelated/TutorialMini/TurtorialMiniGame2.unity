@@ -2379,7 +2379,7 @@ MonoBehaviour:
   obstaclePref: {fileID: 4539771526463429180, guid: 53c174a105383b340a9d1f386fc44d08,
     type: 3}
   obstacles:
-  - {fileID: 4539771526463429180, guid: b48620986ce74fa4aabf5c384ff04a24, type: 3}
+  - {fileID: 4539771526463429180, guid: 7d484e4bef27d5d4faf1ea358c0b88d8, type: 3}
   - {fileID: 4539771526463429180, guid: 7e694f883a232294daa43e03624349a3, type: 3}
   - {fileID: 4539771526463429180, guid: 53c174a105383b340a9d1f386fc44d08, type: 3}
   - {fileID: 4539771526463429180, guid: 7d484e4bef27d5d4faf1ea358c0b88d8, type: 3}
