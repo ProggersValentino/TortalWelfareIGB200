@@ -6118,6 +6118,74 @@ MonoBehaviour:
   m_DefaultActionMap: PlayerActions
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!1001 &461280300
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4310661497963661424, guid: 29be39c2bceca3f46ab51ce859342ea2,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -7.796096
+      objectReference: {fileID: 0}
+    - target: {fileID: 4310661497963661424, guid: 29be39c2bceca3f46ab51ce859342ea2,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.768028
+      objectReference: {fileID: 0}
+    - target: {fileID: 4310661497963661424, guid: 29be39c2bceca3f46ab51ce859342ea2,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 13.25382
+      objectReference: {fileID: 0}
+    - target: {fileID: 4310661497963661424, guid: 29be39c2bceca3f46ab51ce859342ea2,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4310661497963661424, guid: 29be39c2bceca3f46ab51ce859342ea2,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4310661497963661424, guid: 29be39c2bceca3f46ab51ce859342ea2,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4310661497963661424, guid: 29be39c2bceca3f46ab51ce859342ea2,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4310661497963661424, guid: 29be39c2bceca3f46ab51ce859342ea2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4310661497963661424, guid: 29be39c2bceca3f46ab51ce859342ea2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4310661497963661424, guid: 29be39c2bceca3f46ab51ce859342ea2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7299897634191294023, guid: 29be39c2bceca3f46ab51ce859342ea2,
+        type: 3}
+      propertyPath: m_Name
+      value: Fish Spawner
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 29be39c2bceca3f46ab51ce859342ea2, type: 3}
 --- !u!1 &523896871
 GameObject:
   m_ObjectHideFlags: 0
@@ -8709,7 +8777,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 537029301
-  m_SortingLayer: 6
+  m_SortingLayer: 5
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: b9c851da6bf003e48a28d82bb7dbbc7e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -9118,7 +9186,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 537029301
-  m_SortingLayer: 6
+  m_SortingLayer: 5
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: b9c851da6bf003e48a28d82bb7dbbc7e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -20266,3 +20334,4 @@ SceneRoots:
   - {fileID: 811439614}
   - {fileID: 1506974052}
   - {fileID: 895646387}
+  - {fileID: 461280300}
