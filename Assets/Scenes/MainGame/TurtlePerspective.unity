@@ -22164,6 +22164,74 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1353763780}
   m_LocalEulerAnglesHint: {x: -45, y: 90, z: 0}
+--- !u!1001 &427575832127818586
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4310661497963661424, guid: 29be39c2bceca3f46ab51ce859342ea2,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -7.796096
+      objectReference: {fileID: 0}
+    - target: {fileID: 4310661497963661424, guid: 29be39c2bceca3f46ab51ce859342ea2,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.768028
+      objectReference: {fileID: 0}
+    - target: {fileID: 4310661497963661424, guid: 29be39c2bceca3f46ab51ce859342ea2,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 13.25382
+      objectReference: {fileID: 0}
+    - target: {fileID: 4310661497963661424, guid: 29be39c2bceca3f46ab51ce859342ea2,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4310661497963661424, guid: 29be39c2bceca3f46ab51ce859342ea2,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4310661497963661424, guid: 29be39c2bceca3f46ab51ce859342ea2,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4310661497963661424, guid: 29be39c2bceca3f46ab51ce859342ea2,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4310661497963661424, guid: 29be39c2bceca3f46ab51ce859342ea2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4310661497963661424, guid: 29be39c2bceca3f46ab51ce859342ea2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4310661497963661424, guid: 29be39c2bceca3f46ab51ce859342ea2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7299897634191294023, guid: 29be39c2bceca3f46ab51ce859342ea2,
+        type: 3}
+      propertyPath: m_Name
+      value: Fish Spawner
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 29be39c2bceca3f46ab51ce859342ea2, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -22184,3 +22252,4 @@ SceneRoots:
   - {fileID: 1114453751}
   - {fileID: 1513557935}
   - {fileID: 1581681073}
+  - {fileID: 427575832127818586}

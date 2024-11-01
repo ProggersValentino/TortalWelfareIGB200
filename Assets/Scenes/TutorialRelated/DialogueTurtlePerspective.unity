@@ -1305,6 +1305,74 @@ MonoBehaviour:
   m_DefaultActionMap: PlayerActions
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!1001 &461280300
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4310661497963661424, guid: 29be39c2bceca3f46ab51ce859342ea2,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -7.796096
+      objectReference: {fileID: 0}
+    - target: {fileID: 4310661497963661424, guid: 29be39c2bceca3f46ab51ce859342ea2,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.768028
+      objectReference: {fileID: 0}
+    - target: {fileID: 4310661497963661424, guid: 29be39c2bceca3f46ab51ce859342ea2,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 13.25382
+      objectReference: {fileID: 0}
+    - target: {fileID: 4310661497963661424, guid: 29be39c2bceca3f46ab51ce859342ea2,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4310661497963661424, guid: 29be39c2bceca3f46ab51ce859342ea2,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4310661497963661424, guid: 29be39c2bceca3f46ab51ce859342ea2,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4310661497963661424, guid: 29be39c2bceca3f46ab51ce859342ea2,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4310661497963661424, guid: 29be39c2bceca3f46ab51ce859342ea2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4310661497963661424, guid: 29be39c2bceca3f46ab51ce859342ea2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4310661497963661424, guid: 29be39c2bceca3f46ab51ce859342ea2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7299897634191294023, guid: 29be39c2bceca3f46ab51ce859342ea2,
+        type: 3}
+      propertyPath: m_Name
+      value: Fish Spawner
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 29be39c2bceca3f46ab51ce859342ea2, type: 3}
 --- !u!1 &523896871
 GameObject:
   m_ObjectHideFlags: 0
@@ -20283,3 +20351,4 @@ SceneRoots:
   - {fileID: 811439614}
   - {fileID: 1506974052}
   - {fileID: 1425976877}
+  - {fileID: 461280300}
