@@ -59,7 +59,7 @@ public class SQLiteTest: MonoBehaviour
          var options = new SQLiteConnectionString(dbName, false);
          var conn= new SQLiteConnection(options);
 
-         //conn.CreateTable<Difficulty>();
+         conn.CreateTable<Difficulty>();
          
          Debug.LogWarning(dbName);
          if (IsTherePreviousData())

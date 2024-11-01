@@ -4,25 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="68d6ce5a-7462-47c9-ab06-87d1cfaf8aab" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Fish Spawner.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Fish Spawner.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Fishies 1.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Fishies 1.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Fishies 2.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Fishies 2.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Fishies.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Fishies.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/blue_tang.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/blue_tang.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/butterflyfish.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/butterflyfish.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/parrotfish.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/parrotfish.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainGame/TurtlePerspective.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainGame/TurtlePerspective.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/TutorialRelated/DialogueTurtlePerspective.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/TutorialRelated/DialogueTurtlePerspective.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/TutorialRelated/DialogueTurtlePerspectiveRevealed.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/TutorialRelated/DialogueTurtlePerspectiveRevealed.unity" afterDir="false" />
-    </list>
+    <list default="true" id="68d6ce5a-7462-47c9-ab06-87d1cfaf8aab" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -70,7 +52,7 @@
   "keyToString": {
     "Attach to Unity Editor.Attach to Unity Editor.executor": "Debug",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "Merging dev",
+    "git-widget-placeholder": "peter",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -82,7 +64,7 @@
 }]]></component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="$PROJECT_DIR$/../Builds/nooooo\IGB200TortalSquad.exe" />
+      <option name="EXE_PATH" value="$PROJECT_DIR$/../Buids/TortalWelfare/TortalWelfare_FinalProduct\IGB200TortalSquad.exe" />
       <option name="PROGRAM_PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="C:\Uni\Semester 2 2024\IGB200\Assessment\Builds" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -177,7 +159,7 @@
       <workItem from="1729394833269" duration="995000" />
       <workItem from="1729504154952" duration="807000" />
       <workItem from="1729518311436" duration="325000" />
-      <workItem from="1730449522121" duration="59000" />
+      <workItem from="1730364829239" duration="4135000" />
     </task>
     <servers />
   </component>
